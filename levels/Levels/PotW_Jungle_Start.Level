@@ -1,0 +1,6 @@
+name = Pirates of the Wasteland
+folder = potw
+shared = environments/thepark/adventureland/pirates/gsa/potw_playerstart_jungle.gsa
+initial = stream_4
+interior = stream_4_int
+

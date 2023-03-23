@@ -1,0 +1,5 @@
+name = Pirates of the Wasteland
+folder = potw
+shared = Environments/ThePark/AdventureLand/Pirates/GSA/PotW_PlayerStart_ScalpRock.gsa
+initial = stream_10b
+interior = stream_10c

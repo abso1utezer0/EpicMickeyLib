@@ -1,0 +1,17 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gv_zonei.gsa -i
+
+// audio:
+global.bnk
+lvl_fx_gremlinvillage.bnk
+Prefab_Spawner_Faucet.bnk
+
+// interior: stream_10b
+// interior: stream_7d_i
+// interior: stream_7c_i
+// interior: stream_8_audio_collesium
+// interior: stream_8_audio_outside
+// interior: stream_gv_empty
+
+// destination: stream_cwb
+

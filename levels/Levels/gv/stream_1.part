@@ -1,0 +1,14 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gremlinvillage_zonea.gsa -i
+
+// audio:
+global.bnk
+gremlin.bnk
+lvl_fx_gremlinvillage.bnk
+lvl_fx_gv_slalom.bnk
+spatter.bnk
+
+// interior: stream_atob_airlock
+
+// destination: stream_2
+

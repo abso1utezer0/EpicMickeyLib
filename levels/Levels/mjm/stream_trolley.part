@@ -1,0 +1,7 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_trolleya_shared.gsa -i
+
+// audio:
+global.bnk
+lvl_2d_trolleytroubles.bnk
+

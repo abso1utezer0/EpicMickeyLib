@@ -1,0 +1,18 @@
+// note: Used to cook gsas that aren't picked up by progression skipping
+
+// gsas:
+environments/meanstreets/hub_meanstreet_v1_launcher.gsa
+environments/meanstreets/hub_meanstreet_v2_launcher.gsa
+environments/meanstreets/hub_meanstreet_v3_launcher.gsa
+environments/meanstreets/hub_meanstreet_v4_launcher.gsa
+environments/meanstreets/hub_meanstreet_v5_launcher.gsa
+environments/meanstreets/hub_meanstreet_v6_launcher.gsa
+environments/meanstreets/shared/hub_meanstreet_v1_shared.gsa
+environments/meanstreets/shared/hub_meanstreet_v2_shared.gsa
+environments/meanstreets/shared/hub_meanstreet_v3_shared.gsa
+environments/meanstreets/shared/hub_meanstreet_v4_shared.gsa
+environments/meanstreets/shared/hub_meanstreet_v5_shared.gsa
+environments/meanstreets/shared/hub_meanstreet_v6_shared.gsa
+
+// audio:
+

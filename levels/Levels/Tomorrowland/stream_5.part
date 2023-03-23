@@ -1,0 +1,13 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/tlmh_visit1onlyworking.gsa
+
+// audio:
+global.bnk
+gremlin.bnk
+lvl_fx_tc_tcs_01.bnk
+lvl_fx_tomorrowcity.bnk
+
+// interior: stream2d_3
+
+// destination: stream_19
+

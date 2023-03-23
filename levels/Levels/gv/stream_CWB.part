@@ -1,0 +1,9 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/sw_clockworkboss_shared.gsa -i
+
+// audio:
+global.bnk
+gremlin.bnk
+lvl_fx_gv_clocktower.bnk
+lvl_fx_gremlinvillage.bnk
+

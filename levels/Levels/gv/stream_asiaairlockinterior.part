@@ -1,0 +1,7 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gv_jungletoasiaairlock.gsa -i
+
+// audio:
+lvl_fx_gv_jab_airlock.bnk
+pete.bnk
+lvl_fx_gremlinvillage.bnk

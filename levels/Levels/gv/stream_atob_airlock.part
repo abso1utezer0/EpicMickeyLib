@@ -1,0 +1,8 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gv_zonea_airlock.gsa -i
+
+// audio:
+global.bnk
+lvl_fx_gv_stb_airlock.bnk
+prefab_spawner_faucet.bnk
+

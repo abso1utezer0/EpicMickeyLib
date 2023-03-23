@@ -1,0 +1,13 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zonef.gsa -i
+
+// audio:
+
+
+// interior: stream_fantasia1_2d
+// interior: stream_fantasia2_2d
+// interior: stream_sleepingbeauty2d
+// interior: stream_throneroom_int
+
+// destination: stream_controltower
+

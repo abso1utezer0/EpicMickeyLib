@@ -1,0 +1,10 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_zonef.gsa
+
+// audio:
+lvl_fx_mickeyjunkmountain.bnk
+
+// interior: stream_guns
+// interior: stream_knight
+// interior: stream_trolley
+// interior: stream_17_int

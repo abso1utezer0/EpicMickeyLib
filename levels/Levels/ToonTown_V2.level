@@ -1,0 +1,7 @@
+name = ToonTown_V2
+folder = ms
+loading_screen_texture = loadingscreens/postcard_ostown.dds
+shared = environments/meanstreets/hub_toontown_v2_launcher.gsa
+initial = ttvisit2_wsound
+interior = ttv2_defaultinterior
+

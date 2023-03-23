@@ -1,0 +1,8 @@
+name = Tomorrowland
+author = Evan Boehler
+folder = tomorrowland
+loading_screen_texture = LoadingScreens/Postcard_TC_Space_Voyage.dds
+shared = environments/thepark/tomorrowland/gsa/tl_shared.gsa
+initial = stream_23
+interior = stream_23a
+

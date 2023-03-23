@@ -1,0 +1,8 @@
+// 9 Space Mountain - Boss Fight
+
+//Environments/ThePark/TomorrowLand/GSA/TL_AI_Shared.gsa
+Environments/ThePark/TomorrowLand/GSA/SM_TL_ZoneE.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_TomorrowCity.bnk

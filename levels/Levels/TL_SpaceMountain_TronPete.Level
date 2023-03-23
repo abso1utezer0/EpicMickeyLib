@@ -1,0 +1,5 @@
+name = Tomorrowland
+folder = Tomorrowland
+loading_screen_texture = LoadingScreens/Postcard_TronPete_Boss_Fight.dds
+initial = stream_21
+author = Drew Marrè

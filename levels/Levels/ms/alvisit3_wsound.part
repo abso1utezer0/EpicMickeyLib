@@ -1,0 +1,18 @@
+// gsas:
+environments/meanstreets/hub_adventureland_v3_ai.gsa -i
+environments/meanstreets/levelwrappers/ventureland_visit3_wrapper.gsa
+
+// audio:
+blob.bnk
+blotlingranged.bnk
+global.bnk
+hub_infestation.bnk
+lvl_fx_ventureland.bnk
+prefab_blottentacles.bnk
+spatter_opt.bnk
+
+// interior: jungle_rhythm01
+
+// destination: msvisit6
+// destination: msvisit6_noenemy
+

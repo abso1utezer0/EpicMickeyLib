@@ -1,0 +1,11 @@
+// gsas:
+environments/meanstreets/levelwrappers/ostown_visit3_wrapper.gsa -i
+environments/meanstreets/hub_toontown_v3_ai.gsa -i
+
+// audio:
+
+// interior: thru_mirror
+
+// destination: msvisit6
+// destination: msvisit6_noenemy
+

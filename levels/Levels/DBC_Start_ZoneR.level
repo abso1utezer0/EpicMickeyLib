@@ -1,0 +1,6 @@
+name = Dark Beauty Castle Zone R
+author = Damien Allen
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zr.gsa
+initial = stream_utilidor7
+

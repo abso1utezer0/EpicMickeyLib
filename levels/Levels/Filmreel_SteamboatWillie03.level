@@ -1,0 +1,4 @@
+name = FR_SteamboatWillie03
+folder = fr
+shared = Environments/MeanStreets/Transitions/2D_SteamboatWillie03_Transitions.gsa
+initial = SteamboatWillie03.part

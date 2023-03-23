@@ -1,0 +1,5 @@
+name = E3 Demo SR
+mapname = Skull Island
+folder = E3_Demo
+shared = Environments/ThePark/AdventureLand/Pirates/GSA/PotW_PlayerStart_ScalpRock.gsa
+initial = E3_SR

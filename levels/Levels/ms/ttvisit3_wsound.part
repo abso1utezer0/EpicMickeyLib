@@ -1,0 +1,16 @@
+// gsas:
+environments/meanstreets/levelwrappers/ostown_visit3_wrapper.gsa
+environments/meanstreets/hub_toontown_v3_ai.gsa
+
+// audio:
+blotlingranged.bnk
+global.bnk
+hub_infestation.bnk
+prefab_blottentacles.bnk
+spatter.bnk
+
+// interior: thru_mirror
+
+// destination: msvisit6
+// destination: msvisit6_noenemy
+

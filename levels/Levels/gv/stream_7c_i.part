@@ -1,0 +1,7 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/sw_clockb_shared.gsa
+
+// audio:
+global.bnk
+LVL_2D_ClockCleaners_B.bnk
+lvl_fx_gremlinvillage.bnk

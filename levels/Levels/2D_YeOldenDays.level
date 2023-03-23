@@ -1,0 +1,6 @@
+name = 2D_YeOldenDays
+folder = mjm
+loading_screen_texture = LoadingScreens/Postcard_MJM_Osmore_Caverns.dds
+shared = Environments/ThePark/DarkBeautyCastle/GSA/DBC_2DYeOlden_Shared.gsa
+initial = 2D_YeOldenDays_ext
+interior = 2D_YeOldenDays

@@ -1,0 +1,6 @@
+name = Tomorrowland
+folder = Tomorrowland
+shared = Environments/ThePark/TomorrowLand/GSA/TL_Shared.gsa
+initial = stream_2
+interior = stream2D_5
+author = Ian Shepherd

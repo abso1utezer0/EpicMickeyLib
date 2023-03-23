@@ -1,0 +1,21 @@
+// gsas:
+environments/thepark/neworleanssquare/hauntedmansion/gsa/hauntedmansion_zoneh.gsa
+
+// audio:
+blotlingkamikaze.bnk
+blotlingranged.bnk
+global.bnk
+gremlin.bnk
+hm_zoneh1_library.bnk
+lvl_fx_hauntedmansion.bnk
+sfx_flyingbooks.bnk
+blob.bnk
+
+// interior: stream_6
+// interior: stream_8
+// interior: stream_7_a
+// interior: stream_7_b
+
+
+// destination: stream_11
+

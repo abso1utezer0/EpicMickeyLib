@@ -1,0 +1,6 @@
+name = Pirates of the Wasteland
+author = Daniel Becker
+folder = potw
+loading_screen_texture = LoadingScreens/Postcard_POTW_Tortooga.dds
+shared = environments/thepark/adventureland/pirates/gsa/potw_playerstart_tortuga1.gsa
+initial = stream_2

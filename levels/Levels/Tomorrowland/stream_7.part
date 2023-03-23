@@ -1,0 +1,18 @@
+// 7 Space Mountain Interior
+
+//Environments/ThePark/TomorrowLand/GSA/TL_AI_Shared.gsa
+//Environments/ThePark/TomorrowLand/GSA/SM_TL_ZoneB.gsa
+Environments/ThePark/TomorrowLand/GSA/TL_Shared.gsa
+//Environments/ThePark/TomorrowLand/GSA/SM_TL_ZoneBVisit1Only.gsa
+Environments/ThePark/TomorrowLand/GSA/SM_TL_ZoneB_Visit1_wrapper.gsa
+
+
+//Soundbanks list
+Global.bnk
+LVL_FX_TomorrowCity.bnk
+LVL_FX_TC_SV_01.bnk
+gremlin.bnk
+sfx_beetleworx_cannon.bnk
+blotlingKamikaze.bnk
+animatronicFodder.bnk
+Prefab_PressurePlate_TV.bnk

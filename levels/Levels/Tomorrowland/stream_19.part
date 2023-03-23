@@ -1,0 +1,10 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/sm_tl_zoneb_visit1_wrapper.gsa -i
+environments/thepark/tomorrowland/gsa/tl_shared.gsa
+
+// audio:
+
+
+// interior: stream2d_3
+// interior: stream_19_int
+

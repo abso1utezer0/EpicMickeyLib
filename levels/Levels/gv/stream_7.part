@@ -1,0 +1,15 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gremlinvillage_zonef.gsa -i
+
+// audio:
+global.bnk
+lvl_fx_gremlinvillage.bnk
+
+// interior: stream_7_ai
+// interior: stream_7_defaultinterior
+// interior: stream_7b
+// interior: stream_7c
+// interior: stream_7d
+
+// destination: stream_8
+

@@ -1,0 +1,10 @@
+//Jungle Rythm 1 (2D transition from Mean Street) 
+
+Environments/MeanStreets/Transitions/2D_JungleRhythm01_Shared.gsa
+
+//Lighting Data
+Environments/ThePark/MeanStreetUSA/GSA/MSUSA_ZoneM_StaticLighting.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_2D_JungleRhythm_A.bnk

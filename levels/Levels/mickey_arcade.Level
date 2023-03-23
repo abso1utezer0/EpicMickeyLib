@@ -1,0 +1,5 @@
+name = Mickey Arcade
+folder = ma
+shared = Environments\GameplayTest\2D_PopUp\mickey_arcade_shared.gsa
+initial = stream_1
+author = Mark Capers

@@ -1,0 +1,19 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gremlinvillage_zoned.gsa -i
+
+// audio:
+global.bnk
+gremlin.bnk
+lvl_fx_gremlinvillage.bnk
+lvl_fx_gv_asiaboat.bnk
+prefab_animated_gear.bnk
+prefab_platform_boat.bnk
+prefab_platform_gear_rotate.bnk
+prefab_spawner_faucet.bnk
+
+// interior: stream_asiaairlockinterior
+// interior: stream_asiaoswald
+// interior: stream_gv_empty
+
+// destination: stream_7
+

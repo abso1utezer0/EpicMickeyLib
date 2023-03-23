@@ -1,0 +1,21 @@
+// gsas:
+environments/thepark/adventureland/pirates/gsa/potw_zoneb.gsa -i
+environments/thepark/adventureland/pirates/gsa/potw_zoneb_ai_3.gsa -i
+
+// audio:
+global.bnk
+lvl_fx_piratesofthewasteland.bnk
+piratemelee.bnk
+pirateranged.bnk
+pirate_vox.bnk
+potw_zoneb_tortugav2.bnk
+prefab_platform_boat.bnk
+gremlin.bnk
+
+// interior: stream_2_2
+// interior: stream_5_2
+// interior: stream_7
+// interior: stream_clear
+
+// destination: stream_8
+

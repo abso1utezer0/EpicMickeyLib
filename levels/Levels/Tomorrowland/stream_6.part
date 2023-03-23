@@ -1,0 +1,22 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/tl_minihub_airlock3.gsa
+environments/thepark/tomorrowland/gsa/tl_minihub_airlock3_visit_1.gsa
+environments/thepark/tomorrowland/gsa/tlmh_visit1onlyworking.gsa -i
+
+// audio:
+animatronicfodder.bnk
+beetleworxcrawler.bnk
+global.bnk
+gremlin.bnk
+lvl_fx_tc_tch.bnk
+lvl_fx_tc_tcs_01.bnk
+lvl_fx_tomorrowcity.bnk
+prefab_pressureplate_tv.bnk
+spatter.bnk
+
+// interior: stream2d_2
+// interior: stream2d_3
+// interior: stream_16a
+
+// destination: stream_19
+

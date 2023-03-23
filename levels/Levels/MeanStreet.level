@@ -1,0 +1,4 @@
+name = Mean Street
+folder = HUB
+shared = Environments/MeanStreets/HUB_Shared.gsa
+initial = stream_11

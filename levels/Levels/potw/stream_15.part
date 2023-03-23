@@ -1,0 +1,12 @@
+// note: Jolly Roger Boss Fight. Hard Load.
+
+// gsas:
+environments/thepark/adventureland/pirates/gsa/potw_zonem.gsa
+
+// audio:
+animatronichook.bnk
+global.bnk
+gremlin.bnk
+potw_zonem_boss_jolly_roger.bnk
+//spatter.bnk
+

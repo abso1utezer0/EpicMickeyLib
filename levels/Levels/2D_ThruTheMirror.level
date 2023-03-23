@@ -1,0 +1,5 @@
+name = 2D_ThruTheMirror
+folder = ms
+loading_screen_texture = loadingscreens/postcard_ostown.dds
+interior = thru_mirror_i
+

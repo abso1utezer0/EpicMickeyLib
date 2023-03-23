@@ -1,0 +1,20 @@
+// gsas:
+environments/meanstreets/levelwrappers/bogeasy_visit3_wrapper.gsa
+environments/meanstreets/hub_nosquare_v3_ai.gsa
+
+// audio:
+Hub_Infestation.bnk
+blob.bnk
+blotlingkamikaze.bnk
+blotlingranged.bnk
+global.bnk
+LVL_nos_Visit3.bnk
+spatter.bnk
+Prefab_BlotTentacles.bnk
+
+
+// interior: lonesome_ghost01
+
+// destination: msvisit6
+// destination: msvisit6_noenemy
+

@@ -1,0 +1,17 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gv_zonec.gsa -i
+
+// audio:
+blotlingranged.bnk
+global.bnk
+gremlin.bnk
+lvl_fx_gremlinvillage.bnk
+lvl_fx_gv_jungleboat.bnk
+lvl_fx_gv_jb_a.bnk
+prefab_platform_boat.bnk
+spatter.bnk
+
+// interior: stream_asiaairlockinterior
+
+// destination: stream_4
+

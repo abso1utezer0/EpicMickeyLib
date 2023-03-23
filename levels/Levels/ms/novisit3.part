@@ -1,0 +1,11 @@
+// gsas:
+environments/meanstreets/levelwrappers/bogeasy_visit3_wrapper.gsa -i
+environments/meanstreets/hub_nosquare_v3_ai.gsa -i
+
+// audio:
+
+// interior: lonesome_ghost01
+
+// destination: msvisit6
+// destination: msvisit6_noenemy
+

@@ -1,0 +1,5 @@
+name = 2D_SteamboatWillie02
+shared = Environments/ThePark/FantasyLand/SmallWorld/GSA/SW_PlayerStart_2D_SteamB.gsa
+folder = gv
+initial = stream_7d_ext
+interior = stream_7d

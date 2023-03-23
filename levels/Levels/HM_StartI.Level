@@ -1,0 +1,7 @@
+name = Haunted Mansion
+author = Mark Capers
+folder = hm
+shared = environments/thepark/neworleanssquare/hauntedmansion/gsa/quickgsa/hauntedmansion_zoneiquick.gsa
+initial = stream_15
+interior = stream_15_int
+

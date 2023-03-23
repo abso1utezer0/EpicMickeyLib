@@ -1,0 +1,14 @@
+// 3 Carousel Of Progress Interior
+
+//Environments/ThePark/TomorrowLand/GSA/TL_AI_Shared.gsa
+Environments/ThePark/TomorrowLand/GSA/TL_MiniHub_ZoneD2.gsa
+Environments/ThePark/TomorrowLand/GSA/TL_MiniHub_ZoneD1Hall.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_TomorrowCity.bnk
+LVL_FX_TC_GBT.bnk
+LVL_FX_TC_TCH.bnk
+Ped_Male.bnk
+blob.bnk
+

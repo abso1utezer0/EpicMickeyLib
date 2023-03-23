@@ -1,0 +1,4 @@
+name = 2D_TheWhalers
+folder = potw
+shared = Environments\ThePark\AdventureLand\Pirates\GSA\PotW_PlayerStart_Whalers.gsa
+interior = stream_5

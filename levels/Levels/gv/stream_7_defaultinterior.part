@@ -1,0 +1,9 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/gremlinvillage_zonef_defaultinterior.gsa
+
+// audio:
+global.bnk
+gremlin.bnk
+spatter.bnk
+lvl_fx_gv_woc.bnk
+prefab_thinnerpaintmachine.bnk

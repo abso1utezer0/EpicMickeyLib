@@ -1,0 +1,9 @@
+//Level Data
+Environments/MeanStreets/Test/Test_MS.gsa
+
+//Lighting Data
+Environments/MeanStreets/HUB_MeanStreet_StaticLights.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_MeanStreets.bnk

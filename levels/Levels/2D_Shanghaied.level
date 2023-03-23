@@ -1,0 +1,4 @@
+name = 2D_Shanghaied
+folder = potw
+shared = Environments/ThePark/AdventureLand/Pirates/GSA/PoTW_PlayerStart_Shanghaied.gsa
+interior = stream_9

@@ -1,0 +1,18 @@
+// gsas:
+environments/thepark/adventureland/pirates/gsa/potw_zoneh_master.gsa -i
+
+// audio:
+global.bnk
+lvl_fx_piratesofthewasteland.bnk
+potw_zoneh_boat_ride.bnk
+prefab_platform_boat.bnk
+spatter.bnk
+blotlingRanged.bnk
+
+// interior: stream_7
+// interior: stream_9
+// interior: stream_8_A
+// interior: stream_8_B
+
+// destination: stream_10
+

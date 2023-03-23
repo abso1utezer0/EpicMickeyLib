@@ -1,0 +1,17 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/tl_minihub_airlock3.gsa
+environments/thepark/tomorrowland/gsa/tl_minihub_airlock3_visit_2.gsa
+environments/thepark/tomorrowland/gsa/tl_minihub_v2_wrapper.gsa
+
+// audio:
+blotlingfodder.bnk
+blotlingranged.bnk
+global.bnk
+gremlin.bnk
+lvl_fx_tc_tcs_02.bnk
+lvl_fx_tomorrowcity.bnk
+oswald.bnk
+Prefab_BlotTentacles.bnk
+
+// destination: stream_24
+

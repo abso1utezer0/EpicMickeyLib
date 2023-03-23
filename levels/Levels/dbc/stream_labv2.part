@@ -1,0 +1,15 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zoned.gsa -i
+
+// audio:
+blotlingranged.bnk
+dbc_zone_a_02.bnk
+global.bnk
+gremlin.bnk
+lvl_fx_darkbeautycastle.bnk
+blob.bnk
+
+// interior: stream_sleepingbeauty2d
+
+// destination: stream_throneroom
+

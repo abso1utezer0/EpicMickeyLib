@@ -1,0 +1,6 @@
+name = SW_ClockWorkBoss_static
+author = Dwight Spaulding
+folder = gv
+loading_screen_texture = LoadingScreens/Postcard_GV_ClockTower.dds
+initial = stream_cwb
+

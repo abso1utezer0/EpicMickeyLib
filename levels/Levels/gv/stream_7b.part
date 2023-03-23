@@ -1,0 +1,6 @@
+// gsas:
+environments/thepark/fantasyland/smallworld/gsa/sw_clocka_shared.gsa -i
+
+// audio:
+Global.bnk
+LVL_2D_ClockCleaners_A.bnk

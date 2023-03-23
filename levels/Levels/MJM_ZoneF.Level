@@ -1,0 +1,7 @@
+name = Mickeyjunk Mountain
+folder = mjm
+loading_screen_texture = LoadingScreens/Postcard_MJM_Osmore_Caverns.dds
+shared = Environments/ThePark/MickeyJunkMountain/GSA/MJM_ZoneF_Shared.gsa
+initial = stream_17
+interior = stream_17_int
+author = Evan Boehler

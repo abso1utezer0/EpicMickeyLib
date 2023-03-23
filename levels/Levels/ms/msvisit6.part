@@ -1,0 +1,21 @@
+// gsas:
+environments/meanstreets/levelwrappers/meanstreet_visit6_wrapper.gsa -i
+environments/meanstreets/hub_meanstreet_v6_enemyinterior.gsa -i
+
+// audio:
+blotlingkamikaze.bnk
+global.bnk
+hub_infestation.bnk
+prefab_blottentacles.bnk
+spatter.bnk
+blob.bnk
+
+// interior: thru_mirror
+
+// destination: alvisit3
+// destination: alvisit3npc
+// destination: novisit3
+// destination: novisit3npc
+// destination: ttvisit3
+// destination: ttvisit3npc
+

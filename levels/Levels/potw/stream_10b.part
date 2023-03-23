@@ -1,0 +1,20 @@
+// gsas:
+environments/thepark/adventureland/pirates/gsa/potw_zonel.gsa
+environments/thepark/adventureland/pirates/gsa/potw_zonel_bwx.gsa
+
+// audio:
+animatronicpiratemelee_opt.bnk
+blotlingkamikaze.bnk
+blotlingranged.bnk
+global.bnk
+lvl_fx_piratesofthewasteland.bnk
+potw_zonel_skull_rock.bnk
+prefab_thinnerpaintmachine.bnk
+spatter_opt.bnk
+
+// interior: stream_9
+// interior: stream_10c
+// interior: stream_10d
+
+// destination: stream_10_2
+

@@ -1,0 +1,16 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zones.gsa
+
+// audio:
+Global.bnk
+gremlin.bnk
+blotlingKamikaze.bnk
+DBC_BlotInterior.bnk
+fmv_endgame_soundtrack.bnk
+tentacleSmallThree.bnk
+
+// interior: stream_blotai1
+// interior: stream_blotai2
+// interior: stream_blotai3
+// interior: stream_controltower_interior
+

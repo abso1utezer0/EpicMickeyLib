@@ -1,0 +1,6 @@
+name = Adventureland_v1
+folder = ms
+loading_screen_texture = loadingscreens/postcard_ventureland.dds
+shared = environments/meanstreets/shared/hub_ventureland_v3_debug.gsa
+initial = alvisit3_wsound
+

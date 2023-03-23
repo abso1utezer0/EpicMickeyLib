@@ -1,0 +1,10 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/sm_tl_v2_oswaldlayer.gsa
+
+// audio:
+global.bnk
+gremlin.bnk
+lvl_fx_tc_sv_02.bnk
+lvl_fx_tomorrowcity.bnk
+oswald.bnk
+

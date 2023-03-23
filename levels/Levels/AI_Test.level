@@ -1,0 +1,16 @@
+name = AI Test Level
+folder = ai_test
+shared = Environments/GameplayTest/Test_Deluxe/Test_Deluxe_PlayerStart.gsa
+initial = Start
+
+
+
+
+
+
+
+
+
+
+
+

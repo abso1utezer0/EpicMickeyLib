@@ -1,0 +1,5 @@
+name = Mickeyjunk Mountain
+folder = mjm
+shared = Environments/ThePark/MickeyJunkMountain/GSA/MJM_Shared.gsa
+initial = stream_11
+author = Evan Boehler

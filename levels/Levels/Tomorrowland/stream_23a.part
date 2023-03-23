@@ -1,0 +1,13 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/sm_tl_visit2nonlitobjects.gsa
+
+// audio:
+global.bnk
+gremlin.bnk
+lvl_fx_tc_sv_02.bnk
+lvl_fx_tomorrowcity.bnk
+animatronicPirateMelee.bnk
+spatter.bnk
+sfx_beetleworx_cannon.bnk
+Prefab_BlotTentacles.bnk
+blotlingranged.bnk

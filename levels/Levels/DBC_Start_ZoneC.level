@@ -1,0 +1,7 @@
+name = Dark Beauty Castle Zone C
+author = Damien Allen
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zc.gsa
+initial = stream_sleepingbeauty2d_ext
+interior = stream_sleepingbeauty2d
+

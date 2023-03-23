@@ -1,0 +1,16 @@
+//Environment Data ZoneL
+Environments/ThePark/AdventureLand/Pirates/GSA/PotW_PlayerStart_ScalpRock.gsa
+Environments/ThePark/AdventureLand/Pirates/GSA/PoTW_ZoneL.gsa
+//Lighting Data ZoneL
+Environments/ThePark/AdventureLand/Pirates/GSA/PoTW_ZoneL_StaticLights.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_PiratesOfTheWasteland.bnk
+POTW_ZoneL_Skull_Rock.bnk
+Prefab_Spawner_Doors.bnk
+Prefab_Platform_Boat.bnk
+PreFab_ThinnerPaintMachine.bnk
+blotlingKamikaze.bnk
+spatter.bnk
+blotlingRanged.bnk

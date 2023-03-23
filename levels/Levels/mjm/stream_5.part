@@ -1,0 +1,21 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_airlock3.gsa
+environments/thepark/mickeyjunkmountain/gsa/mjm_zonee.gsa
+
+// audio:
+global.bnk
+lvl_fx_mickeyjunkmountain.bnk
+LVL_FX_MJM_Slopes.bnk
+playingcardranged.bnk
+animatronicFodder.bnk
+blotlingKamikaze.bnk
+spatter_Opt.bnk
+blotlingRanged.bnk
+Prefab_TossAbout.bnk
+Prefab_MickeyGasMask.bnk
+
+
+// interior: stream_alpineb
+
+// destination: stream_6
+

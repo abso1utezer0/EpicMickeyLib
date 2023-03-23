@@ -1,0 +1,22 @@
+// gsas:
+environments/meanstreets/levelwrappers/bogeasy_visit1_wrapper.gsa
+
+// audio:
+animatronicdonald.bnk
+global.bnk
+lonesomeghostshort.bnk
+lonesomeghosttall.bnk
+lvl_fx_neworleanssquare.bnk
+ped_male.bnk
+Ghost_Vox.bnk
+Ped_Vox.bnk
+LVL_nos_Visit1.bnk
+
+// interior: bog_shack
+// interior: bog_ship
+// interior: bog_store
+// interior: lonesome_ghost01
+// interior: lonesome_ghost02
+
+// destination: msvisit4
+

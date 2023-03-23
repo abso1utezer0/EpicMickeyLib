@@ -1,0 +1,4 @@
+name = 2D_LonesomeGhost02
+folder = ms
+initial = lonesome_ghost02_ext
+interior = lonesome_ghost02

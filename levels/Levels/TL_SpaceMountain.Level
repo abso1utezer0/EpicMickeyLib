@@ -1,0 +1,6 @@
+name = Tomorrowland
+folder = Tomorrowland
+shared = Environments/ThePark/TomorrowLand/GSA/SM_TL_ZoneB_PlayerStart.gsa
+initial = stream_19
+interior = stream_19_int
+author = Evan Boehler

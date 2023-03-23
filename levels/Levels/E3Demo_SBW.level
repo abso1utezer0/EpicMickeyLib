@@ -1,0 +1,5 @@
+name = E3 Demo SBW
+mapname = Steamboat Willie
+maptype = 2D
+folder = E3_Demo
+initial = E3_SBW_HardLoad

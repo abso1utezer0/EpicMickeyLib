@@ -1,0 +1,16 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_zonea.gsa
+
+// audio:
+bunnychildren.bnk
+global.bnk
+gremlin.bnk
+lvl_fx_mickeyjunkmountain.bnk
+LVL_FX_MJM_Heaps.bnk
+playingcardranged.bnk
+spatter.bnk
+
+// interior: stream_alpinea
+
+// destination: stream_16
+

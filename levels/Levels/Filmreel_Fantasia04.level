@@ -1,0 +1,4 @@
+name = FR_Fantasia04
+folder = fr
+shared = Environments/MeanStreets/Transitions/2D_Fantasia04_Transitions.gsa
+initial = FR_Fantasia04

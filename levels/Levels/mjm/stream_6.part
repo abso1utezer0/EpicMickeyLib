@@ -1,0 +1,11 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_airlock3.gsa
+environments/thepark/mickeyjunkmountain/gsa/mjm_zonef.gsa -i
+
+// audio:
+lvl_fx_mickeyjunkmountain.bnk
+
+// interior: stream_17_int
+
+// destination: stream_17
+

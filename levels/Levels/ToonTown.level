@@ -1,0 +1,4 @@
+name = ToonTown
+folder = HUB
+shared = Environments/MeanStreets/HUB_ToonTown_Shared.gsa
+initial = stream_9

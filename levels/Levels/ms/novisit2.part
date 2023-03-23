@@ -1,0 +1,13 @@
+// gsas:
+environments/meanstreets/levelwrappers/bogeasy_visit2_wrapper.gsa -i
+
+// audio:
+
+// interior: bog_shack
+// interior: bog_ship
+// interior: bog_store
+// interior: lonesome_ghost01
+// interior: lonesome_ghost02
+
+// destination: msvisit5
+

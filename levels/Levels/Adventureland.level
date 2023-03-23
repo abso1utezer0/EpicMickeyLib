@@ -1,0 +1,4 @@
+name = Adventureland
+folder = HUB
+shared = Environments/MeanStreets/HUB_Adv_Shared.gsa
+initial = stream_5

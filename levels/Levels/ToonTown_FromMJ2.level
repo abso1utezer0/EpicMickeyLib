@@ -1,0 +1,6 @@
+name = ToonTown_V3
+folder = ms
+loading_screen_texture = loadingscreens/postcard_hub_ostown_v3.dds
+shared = environments/meanstreets/hub_toontown_v3_launcher.gsa
+initial = ttvisit3_wsound
+

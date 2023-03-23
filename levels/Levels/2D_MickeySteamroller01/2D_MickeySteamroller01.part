@@ -1,0 +1,8 @@
+Environments/ThePark/MeanStreetUSA/GSA/MSUSA_ZoneP.gsa
+
+//Lighting Data
+Environments/ThePark/MeanStreetUSA/GSA/MSUSA_ZoneP_StaticLights.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_2D_MickeysSteamroller.bnk

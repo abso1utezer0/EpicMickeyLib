@@ -1,0 +1,11 @@
+// gsas:
+environments/thepark/neworleanssquare/hauntedmansion/gsa/hauntedmansion_zoned3.gsa -i
+
+// audio:
+
+// interior: stream_14
+// interior: stream_15_int
+// interior: stream_4
+
+// destination: stream_5
+

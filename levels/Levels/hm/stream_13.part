@@ -1,0 +1,13 @@
+// gsas:
+environments/thepark/neworleanssquare/hauntedmansion/gsa/hauntedmansion_zonem.gsa
+
+// audio:
+global.bnk
+hm_zonem_attic.bnk
+lvl_fx_hauntedmansion.bnk
+prefab_spawner_doors.bnk
+
+// interior: stream_12
+// interior: stream_13_ai_1
+// interior: stream_13_ai_2
+

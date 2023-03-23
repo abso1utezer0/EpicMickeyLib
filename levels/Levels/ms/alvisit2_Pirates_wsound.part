@@ -1,0 +1,24 @@
+// gsas:
+environments/meanstreets/levelwrappers/ventureland_visit2pirates_wrapper.gsa
+
+// audio:
+animatronicdaisy.bnk
+global.bnk
+lvl_fx_ventureland.bnk
+ped_male.bnk
+piratemelee.bnk
+pirateranged.bnk
+smee.bnk
+LVL_Ventureland_Visit2_pirates.bnk
+Ped_Vox.bnk
+Pirate_Vox.bnk
+
+// interior: alv2_p_defaultinterior
+// interior: hut_shop
+// interior: jungle_rhythm01
+// interior: tiki_shop
+// interior: tree_house
+
+// destination: msvisit4
+// destination: msvisit5
+

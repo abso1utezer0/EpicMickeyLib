@@ -1,0 +1,15 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zonek_bottominterior.gsa
+
+// audio:
+dbc_zone_k_top.bnk
+global.bnk
+lvl_fx_darkbeautycastle.bnk
+spatter.bnk
+StormBlot.bnk
+
+// interior: stream_fantasia3_2d
+// interior: stream_sorrowtower_bottominterior
+
+// destination: stream_grieftower
+

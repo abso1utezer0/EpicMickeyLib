@@ -1,0 +1,5 @@
+name = 2D_Plutopia02
+folder = Tomorrowland
+shared = Environments/ThePark/TomorrowLand/GSA/TL_2D_Nautilus_PlayerStart.gsa
+initial = stream2D_2_ext
+interior = stream2D_2

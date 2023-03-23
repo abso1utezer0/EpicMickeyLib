@@ -1,0 +1,6 @@
+name = Tomorrowland
+folder = Tomorrowland
+loading_screen_texture = LoadingScreens/Postcard_TC_Notilus_Room.dds
+shared = Environments/ThePark/TomorrowLand/GSA/TL_Shared.gsa
+initial = stream_5
+author = Evan Boehler

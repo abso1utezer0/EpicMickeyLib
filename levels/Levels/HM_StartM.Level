@@ -1,0 +1,5 @@
+name = Haunted Mansion
+folder = hm
+shared = Environments/ThePark/NewOrleansSquare/HauntedMansion/GSA/QuickGSA/HauntedMansion_ZoneMQuick.gsa
+initial = stream_13
+author = Mark Capers

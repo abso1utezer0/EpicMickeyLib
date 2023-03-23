@@ -1,0 +1,5 @@
+name = 2D_MadDoctor02
+folder = hm
+shared = Environments/ThePark/NewOrleansSquare/HauntedMansion/GSA/QuickGSA/MadDoctor02_Shared.gsa
+initial = stream_6_ext
+interior = stream_6

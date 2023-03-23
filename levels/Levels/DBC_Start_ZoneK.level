@@ -1,0 +1,7 @@
+name = Dark Beauty Castle Zone K
+author = Damien Allen
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zk.gsa
+initial = stream_sorrowtower
+interior = stream_sorrowtower_bottominterior
+

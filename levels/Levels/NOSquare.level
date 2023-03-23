@@ -1,0 +1,4 @@
+name = New Orleans Square
+folder = HUB
+shared = Environments/MeanStreets/HUB_NOS_Shared.gsa
+initial = stream_7

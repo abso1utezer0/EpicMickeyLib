@@ -1,0 +1,6 @@
+name = Dark Beauty Castle Zone O
+author = Mark Capers
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zo.gsa
+initial = stream_utilidor4
+

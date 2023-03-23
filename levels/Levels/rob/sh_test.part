@@ -1,0 +1,9 @@
+// This is a straming section file. Streaming sections are resposible for
+// keeping everything in memory that needs to be there while the player is
+// located within a given region of the level. This data is not only asset
+// data (driven by GSA files), but also lighting and other types of data.
+//
+// Each line of the section file is another GSA that needs to be loaded
+// by the scene loader and processed.
+
+Environments/_Test/SH_TestMap.gsa 

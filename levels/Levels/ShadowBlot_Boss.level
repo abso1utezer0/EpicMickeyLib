@@ -1,0 +1,4 @@
+name = Shadowblot_Boss
+folder = mjm
+loading_screen_texture = LoadingScreens/Postcard_ShadowBlot_Mickey_Fight.dds
+initial = Shadowblot_Boss

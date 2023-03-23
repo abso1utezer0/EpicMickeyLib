@@ -1,0 +1,7 @@
+name = Dark Beauty Castle Zone F
+author = Damien Allen
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zf.gsa
+initial = stream_throneroom
+interior = stream_throneroom_int
+

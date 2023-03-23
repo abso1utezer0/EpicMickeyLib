@@ -1,0 +1,12 @@
+// 21 Tron Pete Boss Fight
+
+Environments/ThePark/TomorrowLand/GSA/SM_TL_ZoneD.gsa
+//Environments/ThePark/TomorrowLand/GSA/TL_Shared.gsa
+//Environments/ThePark/TomorrowLand/GSA/TL_MechanicalA.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_TomorrowCity.bnk
+LVL_FX_TC_SMTP.bnk
+tronPete.bnk
+

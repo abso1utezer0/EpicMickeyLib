@@ -1,0 +1,7 @@
+name = Dark Beauty Castle Zone M
+author = Damien Allen
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zm.gsa
+initial = stream_losstower
+interior = stream_losstower_anims
+

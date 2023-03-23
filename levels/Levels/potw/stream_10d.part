@@ -1,0 +1,10 @@
+// gsas:
+
+// audio:  swap this soundbanks as interior when we are at top of skull where pete stays
+global.bnk
+pete.bnk
+
+// interior: stream_9
+
+// destination: stream_10_2
+

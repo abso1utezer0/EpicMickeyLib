@@ -1,0 +1,24 @@
+//Level Data
+
+Environments/MeanStreets/HUB_ToonTown_V1.gsa
+Environments/MeanStreets/HUB_ToonTown_MickeyHouse.gsa
+Environments/MeanStreets/HUB_ToonTown_OrtensiaHouse.gsa
+
+//Lighting Data  -  Commented until interiors are lit
+
+//Environments/MeanStreets/HUB_ToonTown_StaticLights.gsa
+
+//Environments/MeanStreets/HUB_ToonTown_OrtensiaHouse_StaticLights.gsa
+
+//Environments/MeanStreets/HUB_ToonTown_MickeyHouse_StaticLights.gsa
+
+//Soundbanks list
+Global.bnk
+Ped_Male.bnk
+talkingPhone.bnk
+animatronicGoofy.bnk
+pirateRanged.bnk
+
+
+
+

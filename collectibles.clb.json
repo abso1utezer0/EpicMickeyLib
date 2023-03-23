@@ -1,0 +1,1073 @@
+{
+  "general": {
+    "Symphony_Sunflower": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_give_symphony_sunflower_tex.nif",
+      "type": "Pin"
+    },
+    "Daisy_Body": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_daisy_torso_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_Fantasia01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "DarkBeautyCastle": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_dbc_tex.nif",
+      "type": "Pin"
+    },
+    "Mystery_Solved": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_solve_case_of_lost_dog_tex.nif",
+      "type": "Pin"
+    },
+    "Fishing_Pole": {
+      "icon": "HUDElements\\Icons\\Placeholder_04_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Book": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_book.tga",
+      "type": "Quest_Object"
+    },
+    "Hatchet": {
+      "icon": "",
+      "type": "Quest_Object"
+    },
+    "Mickey_Mum": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_give_mickey_mum_flower_tex.nif",
+      "type": "Pin"
+    },
+    "Pie_Delivery": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_deliver_clarabelles_pie_tex.nif",
+      "type": "Pin"
+    },
+    "FR_Mirror": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_YeOlenDays": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Entertaining": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_use_sketch_tv_tex.nif",
+      "type": "Pin"
+    },
+    "Fantasia01_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Sprocket": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_sprocket_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Escape_Shadow_Blot": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_escape_shadow_blot_tex.nif",
+      "type": "Pin"
+    },
+    "Ventureland_Cupid": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_unite_henrietta_damien_salt_tex.nif",
+      "type": "Pin"
+    },
+    "Welcome_to_Wasteland": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_game_start_new_tex.nif",
+      "type": "Pin"
+    },
+    "FR_Plutopia01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Gremlin_Village": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_gremlin_village_quest_tex.nif",
+      "type": "Pin"
+    },
+    "Repair_Mean_Street": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_repaint_mean_streets_blot_attack_act3_tex.nif",
+      "type": "Pin"
+    },
+    "Swamp_Iris": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_give_swamp_iris_tex.nif",
+      "type": "Pin"
+    },
+    "Sketch_TVUpgradeNoNumber": {
+      "icon": "HUDElements\\Icons\\ui_icon_shop_sketch_tv_upgrade_tex.nif",
+      "type": "Quest_Object"
+    },
+    "WalletLarge": {
+      "icon": "HUDElements\\Icons\\ui_icon_shop_ticket_upgrade_5_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Compass": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_compass_tex.nif",
+      "type": "Quest_Object"
+    },
+    "No_More_Animatronic_Pirates": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_destroy_toon_to_animatronic_machine_tex.nif",
+      "type": "Pin"
+    },
+    "Oswald_Pin": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_oswald_tex.nif",
+      "type": "Pin"
+    },
+    "CapIncrease_Paint": {
+      "icon": "HUDElements\\Icons\\ui_icon_shop_paint_upgrade_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Donald_Arm": {
+      "icon": "hudelements\\Icons\\ui_icon_quest_animatronic_donald_arm_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Buyable_Tiki_Mask": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_tiki_02_tex.nif",
+      "type": "Quest_Object"
+    },
+    "TeddyBear": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_teddybear_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Tiki_Mask_05": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_tiki_05.tga",
+      "type": "Quest_Object"
+    },
+    "Tiki_Mask_04": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_tiki_04.tga",
+      "type": "Quest_Object"
+    },
+    "Tiki_Mask_03": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_tiki_03.tga",
+      "type": "Quest_Object"
+    },
+    "Key": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_key_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Tiki_Mask_02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_tiki_02.tga",
+      "type": "Quest_Object"
+    },
+    "Steamboat 03_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Tiki_Mask_01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_tiki_01.tga",
+      "type": "Quest_Object"
+    },
+    "Fantasia02_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_Shanghaied": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Steamroller01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Cameo": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_cameo_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_JungleRhythm01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Cake": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_cake_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_JungleRhythm02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Alpine02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Pirate_Hero": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_pirate_sub_quest_tex.nif",
+      "type": "Pin"
+    },
+    "Sparkle_Daisy": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_give_sparkle_daisy_tex.nif",
+      "type": "Pin"
+    },
+    "FR_OhWhatAKnight01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_GreatGuns01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Alpine01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Steamboat03": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Animatronic_Goofy": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_restore_goofy_tex.nif",
+      "type": "Pin"
+    },
+    "FR_Whalers": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Art_Appreciator": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_restore_paintings_haunted_mansion_tex.nif",
+      "type": "Pin"
+    },
+    "Donald_Torso": {
+      "icon": "hudelements\\Icons\\ui_icon_quest_animatronic_donald_torso_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Never_Late": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_use_sketch_watch_tex.nif",
+      "type": "Pin"
+    },
+    "Tomorrow_City": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_tomorrowland_visit_tex.nif",
+      "type": "Pin"
+    },
+    "CapIncrease_Thinner": {
+      "icon": "HUDElements\\Icons\\ui_icon_shop_thinner_upgrade_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Alpine01_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Goofy_Gear": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_sprocket_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Bell_Half2": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_bell_half_02_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Bell_Half1": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_bell_half_01_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Pie": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_pie_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_SleepingBeauty01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Friend_of_Gremlins": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_gremlin_village_tex.nif",
+      "type": "Pin"
+    },
+    "Redeem_Small_Pete": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_redeem_small_pete_tex.nif",
+      "type": "Pin"
+    },
+    "FR_HauntedHouse01": {
+      "icon": "hudelements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_LonesomeGhosts02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_LonesomeGhosts01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_HauntedHouse03": {
+      "icon": "hudelements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Case_Closed": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_recover_murder_weapon_tex.nif",
+      "type": "Pin"
+    },
+    "Defeated_Petetronic": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_break_animatronic_pete_tex.nif",
+      "type": "Pin"
+    },
+    "FR_HauntedHouse02": {
+      "icon": "hudelements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Gold_Pin": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_collectible_gold_tex.nif",
+      "type": "Pin_Inc"
+    },
+    "Sketch_WatchUpgradeNoNumber": {
+      "icon": "HUDElements\\Icons\\ui_icon_shop_sketch_watch_upgrade_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_Fantasia02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Redeem_Petetronic": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_redeem_petetronic_tex.nif",
+      "type": "Pin"
+    },
+    "FR_Fantasia03": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Steamboat02_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Animatronic_Daisy": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_restore_daisy_tex.nif",
+      "type": "Pin"
+    },
+    "FR_Fantasia04": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Daisy_LLeg": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_daisy_leg_tex.nif",
+      "type": "Quest_Object"
+    },
+    "CaptainsLog": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_book_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Heavy": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_use_sketch_anvil_tex.nif",
+      "type": "Pin"
+    },
+    "Well_Read": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_restore_leota_library_tex.nif",
+      "type": "Pin"
+    },
+    "Captain_Hook": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_defeat_hook_tex.nif",
+      "type": "Pin"
+    },
+    "Mickeyjunk_Mountain": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_mickeyjunk_mountain_tex.nif",
+      "type": "Pin"
+    },
+    "Fantasia04_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Shipwheel": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_shipwheel_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_TrolleyTrouble01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Shadow_Boxing": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_defeat_shadow_tex.nif",
+      "type": "Pin"
+    },
+    "FR_MechanicalMan2": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Mad_Doctor": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_defeat_mad_doctor_tex.nif",
+      "type": "Pin"
+    },
+    "Bronze_Pin": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_collectible_bronze_tex.nif",
+      "type": "Pin_Inc"
+    },
+    "House_Key": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_key_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_Castaway02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Clock02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Castaway01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Clock01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Pirates_of_the_Wasteland": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_pirates_of_the_wasteland_tex.nif",
+      "type": "Pin"
+    },
+    "Renew_the_Rivalry": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_restore_captain_hook_tex.nif",
+      "type": "Pin"
+    },
+    "Mean_Street": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_mean_street_final_visit_tex.nif",
+      "type": "Pin"
+    },
+    "Wrench": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_wrench.tga",
+      "type": "Quest_Object"
+    },
+    "Goofy_Arm": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_goofy_arm_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Fantasia03_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Figurehead": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_figurehead_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Goofy_Torso": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_goofy_torso_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Stop_the_Music": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_collect_small_world_record_tex.nif",
+      "type": "Pin"
+    },
+    "Cartoon_Buff": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_collect_all_film_clips_tex.nif",
+      "type": "Pin"
+    },
+    "Silver_Pin": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_collectible_silver_tex.nif",
+      "type": "Pin_Inc"
+    },
+    "Play_a_Tune": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_satisfy_organ_in_haunted_mansion_tex.nif",
+      "type": "Pin"
+    },
+    "FR_Steamboat01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_Steamboat02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Daisy_LArm": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_daisy_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Donald_Waist": {
+      "icon": "hudelements\\Icons\\ui_icon_quest_animatronic_donald_bottom_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Lonesome_Manor": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_complete_haunted_mansion_tex.nif",
+      "type": "Pin"
+    },
+    "Rare_Filmstrip": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_MickeyAndTheBeanstalk": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Daisy_RLeg": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_daisy_bottom_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Medal": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_medal_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Happy_Birthday": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_deliver_clarabelles_cake_tex.nif",
+      "type": "Pin"
+    },
+    "Animatronic_Donald": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_restore_donald_tex.nif",
+      "type": "Pin"
+    },
+    "Power_Spark": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_energy_ball_tex.nif",
+      "type": "Quest_Object"
+    },
+    "VL_IceCream": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_icecream_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Rocket_Part_01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_rocket_parts_engine_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Rocket_Part_02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_rocket_parts_joystick_tex.nif",
+      "type": "Quest_Object"
+    },
+    "ColonelPeteFilm": {
+      "icon": "",
+      "type": "Quest_Object"
+    },
+    "Cutlass": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_cutlass_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_MechanicalMan01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "No_More_Bloticles": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_defeat_tentacles_blot_attack_act3_tex.nif",
+      "type": "Pin"
+    },
+    "Sketch_AnvilUpgradeNoNumber": {
+      "icon": "HUDElements\\Icons\\ui_icon_shop_sketch_anvil_upgrade_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Bouquet?": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_bouquet_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Goofy_Waist": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_goofy_l_leg_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Donald_Voodoo": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_voodoodoll_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Swamp_Flowers": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_flower_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Gremlin_Guardian": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_free_all_captive_gremlins_tex.nif",
+      "type": "Pin"
+    },
+    "Donald_Leg": {
+      "icon": "hudelements\\Icons\\ui_icon_quest_animatronic_donald_leg_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Ice_Cream": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_give_icecream_to_generic_toon_tex.nif",
+      "type": "Pin"
+    },
+    "Flower": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_flower_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Daisy_RArm": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_daisy_arm_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Mean_Street_Matchmaker": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_unite_horace_clarabelle_tex.nif",
+      "type": "Pin"
+    },
+    "WalletLargeNoDenomination": {
+      "icon": "HUDElements\\Icons\\ui_icon_shop_ticket_upgrade_5_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Unwind_the_Clock": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_defeat_clock_boss_tex.nif",
+      "type": "Pin"
+    },
+    "Swashbuckler": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_recover_pirate_cutlass_collectible_tex.nif",
+      "type": "Pin"
+    },
+    "Candle": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_candle_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Ice_Cream_Tub": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_icecream_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Skydiver": {
+      "icon": "HUDElements\\Icons\\ui_icon_pin_skydiver_tex.nif",
+      "type": "Pin"
+    },
+    "FR_Plutopia2": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "Gunters_Ice_Axe": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_icehammer_tex.nif",
+      "type": "Quest_Object"
+    },
+    "Goofy_Leg": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_animatronic_goofy_r_leg_tex.nif",
+      "type": "Quest_Object"
+    },
+    "FR_MadDoc01": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    },
+    "FR_MadDoc02": {
+      "icon": "HUDElements\\Icons\\ui_icon_quest_film_tex.nif",
+      "type": "Film_Reel"
+    }
+  },
+  "extras": {
+    "FILM_MadDoctor": {
+      "file": "Movies\\Mad_Doctor.bik",
+      "icon": "HUDElements\\Extras_Cartoons\\Cartoons_01_MadDoctor_tex.nif",
+      "type": "Film"
+    },
+    "ConceptArt_45_Petetronic_Fight": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_08_Machine_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_08_Machine_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_50_Attack_Spatter": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_49_ChaseArt_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_49_ChaseArt_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_06_Mickey_Oswald": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_47_MickeyAndOswald_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_47_MickeyAndOswald_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_09_Croc": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_36_CrocSketch_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_36_CrocSketch_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "AL_visit1_Cyrano_for_Pirate_Happy": {
+      "file": "Movies\\AL_visit1_Cyrano_for_Pirate_Happy.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_20_AL_Visit1_ Cyrano_for_Pirate_Happy_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_40_Jungle_Door": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_02_POWL_Door_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_02_POWL_Door_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_19_Oswald_Chase": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_28_Tunnels_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_28_Tunnels_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "DBC_visit2_Blot_Grabs_Mickey": {
+      "file": "Movies\\DBC_visit2_Blot_Grabs_Mickey.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_04_DBC_Visit2_Blot_Grabs_Mickey_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_03_EXP_3": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_44_MickeyHeadTurn_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_44_MickeyHeadTurn_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "GV_Visit1_TrainingGuardian": {
+      "file": "Movies\\GV_visit1_Training_Guardians.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_03_Training_Guardians_Thumbnail_tex.nif",
+      "type": "Cartoon"
+    },
+    "AL_visit1_Cyrano_for_Pirate_Sad": {
+      "file": "Movies\\AL_visit1_Cyrano_for_Pirate_Sad.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_21_AL_Visit1_ Cyrano_for_Pirate_Sad_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_16_Mickey_Grabbed": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_25_Abduction_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_25_Abduction_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "DBC_1st_GiveAbilitiesCutscene": {
+      "file": "Movies\\DBC_visit1_Brush_PowerUp.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_02_Brush_PowerUp_Thumbnail_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_28_GV_Overall": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_11_GremlinVillage_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_11_GremlinVillage_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "HM_visit1_Mad_Doctor_Defeated": {
+      "file": "Movies\\HM_visit1_Mad_Doctor_Defeated.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_37_HM_Visit1_Mad_Doctor_Defeated_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_20_Bog_Easy": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_29_BogEasy_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_29_BogEasy_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "NOS_visit2_Restoration_of_Donald": {
+      "file": "Movies\\NOS_visit2_Restoration_of_Donald.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_28_NOS_Visit2_Restoration_of_Donald_tex.nif",
+      "type": "Cartoon"
+    },
+    "EndgameVar_Closing": {
+      "file": "Movies\\EndgameVar_Closing.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_41_FMV_UniqueEnding_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_46_Tunnels_Machine": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_09_ThinnerFalls_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_09_ThinnerFalls_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "PotW_visit1_Intro_to_Pirates": {
+      "file": "Movies\\PotW_visit1_Intro_to_Pirates.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_31_PotW_Visit1_Intro_to_Pirates_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_02_EXP_2": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_43_MickeyExpressions_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_43_MickeyExpressions_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_29_LM_Approach": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_12_HauntedMansion_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_12_HauntedMansion_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "PotW_visit1_jungle_meetStarkey": {
+      "file": "Movies\\PotW_visit1_jungle_meetStarkey.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_34_PotW_Visit1_Jungle_MeetStarkey_tex.nif",
+      "type": "Cartoon"
+    },
+    "MS_visit1_Intro_to_Pete": {
+      "file": "Movies\\MS_visit1_Intro_to_Pete.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_10_MS_Visit1_Intro_to_Pete_tex.nif",
+      "type": "Cartoon"
+    },
+    "NOS_visit2_Spatter_Voodoo_Doll": {
+      "file": "Movies\\NOS_visit2_Spatter_Voodoo_Doll.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_30_NOS_Visit2_Spatter_Voodoo_Doll_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_05_Inky": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_46_DrippyMickey_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_46_DrippyMickey_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_26_TC_Rocket": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_41_FutureOfWasteLand_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_41_FutureOfWasteLand_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "DBC_1st_SeerCutcene": {
+      "file": "Movies\\GV_Visit1_Training_Combat.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_08_Training_Combat_Thumbnail_tex.nif",
+      "type": "Cartoon"
+    },
+    "DBC_1st_FilmScreenCutscene": {
+      "file": "Movies\\DBC_visit1_Training_Filmscreen.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_01_Training_Filmscreen_Thumbnail_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_23_Ortensia": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_38_DBC_Sleeping_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_38_DBC_Sleeping_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_11_Spatter_2": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_35_SpatterSketches_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_35_SpatterSketches_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_47_Waterfall": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_05_DBC_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_05_DBC_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_12_Petetronic": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_33_PeteSketches_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_33_PeteSketches_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "NOS_visit2_Donald_Tormented": {
+      "file": "Movies\\NOS_visit2_Donald_Tormented.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_29_NOS_Visit2_Donald_Tormented_tex.nif",
+      "type": "Cartoon"
+    },
+    "AL_visit1_Smee_Delivers_Setup": {
+      "file": "Movies\\AL_visit1_Smee_Delivers_Setup.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_19_AL_Visit1_Smee_Delivers_Setup_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_24_Blot_Reaches": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_39_Blot_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_39_Blot_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_32_Library": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_15_HauntedMansionLibrary_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_15_HauntedMansionLibrary_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_44_Throne_Room": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_07_TomorrowLand_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_07_TomorrowLand_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "MS_visit1_Walt_Oswald_Statue": {
+      "file": "Movies\\MS_visit1_Walt_Oswald_Statue.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_12_MS_Visit1_Walt_Oswald_Statue_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_42_StormblotE3": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_04_StormBlot_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_04_StormBlot_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "HM_visit1_Training_Anvil": {
+      "file": "Movies\\HM_visit1_Training_Anvil.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_36_HM_Visit1_Training_Anvil_tex.nif",
+      "type": "Cartoon"
+    },
+    "PotW_visit1_Fix_Pirate_Machine": {
+      "file": "Movies\\PotW_visit1_Fix_Pirate_Machine.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_32_PotW_Visit1_Fix_Pirate_Machine_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_27_Slobber": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_23_Slobber_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_23_Slobber_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_37_Oswald_Throne": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_22_OswaldsChair_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_22_OswaldsChair_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_34_Broken_Lab": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_17_DBC_Lab_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_17_DBC_Lab_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_01_EXP_1": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_42_MickeyExpressions_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_42_MickeyExpressions_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "DBC_1st_IntroScene": {
+      "file": "Movies\\fmv_intro.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_40_FMV_AttractMovie_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_33_Mickeyjunk": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_16_MickeyJunkMountain_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_16_MickeyJunkMountain_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "HM_visit1_Intro_to_HauntedMansion": {
+      "file": "Movies\\HM_visit1_Intro_to_HauntedMansion.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_35_HM_Visit1_Intro_to_HauntedMansion_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_41_GV_Ride": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_03_SmallWorld_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_03_SmallWorld_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "MS_visit6_MickOswaldTalk": {
+      "file": "Movies\\MS_visit6_MickOswaldTalk.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_13_MS_Visit6_MickOswaldTalk_tex.nif",
+      "type": "Cartoon"
+    },
+    "TL_visit1_Rocket_Broken": {
+      "file": "Movies\\TL_visit1_Rocket_Broken.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_38_TL_Visit1_Rocket_Broken_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_25_Blot_Mickey_Tower": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_40_Blot_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_40_Blot_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "MJM_visit2_Blot_Escape": {
+      "file": "Movies\\MJM_visit2_Blot_Escape.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_25_MJM_visit2_Blot_Escape_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_13_Mad_Doctor": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_32_MadDoctor_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_32_MadDoctor_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "NOS_visit1_Donald_Introduction": {
+      "file": "Movies\\NOS_visit1_Donald_Introduction.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_26_NOS_Visit1_Donald_Introduction_tex.nif",
+      "type": "Cartoon"
+    },
+    "TT_visit1_Intro_to_Goofy": {
+      "file": "Movies\\TT_visit1_Intro_to_Goofy.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_16_TT_Visit1_Intro_to_Goofy_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_14_Mad_Doc_Craft": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_18_MadCraft_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_18_MadCraft_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_31_Manor_House": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_14_HauntedMansion_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_14_HauntedMansion_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "TT_visit2_Restoration_of_Goofy": {
+      "file": "Movies\\TT_visit2_Restoration of Goofy.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_17_TT_Visit3_Restoration of Goofy_tex.nif",
+      "type": "Cartoon"
+    },
+    "AL_visit2_Restoration_of_Daisy": {
+      "file": "Movies\\AL_visit2_Restoration_of_Daisy.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_22_AL_Visit2_Restoration_of_Daisy_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_15_Mickeys_Mistake": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_24_MickeyMopsUp_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_24_MickeyMopsUp_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_07_Oswald": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_48_OswaldAction_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_48_OswaldAction_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "TL_visit1_Training_TV": {
+      "file": "Movies\\TL_visit1_Training_TV.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_23_TL_Visit1_Training_TV_tex.nif",
+      "type": "Cartoon"
+    },
+    "MS_visit1_Intro_to_MeanStreet": {
+      "file": "Movies\\MS_visit1_Intro_to_MeanStreet.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_09_MS_Visit1_Intro_to_MeanStreet_tex.nif",
+      "type": "Cartoon"
+    },
+    "FILM_WhatAKnight": {
+      "file": "Movies\\Oh_What_a_Knight.bik",
+      "icon": "HUDElements\\Extras_Cartoons\\Cartoons_02_OhWhatAKnight_tex.nif",
+      "type": "Film"
+    },
+    "ConceptArt_43_Tower_Destroy": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_06_DBC_Hallway_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_06_DBC_Hallway_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_22_Painting_O_O": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_37_DBC_Painting_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_37_DBC_Painting_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_04_EXP_4": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_45_MickeyExpressions_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_45_MickeyExpressions_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "DBC_EndGameCutscene": {
+      "file": "Movies\\fmv_attract.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_40_FMV_AttractMovie_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_08_Bunny_Children": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_30_BunnyChildren_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_30_BunnyChildren_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_36_Ortensia_House": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_21_OrtensiaHouse_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_21_OrtensiaHouse_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_21_DBC_Outter_Stair": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_31_Cavern_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_31_Cavern_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "MS_visit1_Intro_to_Horace": {
+      "file": "Movies\\MS_visit1_Intro_to_Horace.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_11_MS_Visit1_Intro_to_Horace_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_18_Blot Scare": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_27_Blot_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_27_Blot_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_35_Mean_Street": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_19_MeanStreet_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_19_MeanStreet_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "GV_Visit1_Establish_Oswald": {
+      "file": "Movies\\GV_visit1_Establish_Oswald.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_06_Establish_Oswald_Thumbnail_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_38_Blot": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_10_PhantomBlot_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_10_PhantomBlot_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_48_DBC_Above": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_20_MeanStreet_Tunnels_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_20_MeanStreet_Tunnels_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "AL_visit1_Intro_to_Daisy": {
+      "file": "Movies\\AL_visit1_Intro_to_Daisy.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_18_AL_Visit1_Intro_to_Daisy_tex.nif",
+      "type": "Cartoon"
+    },
+    "TL_visit2_Rocket_Flight": {
+      "file": "Movies\\TL_visit2_Rocket_Flight.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_39_TL_Visit2_Rocket_Flight_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_39_Cannons": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_01_POWL_Ships_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_01_POWL_Ships_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "PotW_visit1_Training_Watch": {
+      "file": "Movies\\PotW_visit1_Training_Watch.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_33_PotW_Visit1_Training_Watch_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_10_Spatter_1": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_34_SpatterSketches_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_34_SpatterSketches_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "ConceptArt_30_Haunted_Walkway": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_13_Haunted_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_13_Haunted_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "MJM_visit1_Oswald_Mickey_Meet": {
+      "file": "Movies\\MJM_visit1_Oswald_Mickey_Meet.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_24_MJM_Visit1_Oswald_Mickey_Meet_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_49_GI_Cover": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_50_GameInformer_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_50_GameInformer_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    },
+    "TT_visit1_Intro_to_Clarabelle": {
+      "file": "Movies\\TT_visit1_Intro_to_Clarabelle.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_15_TT_Visit1_Intro_to_Clarabelle_tex.nif",
+      "type": "Cartoon"
+    },
+    "TT_visit1_Free_Prescott": {
+      "file": "Movies\\TT_visit1_Free_Prescott.bik",
+      "icon": "HUDElements\\Extras_Movies\\Movie_14_TT_visit1_Free_Prescott_tex.nif",
+      "type": "Cartoon"
+    },
+    "ConceptArt_17_DBC_Hall_Walk": {
+      "file": "HUDElements\\Extras_ConceptArt\\ConceptArt_26_CastleHallway_tex.nif",
+      "icon": "HUDElements\\Extras_ConceptArt\\ConceptArt_26_CastleHallway_Thumbnail_tex.nif",
+      "type": "Concept_Art"
+    }
+  }
+}

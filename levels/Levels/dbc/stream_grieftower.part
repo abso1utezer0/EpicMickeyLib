@@ -1,0 +1,11 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zonel.gsa -i
+
+// audio:
+
+// interior: stream_fantasia3_2d
+// interior: stream_fantasia4_2d
+// interior: stream_grieftower_int
+
+// destination: stream_losstower
+

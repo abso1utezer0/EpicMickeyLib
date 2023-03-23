@@ -1,0 +1,20 @@
+//Visit 2 of Adventureland where Pirates have left
+
+//Lighting Data both static and SH
+Environments/MeanStreets/HUB_Adv_StaticLighting.gsa
+//...TikiHut Shop Lighting
+Environments/MeanStreets/HUB_Adventureland_TikiShopInterior_Main_StaticLights.gsa
+//...JungleHut Shop Lighting
+Environments/MeanStreets/HUB_Adventureland_HutShopInterior_StaticLights.gsa
+
+
+//Level Data
+//Environments/MeanStreets/HUB_Mean_Adv.gsa
+Environments/MeanStreets/HUB_Adventureland.gsa
+Environments/MeanStreets/HUB_Adventureland_V2_NoPirates.gsa
+Environments/MeanStreets/HUB_Adventureland_TikiShopInterior_Main.gsa
+Environments/MeanStreets/HUB_Adventureland_HutShopInterior.gsa
+Environments/MeanStreets/HUB_Adventureland_TreeHouseInterior.gsa
+
+//Soundbanks list
+Global.bnk

@@ -1,0 +1,14 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/tl_minihub_zoneb.gsa
+
+// audio:
+global.bnk
+gremlin.bnk
+lvl_fx_tc_nr.bnk
+lvl_fx_tomorrowcity.bnk
+spatter.bnk
+
+// interior: stream2d_1
+
+// destination: stream_2
+

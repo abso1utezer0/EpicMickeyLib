@@ -1,0 +1,19 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_zoneg.gsa
+
+// audio:
+animatronicfodder.bnk
+blotlingfodder.bnk
+blotlingkamikaze.bnk
+blotlingranged.bnk
+global.bnk
+lvl_fx_mickeyjunkmountain.bnk
+spatter.bnk
+Prefab_MickeyGasMask.bnk
+
+
+// interior: stream_alpinea
+// interior: stream_alpineb
+
+// destination: stream_5
+

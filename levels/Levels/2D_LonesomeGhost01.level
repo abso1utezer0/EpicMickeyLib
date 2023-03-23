@@ -1,0 +1,5 @@
+name = 2D_LonesomeGhost01
+folder = ms
+loading_screen_texture = loadingscreens/postcard_hub_bog_easy.dds
+interior = lonesome_ghost01_i
+

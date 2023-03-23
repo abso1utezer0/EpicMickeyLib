@@ -1,0 +1,13 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zonek.gsa -i
+environments/thepark/darkbeautycastle/gsa/dbc_zoneo.gsa
+
+// audio:
+dbc_zone_o.bnk
+global.bnk
+lvl_fx_darkbeautycastle.bnk
+prefab_platform_chandelier.bnk
+tentaclesmallthree.bnk
+
+// destination: stream_sorrowtower
+

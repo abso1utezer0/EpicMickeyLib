@@ -1,0 +1,8 @@
+// gsas:
+environments/thepark/adventureland/pirates/gsa/potw_zonef.gsa -i
+
+// audio:
+global.bnk
+lvl_fx_piratesofthewasteland.bnk
+potw_zonee_jungle_ruins.bnk
+

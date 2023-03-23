@@ -1,0 +1,14 @@
+//Steam Boat Willie
+Environments/MeanStreets/Transitions/2D_SteamboatWillie01_Transitions.gsa
+Environments/ThePark/fantasyland/SmallWorld/GSA/SW_SteamA.gsa
+
+//Environment Data ZoneL
+Environments/ThePark/AdventureLand/Pirates/GSA/PotW_PlayerStart_ScalpRock.gsa
+Environments/ThePark/AdventureLand/Pirates/GSA/PoTW_ZoneL.gsa
+//Lighting Data ZoneL
+Environments/ThePark/AdventureLand/Pirates/GSA/PoTW_ZoneL_StaticLights.gsa
+
+
+//Soundbanks list
+Global.bnk
+LVL_2D_SteamboatWillie_A.bnk

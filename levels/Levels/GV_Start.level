@@ -1,0 +1,5 @@
+name = Gremlin Village
+folder = gv
+shared = Environments/ThePark/fantasyland/SmallWorld/GSA/GV_Shared2.gsa
+initial = stream_1
+author = Dwight Spaulding

@@ -1,0 +1,13 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_1st_zonec.gsa
+
+// audio:
+blotlingfodder.bnk
+dbc_zone_c.bnk
+global.bnk
+gremlin.bnk
+lvl_fx_darkbeautycastle.bnk
+prefab_spawner_faucet.bnk
+
+// interior: stream_4
+

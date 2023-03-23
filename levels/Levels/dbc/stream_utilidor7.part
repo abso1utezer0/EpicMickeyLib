@@ -1,0 +1,15 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zoner.gsa
+
+// audio:
+dbc_zone_r.bnk
+global.bnk
+lvl_fx_darkbeautycastle.bnk
+prefab_platform_chandelier.bnk
+tentaclesmallthree.bnk
+
+// interior: stream_controltower_interior
+// interior: stream_lossfallingtower
+
+// destination: stream_blotinterior
+

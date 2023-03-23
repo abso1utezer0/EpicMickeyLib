@@ -1,0 +1,10 @@
+// gsas:
+environments/thepark/adventureland/pirates/gsa/potw_zonel.gsa -i
+environments/thepark/adventureland/pirates/gsa/potw_zonel_bwx.gsa -1
+
+// audio:
+
+// interior: stream_9
+
+// destination: stream_10_2
+

@@ -1,0 +1,5 @@
+name = Pirates of the Wasteland
+folder = potw
+shared = Environments/ThePark/AdventureLand/Pirates/GSA/PotW_PlayerStart_TortugaRide.gsa
+initial = stream_8
+interior = stream_8_A

@@ -1,0 +1,5 @@
+name = Dark Beauty Castle
+folder = dbc_1st
+shared = Environments/ThePark/DarkBeautyCastle/GSA/DBC_PlayerStart_Utilidor3.GSA
+initial = stream_2
+author = T. Giovannini

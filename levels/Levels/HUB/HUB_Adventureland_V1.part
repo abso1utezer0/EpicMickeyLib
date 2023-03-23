@@ -1,0 +1,24 @@
+//Visit 1 of Adventureland
+
+//Environments/MeanStreets/HUB_Mean_Adv.gsa
+
+//Lighting Data both static and SH
+Environments/MeanStreets/HUB_Adv_StaticLighting.gsa
+Environments/MeanStreets/HUB_Adventureland_TikiShopInterior_Main_StaticLights.gsa
+Environments/MeanStreets/HUB_Adventureland_TreeHouseInterior_StaticLights.gsa
+
+//Level Data
+Environments/MeanStreets/HUB_Adventureland.gsa
+Environments/MeanStreets/HUB_Adventureland_V1.gsa
+Environments/MeanStreets/HUB_Adventureland_TikiShopInterior_Main.gsa
+Environments/MeanStreets/HUB_Adventureland_TreeHouseInterior.gsa
+Environments/MeanStreets/HUB_Adventureland_NonE3.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_VentureLand.bnk
+animatronicDaisy.bnk
+Ped_Male.bnk
+pirateMelee.bnk
+pirateRanged.bnk
+smee.bnk

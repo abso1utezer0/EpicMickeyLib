@@ -1,0 +1,6 @@
+name = NewOrleans_V2
+folder = ms
+loading_screen_texture = loadingscreens/postcard_hub_bog_easy.dds
+shared = environments/meanstreets/shared/hub_nosquare_v2_noghosts_shared.gsa
+initial = novisit2_wsound
+

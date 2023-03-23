@@ -1,0 +1,12 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_1st_zonea.gsa
+environments/thepark/darkbeautycastle/gsa/dbc_1st_zoneb.gsa
+
+// audio:
+dbc_zone_a.bnk
+//dbc_zone_b.bnk
+global.bnk
+gremlin.bnk
+lvl_fx_darkbeautycastle.bnk
+robotarm.bnk
+

@@ -1,0 +1,6 @@
+name = Dark Beauty Castle
+folder = dbc_1st
+shared = Environments/ThePark/DarkBeautyCastle/GSA/DBC_PlayerStart_2D_Beanstalk.gsa
+initial = stream_4_ext
+author = Damien Allen
+interior = stream_4

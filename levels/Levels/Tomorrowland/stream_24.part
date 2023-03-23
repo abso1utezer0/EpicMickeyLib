@@ -1,0 +1,11 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/tl_minihub_airlock3.gsa
+environments/thepark/tomorrowland/gsa/tl_minihub_airlock3_visit_2.gsa
+
+// audio:
+global.bnk
+
+// interior: stream2d_2
+
+// destination: stream_23
+

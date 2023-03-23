@@ -1,0 +1,9 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zonemr.gsa
+
+
+// audio:
+global.bnk
+DBC_Zone_M_Fall.bnk
+lvl_fx_darkbeautycastle.bnk
+

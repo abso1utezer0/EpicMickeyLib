@@ -1,0 +1,26 @@
+// gsas:
+environments/meanstreets/levelwrappers/ostown_visit1_wrapper.gsa
+
+// audio:
+animatronicgoofy.bnk
+global.bnk
+gremlin.bnk
+LVL_Ostown.bnk
+clarabelleCow.bnk
+LVL_Ostown_V1.bnk
+Prefab_Guardian_Atmosphere.bnk
+Ped_Vox.bnk
+Pirate_Vox.bnk
+
+
+
+
+// interior: clarabelle_house
+// interior: mickey_house
+// interior: ortensia_house
+// interior: steamroller01
+// interior: thru_mirror
+// interior: ttv1_defaultinterior
+
+// destination: msvisit1
+

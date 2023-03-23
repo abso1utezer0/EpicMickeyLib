@@ -1,0 +1,7 @@
+name = Dark Beauty Castle
+author = Damien Allen
+folder = dbc
+loading_screen_texture = LoadingScreens/Postcard_DBC_Rocket_Down.dds
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared.gsa
+initial = stream_labv2
+

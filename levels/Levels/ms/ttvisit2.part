@@ -1,0 +1,18 @@
+// gsas:
+environments/meanstreets/levelwrappers/ostown_visit2_wrapper.gsa -i
+
+// audio:
+
+
+// interior: clarabelle_house
+// interior: mickey_house
+// interior: ortensia_house
+// interior: steamroller01
+// interior: thru_mirror
+// interior: ttv2_defaultinterior
+
+// destination: msvisit2
+// destination: msvisit3
+// destination: msvisit4
+// destination: msvisit5
+

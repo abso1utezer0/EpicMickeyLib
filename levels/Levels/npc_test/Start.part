@@ -1,0 +1,20 @@
+Environments/GameplayTest/Test_Deluxe/Test_Deluxe_NPC_World.gsa
+Environments/GameplayTest/Test_Deluxe/Test_Deluxe_NPC_Petes.gsa
+
+//Soundbanks list
+Global.bnk
+animatronicDaisy.bnk
+animatronicDonald.bnk
+animatronicGoofy.bnk
+animatronicHook.bnk
+clarabelleCow.bnk
+gremlin.bnk
+horaceHorsecollar.bnk
+lonesomeGhostShort.bnk
+lonesomeGhostTall.bnk
+oswald.bnk
+Ped_Male.bnk
+pete.bnk
+pirateMelee.bnk
+pirateRanged.bnk
+playingCardRanged.bnk

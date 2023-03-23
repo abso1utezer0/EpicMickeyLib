@@ -1,0 +1,6 @@
+name = 2D_MechanicalMan01
+folder = Tomorrowland
+shared = Environments/ThePark/TomorrowLand/GSA/TL_2D_Nautilus_PlayerStart.gsa
+initial = stream2D_1_ext
+interior = stream2D_1
+author = Evan Boehler

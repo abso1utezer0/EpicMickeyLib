@@ -1,0 +1,15 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zonem.gsa -i
+
+// audio:
+dbc_zone_m_top.bnk
+global.bnk
+lvl_fx_darkbeautycastle.bnk
+StormBlot.bnk
+
+// interior: stream_fantasia4_2d
+// interior: stream_lossfallingtower
+// interior: stream_losstower_anims
+
+// destination: stream_utilidor7
+

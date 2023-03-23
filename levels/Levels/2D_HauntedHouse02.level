@@ -1,0 +1,5 @@
+name = 2D_HauntedHouse02
+folder = hm
+shared = Environments/ThePark/NewOrleansSquare/HauntedMansion/GSA/QuickGSA/HauntedHouse02_Shared.gsa
+initial = stream_8_ext
+interior = stream_8

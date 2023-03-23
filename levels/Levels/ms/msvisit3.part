@@ -1,0 +1,29 @@
+// gsas:
+environments/meanstreets/levelwrappers/meanstreet_visit3_wrapper.gsa -i
+
+// audio:
+global.bnk
+gremlin.bnk
+Ped_Vox.bnk
+lvl_fx_meanstreets.bnk
+lvl_ms_visit_3.bnk
+ped_male.bnk
+oswald.bnk
+bunnychildren.bnk
+
+// interior: detective_agency
+// interior: emporium
+// interior: ice_cream_parlor
+// interior: jungle_rhythm01
+// interior: lonesome_ghost01
+// interior: museum
+// interior: plutopia
+// interior: thru_mirror
+// interior: town_hall
+// interior: v3_defaultinterior
+// interior: v3_spatterinterior
+// interior: walt_apartment
+
+// destination: alvisit1
+// destination: ttvisit2
+

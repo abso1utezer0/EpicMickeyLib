@@ -1,0 +1,5 @@
+name = 2D_ClockCleaners02
+shared = Environments/ThePark/FantasyLand/SmallWorld/GSA/SW_PlayerStart_2D_ClockB.gsa
+folder = gv
+initial = stream_7c_ext
+interior = stream_7c

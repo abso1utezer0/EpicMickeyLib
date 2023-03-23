@@ -1,0 +1,16 @@
+// gsas:
+environments/thepark/adventureland/pirates/gsa/potw_zonef.gsa -i
+environments/thepark/adventureland/pirates/gsa/potw_zoneg.gsa -i
+
+// audio:
+global.bnk
+lvl_fx_piratesofthewasteland.bnk
+potw_zonee_jungle_ruins.bnk
+lvl_2d_thewhalers.bnk
+
+// interior: stream_4_2
+// interior: stream_5_2
+
+// destination: stream_6
+// destination: stream_6_2
+

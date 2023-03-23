@@ -1,0 +1,7 @@
+name = Dark Beauty Castle Zone S
+author = Mark Capers
+folder = dbc
+loading_screen_texture = LoadingScreens/Postcard_Inside_The_Blot.dds
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zs.gsa
+initial = stream_blotinterior
+

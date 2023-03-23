@@ -1,0 +1,20 @@
+//Visit 3 of Adventureland
+
+//Lighting Data both static and SH
+Environments/MeanStreets/HUB_Adv_StaticLighting.gsa
+//...JungleHut Shop Lighting
+//Environments/MeanStreets/HUB_Adventureland_HutShopInterior_StaticLights.gsa
+//Tiki Shop interior lighting
+Environments/MeanStreets/HUB_Adventureland_TikiShopInterior_Main_StaticLights.gsa
+
+
+//Level Data
+
+//Environments/MeanStreets/HUB_Mean_Adv.gsa
+Environments/MeanStreets/HUB_Adventureland.gsa
+Environments/MeanStreets/HUB_Adventureland_V3.gsa
+//Environments/MeanStreets/HUB_Adventureland_HutShopInterior.gsa
+Environments/MeanStreets/HUB_Adventureland_TikiShopInterior_Main.gsa
+
+//Soundbanks list
+Global.bnk

@@ -1,0 +1,8 @@
+name = Haunted Mansion
+author = Mark Capers
+folder = hm
+loading_screen_texture = LoadingScreens/Postcard_LM_Manor_House.dds
+shared = environments/thepark/neworleanssquare/hauntedmansion/gsa/hauntedmansion_shared.gsa
+initial = stream_1
+interior = stream_1_ai1
+

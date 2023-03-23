@@ -1,0 +1,29 @@
+//Jungle Rythm 1 (2D transition from Mean Street) and Adventureland V1
+
+//Environments/MeanStreets/HUB_Mean_Adv.gsa
+Environments/MeanStreets/HUB_Adventureland.gsa
+Environments/MeanStreets/HUB_Adventureland_V1.gsa
+
+//Adventureland Hub Visit 1 Lighting Data both Baked Vert lighting and SH Layers
+Environments/MeanStreets/HUB_Adv_StaticLighting.gsa
+
+//2D Interiors
+Environments/MeanStreets/HUB_Adventureland_TikiShopInterior_Main.gsa
+Environments/MeanStreets/HUB_Adventureland_TreeHouseInterior.gsa
+
+//Zone M 2D Transition
+Environments/ThePark/MeanStreetUSA/GSA/MSUSA_ZoneM.gsa
+
+
+//ZoneM Lighting Data
+Environments/ThePark/MeanStreetUSA/GSA/MSUSA_ZoneM_StaticLighting.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_VentureLand.bnk
+LVL_2D_JungleRhythm_A.bnk
+animatronicDaisy.bnk
+Ped_Male.bnk
+pirateMelee.bnk
+pirateRanged.bnk
+smee.bnk

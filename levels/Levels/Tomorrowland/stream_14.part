@@ -1,0 +1,9 @@
+// gsas:
+environments/thepark/tomorrowland/gsa/tl_minihub_zoned2.gsa
+
+// audio:
+Global.bnk
+LVL_FX_TomorrowCity.bnk
+LVL_FX_TC_GBT.bnk
+LVL_FX_TC_TCH.bnk
+Ped_Male.bnk

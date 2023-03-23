@@ -1,0 +1,29 @@
+// gsas:
+environments/meanstreets/levelwrappers/meanstreet_visit5_wrapper.gsa -i
+
+// audio:
+bunnychildren.bnk
+global.bnk
+Ped_Vox.bnk
+lvl_fx_meanstreets.bnk
+LVL_MS_Visit_5.bnk
+Prefab_Spawner_Pottery
+gremlin.bnk
+
+// interior: detective_agency
+// interior: emporium
+// interior: ice_cream_parlor
+// interior: jungle_rhythm01
+// interior: lonesome_ghost01
+// interior: museum
+// interior: plutopia
+// interior: thru_mirror
+// interior: town_hall
+// interior: v5_defaultinterior
+// interior: walt_apartment
+
+// destination: alvisit2_nopirates
+// destination: alvisit2_pirates
+// destination: novisit2
+// destination: ttvisit2
+

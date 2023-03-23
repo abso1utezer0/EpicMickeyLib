@@ -1,0 +1,4 @@
+name = Pirates of the Wasteland
+folder = potw
+shared = Environments/ThePark/AdventureLand/Pirates/GSA/PotW_PlayerStart_TortugaV2.gsa
+initial = stream_6_2

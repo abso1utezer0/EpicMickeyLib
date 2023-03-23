@@ -1,0 +1,7 @@
+name = MeanStreet_V2
+folder = ms
+loading_screen_texture = LoadingScreens/Postcard_Mean_Streets.dds
+shared = environments/meanstreets/hub_meanstreet_v2_launcher.gsa
+initial = msvisit2
+interior = v2_defaultinterior
+

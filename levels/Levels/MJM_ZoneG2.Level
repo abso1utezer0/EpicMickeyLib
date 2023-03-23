@@ -1,0 +1,6 @@
+name = Mickeyjunk Mountain
+folder = mjm
+shared = Environments/ThePark/MickeyJunkMountain/GSA/MJM_ZoneG2_Shared.gsa
+initial = stream_g2
+interior = stream_g2_start
+author = Ian Shepherd

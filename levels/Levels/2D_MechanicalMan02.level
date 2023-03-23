@@ -1,0 +1,6 @@
+name = tomorrowland 2d mechman1 visit
+folder = Tomorrowland
+shared = Environments/ThePark/TomorrowLand/GSA/TL_MiniHub_ZoneD3Visit2.gsa
+initial = stream2D_VISIT2_ext
+interior = stream2D_VISIT2
+author = Evan Boehler

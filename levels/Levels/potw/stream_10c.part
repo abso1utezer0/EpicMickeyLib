@@ -1,0 +1,11 @@
+// gsas:
+
+// audio:  swap these soundbanks as interior part when we are not at the top of the skull
+global.bnk
+prefab_platform_boat.bnk
+prefab_spawner_doors.bnk
+
+// interior: stream_9
+
+// destination: stream_10_2
+

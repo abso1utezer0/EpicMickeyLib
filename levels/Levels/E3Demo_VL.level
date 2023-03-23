@@ -1,0 +1,5 @@
+name = E3 Demo VL
+mapname = Ventureland
+folder = E3_Demo
+shared = Environments/MeanStreets/HUB_Adv_Shared.gsa
+initial = E3_VL

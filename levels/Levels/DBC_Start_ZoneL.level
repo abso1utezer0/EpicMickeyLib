@@ -1,0 +1,6 @@
+name = Dark Beauty Castle Zone L
+author = Damien Allen
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zl.gsa
+initial = stream_grieftower
+

@@ -1,0 +1,6 @@
+name = Pirates of the Wasteland
+author = Daniel Becker
+folder = potw
+shared = environments/thepark/adventureland/pirates/gsa/potw_playerstart_tortuga1.gsa
+initial = stream_2
+

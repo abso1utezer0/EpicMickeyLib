@@ -1,0 +1,4 @@
+name = 2D_Castaway02
+folder = potw
+shared = Environments\ThePark\AdventureLand\Pirates\GSA\PotW_PlayerStart_Castaway2.gsa
+interior = stream_7

@@ -1,0 +1,7 @@
+name = Mickeyjunk Mountain Visit 2
+folder = mjm
+shared = Environments/ThePark/MickeyJunkMountain/GSA/MJM_ZoneF_Shared.gsa
+loading_screen_texture = LoadingScreens/Postcard_MJM_Osmore_Caverns.dds
+initial = stream_18
+interior = stream_17_int
+author = Ian Shepherd

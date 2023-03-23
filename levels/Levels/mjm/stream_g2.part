@@ -1,0 +1,12 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_zoneg2.gsa
+environments/thepark/mickeyjunkmountain/gsa/mjm_zonegairlock.gsa
+
+// audio:
+global.bnk
+lvl_fx_mickeyjunkmountain.bnk
+blotlingKamikaze.bnk
+LVL_FX_MJM_Piles2_Conveyor.bnk
+// interior: stream_alpineb
+// interior: stream_g2_start
+// interior: stream_g2_end

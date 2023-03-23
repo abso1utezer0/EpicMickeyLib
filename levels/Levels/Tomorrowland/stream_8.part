@@ -1,0 +1,11 @@
+// 8 Space Mountain Top
+
+//Environments/ThePark/TomorrowLand/GSA/TL_AI_Shared.gsa
+Environments/ThePark/TomorrowLand/GSA/SM_TL_ZoneD.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_FX_TomorrowCity.bnk
+LVL_FX_TC_SMTP.bnk
+tronPete.bnk
+

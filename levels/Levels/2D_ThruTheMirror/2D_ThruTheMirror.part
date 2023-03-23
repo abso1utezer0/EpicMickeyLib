@@ -1,0 +1,8 @@
+Environments/ThePark/MickeyJunkMountain/GSA/MJ_2dMirror_Shared.gsa
+
+//Lighting Data
+Environments/ThePark/MickeyJunkMountain/GSA/MJ_2dMirror_Shared_StaticLights.gsa
+
+//Soundbanks list
+Global.bnk
+LVL_2D_ThruTheMirror.bnk

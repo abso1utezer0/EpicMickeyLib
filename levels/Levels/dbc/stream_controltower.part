@@ -1,0 +1,16 @@
+// gsas:
+environments/thepark/darkbeautycastle/gsa/dbc_zoneh.gsa -i
+environments/thepark/darkbeautycastle/gsa/dbc_zoneo.gsa
+
+// audio:
+dbc_zone_h.bnk
+dbc_zone_o.bnk
+global.bnk
+lvl_fx_darkbeautycastle.bnk
+oswald.bnk
+
+// interior: stream_fantasia1_2d
+// interior: stream_fantasia2_2d
+
+// destination: stream_sorrowtower
+

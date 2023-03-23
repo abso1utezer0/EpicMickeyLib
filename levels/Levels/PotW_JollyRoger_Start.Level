@@ -1,0 +1,5 @@
+name = Pirates of the Wasteland
+folder = potw
+loading_screen_texture = LoadingScreens/Postcard_POTW_Jolly_Roger.dds
+shared = Environments/ThePark/AdventureLand/Pirates/GSA/PotW_PlayerStart_JollyRoger.gsa
+initial = stream_15

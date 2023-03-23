@@ -1,0 +1,5 @@
+name = 2D_MadDoctor01
+folder = hm
+shared = Environments/MeanStreets/Transitions/2D_MadDoctor01_Shared.gsa
+initial = stream_14_ext
+interior = stream_14

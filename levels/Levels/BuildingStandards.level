@@ -1,0 +1,5 @@
+name =Building Standards
+folder = BSTEST
+shared = Environments/_Test/Building_Standards.gsa
+initial = HotStream
+

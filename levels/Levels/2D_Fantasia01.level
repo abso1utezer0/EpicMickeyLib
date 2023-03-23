@@ -1,0 +1,5 @@
+name = Dark Beauty Castle Zone G
+folder = dbc
+shared = environments/thepark/darkbeautycastle/gsa/dbc_shared_zg.gsa
+interior = stream_fantasia1_2d
+author = Damien Allen

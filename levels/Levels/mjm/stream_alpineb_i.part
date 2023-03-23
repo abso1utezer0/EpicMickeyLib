@@ -1,0 +1,11 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_alpineb_shared.gsa
+
+// audio:
+global.bnk
+lvl_2d_alpineclimbers_b.bnk
+
+// interior: stream_alpinea
+
+// destination: stream_5
+

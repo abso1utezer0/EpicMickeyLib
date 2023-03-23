@@ -1,0 +1,7 @@
+// gsas:
+environments/thepark/mickeyjunkmountain/gsa/mjm_knighta_shared.gsa -i
+
+// audio:
+global.bnk
+lvl_2d_ohwhataknight.bnk
+
