@@ -5,8 +5,17 @@ import sys
 class BSQ:
     fm = None
     json_root = {}
-    def __init__(self, path):
-        self.fm = FileManipulator(path, "rb", "big")
+    def __init__(self, data, format_type="binary"):
+        if format_type == "binary":
+            self.fm = FileManipulator()
+            self.fm.from_bytes(data, "big")
+            self.decompile()
+        elif format_type == "ascii":
+            self.json_root = data
+        else:
+            print("Unknown type: " + type)
+            sys.exit(1)
+        
     def get_unknown(self, id):
         return "unknown_item_id" + str(id)
     def read_item(self, id=-1):
@@ -144,9 +153,15 @@ class BSQ:
                 sequence2.append(data)
         self.json_root["sequence2"] = sequence2
         print("END OFFSET:", self.fm.file.tell())
-        
     
-    def get_json(self):
+    def compile(self):
+        # TODO: Implement
+        pass
+
+    def get_binary(self):
+        return self.compile()
+
+    def get_ascii(self):
         return self.json_root
 
     def __str__(self):
