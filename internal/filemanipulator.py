@@ -63,7 +63,6 @@ class FileManipulator:
             value = struct.unpack(">" + data_type, self.file.read(length))[0]
         else:
             value = struct.unpack("<" + data_type, self.file.read(length))[0]
-        self.align(4)
         return value
 
     def r_bytes(self, length):
@@ -77,6 +76,15 @@ class FileManipulator:
         - The bytes that were read.
         """
         return self.file.read(length)
+    
+    def r_byte(self):
+        """
+        Reads a byte from the file.
+
+        Returns:
+        - The byte that was read.
+        """
+        return self.r_bytes(1)
 
     def r_int(self):
         """
@@ -186,8 +194,9 @@ class FileManipulator:
         Args:
         - num (int): The byte boundary to align the file pointer to.
         """
-        while (self.file.tell() % num) != 0:
-            self.file.seek(self.file.tell() + 1)
+        pos = self.file.tell()
+        if pos % num != 0:
+            self.file.seek(pos + (num - (pos % num)))
 
     def r_next_str(self):
         """

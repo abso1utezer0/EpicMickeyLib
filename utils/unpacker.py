@@ -1,5 +1,7 @@
 import os
 from formats.dict import Dict
+from formats.scene import Scene
+from formats.clb import CLB
 
 class Unpacker:
     """
@@ -46,14 +48,14 @@ class Unpacker:
             if decompile_formats:
                 extension = path.split(".")[-1]
                 magic = file["type"]
-                data, new_extension = self.decompile_data(data, extension, magic)
+                data, new_extension = Unpacker.decompile_data(data, extension, magic)
                 out_path = out_path.replace(extension, new_extension)
 
             # write file
             with open(out_path, "wb") as file:
                 file.write(data)
 
-    def decompile_data(self, data, extension, magic):
+    def decompile_data(data, extension, magic):
         text = ""
         extension = extension.lower()
         new_extension = extension
@@ -62,8 +64,16 @@ class Unpacker:
             new_extension += ".json"
             dct = Dict(data, "binary")
             text = dct.get_ascii()
+        elif extension == "bin":
+            new_extension = "gsa"
+            scene = Scene(data)
+            text = scene.get_ascii()
+        elif extension == "clb":
+            new_extension += ".json"
+            clb = CLB(data, "binary")
+            text = clb.get_text()
         else:
-            return data
+            return data, extension
         # encode text
         text = text.encode("utf-8")
         return text, new_extension
