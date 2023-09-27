@@ -62,15 +62,15 @@ class Unpacker:
         magic = magic.lower()
         if extension == "dct":
             new_extension += ".json"
-            dct = Dict(data, "binary")
+            dct = Dict(data)
             text = dct.get_ascii()
         elif extension == "bin":
-            new_extension = "gsa"
+            new_extension += ".json"
             scene = Scene(data)
-            text = scene.get_ascii()
+            text = scene.get_text()
         elif extension == "clb":
             new_extension += ".json"
-            clb = CLB(data, "binary")
+            clb = CLB(data)
             text = clb.get_text()
         else:
             return data, extension

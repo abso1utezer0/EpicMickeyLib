@@ -210,6 +210,127 @@ class FileManipulator:
         string = self.r_str_null()
         self.align(4)
         return string
+    
+    def r_str_from_pointer(self, pointer):
+        """
+        Reads a null-terminated string from a specified pointer.
+
+        Args:
+        - pointer (int): The pointer to read the string from.
+
+        Returns:
+        - The string that was read.
+        """
+        pos = self.file.tell()
+        self.file.seek(pointer + 2)
+        string = self.r_str_null()
+        self.file.seek(pos)
+        return string
+    def w_data(self, data_type, data):
+        """
+        Writes data to the file.
+
+        Args:
+        - data_type (str): The type of data to be written.
+        - data (any): The data to be written.
+        """
+        if self.endian == "big":
+            self.file.write(struct.pack(">" + data_type, data))
+        else:
+            self.file.write(struct.pack("<" + data_type, data))
+    
+    def w_bytes(self, data):
+        """
+        Writes bytes to the file.
+
+        Args:
+        - data (bytes): The bytes to be written.
+        """
+        self.file.write(data)
+    
+    def w_byte(self, data):
+        """
+        Writes a byte to the file.
+
+        Args:
+        - data (int): The byte to be written.
+        """
+        self.w_bytes(bytes([data]))
+    
+    def w_int(self, data):
+        """
+        Writes a 4-byte integer to the file.
+
+        Args:
+        - data (int): The integer to be written.
+        """
+        self.w_data("i", data)
+    
+    def w_ushort(self, data):
+        """
+        Writes a 2-byte unsigned short to the file.
+
+        Args:
+        - data (int): The unsigned short to be written.
+        """
+        self.w_data("H", data)
+    
+    def w_float(self, data):
+        """
+        Writes a 4-byte float to the file.
+
+        Args:
+        - data (float): The float to be written.
+        """
+        self.w_data("f", data)
+    
+    def w_bool(self, data):
+        """
+        Writes a boolean value to the file.
+
+        Args:
+        - data (bool): The boolean value to be written.
+        """
+        if data == True:
+            self.w_bytes(b"\xFF\xFF\xFF\xFF")
+        else:
+            self.w_bytes(b"\x00\x00\x00\x00")
+    
+    def w_str(self, data):
+        """
+        Writes a string to the file.
+
+        Args:
+        - data (str): The string to be written.
+        """
+        self.w_bytes(data.encode("utf-8"))
+    
+    def w_str_null(self, data):
+        """
+        Writes a null-terminated string to the file.
+
+        Args:
+        - data (str): The string to be written.
+        """
+        self.w_str(data)
+        self.w_byte(0)
+    
+    def w_next_str(self, data):
+        """
+        Aligns the file pointer to a 4-byte boundary, then writes a null-terminated string to the file.
+
+        Args:
+        - data (str): The string to be written.
+        """
+        self.align(4)
+        num1 = len(data) + 2
+        while num1 % 4 != 0:
+            num1 += 1
+        num2 = len(data) + 1
+        self.w_byte(num1)
+        self.w_byte(num2)
+        self.w_str_null(data)
+        self.align(4)
 
     def seek(self, pos):
         """
@@ -234,3 +355,21 @@ class FileManipulator:
         Closes the file.
         """
         self.file.close()
+    
+    def get_bytes(self):
+        """
+        Returns the bytes of the file.
+
+        Returns:
+        - The bytes of the file.
+        """
+        # get current position
+        pos = self.file.tell()
+        # seek to beginning
+        self.file.seek(0)
+        # read bytes
+        data = self.file.read()
+        # seek to original position
+        self.file.seek(pos)
+        # return bytes
+        return data

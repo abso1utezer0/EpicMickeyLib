@@ -1,7 +1,15 @@
-from utils.mass_unpacker import MassUnpacker
+from formats.scene import Scene
+from formats.packfile import Packfile
 
-if __name__ == "__main__":
-    input_dir = "E:/Modding/EpicMickey/BuildsEx/EM1/"
-    output_dir = "E:/JunctionPoint/Mickey/Game/Content/Raw/"
-    unpacker = MassUnpacker(input_dir)
-    unpacker.mass_unpack(output_dir, True)
+path = "E:/Modding/EpicMickey/Builds/EM1/clean/DATA/files/packfiles/_Dynamic.pak"
+pack_json = {}
+with open(path, "rb") as f:
+    packfile = Packfile(f.read())
+    pack_json = packfile.get_json()
+scene = None
+for path in pack_json["order"]:
+    if path.endswith(".bin"):
+        scene = Scene(pack_json["files"][path]["data"])
+        break
+
+print(scene.get_referenced_files())

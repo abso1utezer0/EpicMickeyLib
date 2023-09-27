@@ -103,7 +103,7 @@ class Dict:
     def get_binary(self):
         return self.compile()
 
-    def get_ascii(self):
+    def get_text(self):
         # convert json to text and prettify it
         return json.dumps(self.json_root, indent=4)
     

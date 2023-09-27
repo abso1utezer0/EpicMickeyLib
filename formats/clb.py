@@ -11,6 +11,7 @@ class CLB:
         if format_type == "binary":
             self.fm = FileManipulator()
             self.fm.from_bytes(data, endian)
+            self.decompile()
         elif format_type == "json":
             self.json_root = data
         elif format_type == "text":
