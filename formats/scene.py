@@ -84,6 +84,42 @@ class Scene:
         else:
             raise Exception("Unknown property class: " + class_name)
         return data
+    
+    def write_property_data(self, class_name, data):
+        if class_name == "Float":
+            self.fm.w_float(data)
+        elif class_name == "Boolean":
+            self.fm.w_bool(data)
+        elif class_name == "String":
+            self.fm.w_int(data)
+        elif class_name == "Point3":
+            for num in data:
+                self.fm.w_float(num)
+        elif class_name == "Point2":
+            for num in data:
+                self.fm.w_float(num)
+        elif class_name == "Matrix3":
+            for row in data:
+                for num in row:
+                    self.fm.w_float(num)
+        elif class_name == "Integer":
+            self.fm.w_int(data)
+        elif class_name == "Entity Pointer":
+            self.fm.w_int(data)
+        elif class_name == "Unsigned Short":
+            self.fm.w_ushort(data)
+            # write CD CD
+            self.fm.w_bytes(b"\xCD\xCD")
+        elif class_name == "Unsigned Integer":
+            self.fm.w_int(data)
+        elif class_name == "Color (RGB)":
+            for num in data:
+                self.fm.w_float(num)
+        elif class_name == "Color (RGBA)":
+            for num in data:
+                self.fm.w_float(num)
+        else:
+            raise Exception("Unknown property class: " + class_name)
 
     def read_property(self):
         # add property element
@@ -126,6 +162,51 @@ class Scene:
             component_property["type"] = data_type
         return component_property
     
+    def write_property(self, component_property, strings):
+        # write property name pointer
+        name = component_property["name"]
+        self.fm.w_int(strings[name])
+        # write property class pointer
+        class_name = component_property["class"]
+        self.fm.w_int(strings[class_name])
+        data_type = None
+        if "type" in component_property:
+            data_type = component_property["type"]
+        data_type_id = 0
+        if data_type == "list":
+            data_type_id = 1
+        elif data_type == "path":
+            data_type_id = 2
+        elif data_type == "animation_path":
+            data_type_id = 3
+        elif data_type == "palette_list":
+            data_type_id = 5
+        # catch unknown data types
+        if data_type_id == 0 and data_type != None:
+            # get the number from the string
+            data_type_id = int(data_type.split("_")[1])
+        self.fm.w_int(data_type_id)
+        data = component_property["data"]
+        if data_type == "list" or data_type == "palette_list":
+            amount = len(data)
+            self.fm.w_int(amount)
+            for item in data:
+                if class_name == "String":
+                    item = strings[item]
+                # write data
+                self.write_property_data(class_name, item)
+        else:
+            if data == None:
+                amount = 0
+            else:
+                amount = 1
+            self.fm.w_int(amount)
+            if amount == 1:
+                if class_name == "String":
+                    data = strings[data]
+                # write data
+                self.write_property_data(class_name, data)
+    
     def read_component(self):
         # add component element
         component = {}
@@ -146,6 +227,29 @@ class Scene:
             component_properties.append(component_property)
         component["properties"] = component_properties
         return component
+    
+    def write_component(self, component, strings):
+        # write component class pointer
+        class_name = component["class"]
+        self.fm.w_int(strings[class_name])
+        # write component template id pointer
+        template_id = component["template_id"]
+        self.fm.w_int(strings[template_id])
+        # write link id
+        link_id = component["link_id"]
+        self.fm.w_int(link_id)
+        # write master link id
+        if "master_link_id" in component:
+            master_link_id = component["master_link_id"]
+            self.fm.w_int(master_link_id)
+        else:
+            self.fm.w_int(0)
+        # write property amount
+        property_amount = len(component["properties"])
+        self.fm.w_int(property_amount)
+        # write properties
+        for component_property in component["properties"]:
+            self.write_property(component_property, strings)
     
     def read_entity(self):
         entity = {}
@@ -171,12 +275,52 @@ class Scene:
         entity["components"] = components
         return entity
     
+    def write_entity(self, entity, strings):
+        # write entity name pointer
+        name = entity["name"]
+        self.fm.w_int(strings[name])
+        # write link id
+        link_id = entity["link_id"]
+        self.fm.w_int(link_id)
+        # write master link id
+        if "master_link_id" in entity:
+            master_link_id = entity["master_link_id"]
+            self.fm.w_int(master_link_id)
+        else:
+            self.fm.w_int(0)
+        # write unknown
+        if "unknown" in entity:
+            unknown = entity["unknown"]
+            self.fm.w_int(unknown)
+        else:
+            self.fm.w_int(0)
+        # write unknown_em2
+        if "unknown_em2" in entity and self.json_root["version"] == 2:
+            unknown_em2 = entity["unknown_em2"]
+            self.fm.w_int(unknown_em2)
+        else:
+            self.fm.w_int(0)
+        # write component amount
+        component_amount = len(entity["components"])
+        self.fm.w_int(component_amount)
+        # write components
+        for component in entity["components"]:
+            self.write_component(component, strings)
+    
     def read_entities(self, entity_amount):
         entities = []
         for i in range(entity_amount):
             entity = self.read_entity()
             entities.append(entity)
         return entities
+    
+    def write_entities(self, entities, strings):
+        # write entity amount
+        entity_amount = len(entities)
+        self.fm.w_int(entity_amount)
+        # write entities
+        for entity in entities:
+            self.write_entity(entity, strings)
 
     def read_scene(self, entity_amount):
         linked_entities = []
@@ -184,6 +328,44 @@ class Scene:
             linked_entity = self.fm.r_int()
             linked_entities.append(linked_entity)
         return linked_entities
+    
+    def write_scene(self, linked_entities):
+        # write entity amount
+        entity_amount = len(linked_entities)
+        self.fm.w_int(entity_amount)
+        # write entities
+        for linked_entity in linked_entities:
+            self.fm.w_int(linked_entity)
+    
+    def add_string(self, string, strings):
+        if not string in strings:
+            location = self.fm.tell()
+            if self.json_root["version"] == 2:
+                location -= 4
+            strings[string] = location
+            self.fm.w_next_str(string)
+        return strings
+
+    def assemble_strings(self):
+        strings = {}
+        for entity in self.json_root["entities"]:
+            strings = self.add_string(entity["name"], strings)
+            for component in entity["components"]:
+                strings = self.add_string(component["class"], strings)
+                strings = self.add_string(component["template_id"], strings)
+                for component_property in component["properties"]:
+                    strings = self.add_string(component_property["name"], strings)
+                    strings = self.add_string(component_property["class"], strings)
+                    if component_property["class"] == "String":
+                        data_type = None
+                        if "type" in component_property:
+                            data_type = component_property["type"]
+                        if data_type == "list" or data_type == "palette_list":
+                            for item in component_property["data"]:
+                                strings = self.add_string(item, strings)
+                        else:
+                            strings = self.add_string(component_property["data"], strings)
+        return strings
     
     def decompile(self):
         # read the first 4 bytes
@@ -263,5 +445,51 @@ class Scene:
         return json.dumps(self.json_root, indent=4)
     
     def get_binary(self):
-        # TODO: implement
-        return b""
+        self.fm = FileManipulator()
+        self.fm.from_bytes(b"", "big")
+        if self.json_root["version"] == 2:
+            self.fm.w_bytes(b"\x01\x00\x00\x01")
+        data_pointer_location = self.fm.tell()
+        data_pointer = 0
+        self.fm.w_int(0)
+        strings = self.assemble_strings()
+        data_pointer = self.fm.tell()
+        if self.json_root["version"] == 2:
+            data_pointer -= 4
+        self.fm.seek(data_pointer_location)
+        self.fm.w_int(data_pointer)
+        self.fm.seek(data_pointer)
+        if self.json_root["version"] == 1:
+            # write unique id
+            unique_id = self.json_root["unique_id"]
+            unique_id = unique_id.split(",")
+            unique_id = [int(byte, 16) for byte in unique_id]
+            unique_id = bytes(unique_id)
+            self.fm.w_bytes(unique_id)
+        else:
+            # write 02 00 00 02
+            self.fm.w_bytes(b"\x02\x00\x00\x02")
+            # get the number of extra strings
+            num_extra_strings = 0
+            if "em2_extra_strings" in self.json_root:
+                num_extra_strings = len(self.json_root["em2_extra_strings"])
+            self.fm.w_int(num_extra_strings)
+            # write extra strings
+            if num_extra_strings > 0:
+                for extra_string in self.json_root["em2_extra_strings"]:
+                    self.fm.w_next_str(extra_string)
+        # write entity amount
+        entity_amount = len(self.json_root["entities"])
+        self.fm.w_int(entity_amount)
+        # write linked entity amount
+        linked_entity_amount = 0
+        if "scene" in self.json_root:
+            linked_entity_amount = len(self.json_root["scene"])
+        self.fm.w_int(linked_entity_amount)
+        # write entities
+        self.write_entities(self.json_root["entities"], strings)
+        # write scene
+        if linked_entity_amount > 0:
+            self.write_scene(self.json_root["scene"])
+        # return bytes
+        return self.fm.get_bytes()

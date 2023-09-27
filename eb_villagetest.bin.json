@@ -1,0 +1,2617 @@
+{
+    "version": 1,
+    "unique_id": "40,13,ad,14,1f,64,46,41,87,7d,15,75,5e,94,e5,d9",
+    "entities": [
+        {
+            "name": "Player",
+            "link_id": 13,
+            "components": [
+                {
+                    "class": "JPSTransformationComponent",
+                    "template_id": "5,0,0,0",
+                    "link_id": 14,
+                    "properties": [
+                        {
+                            "name": "Source Entity",
+                            "class": "Entity Pointer",
+                            "data": null
+                        },
+                        {
+                            "name": "Local Translation",
+                            "class": "Point3",
+                            "data": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Local Rotation",
+                            "class": "Matrix3",
+                            "data": [
+                                [
+                                    1.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "Local Scale",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "Translation",
+                            "class": "Point3",
+                            "data": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Rotation",
+                            "class": "Matrix3",
+                            "data": [
+                                [
+                                    1.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "Scale",
+                            "class": "Float",
+                            "data": 0.10000000149011612
+                        },
+                        {
+                            "name": "DisallowRotation",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Parent Entity",
+                            "class": "Entity Pointer",
+                            "data": null
+                        },
+                        {
+                            "name": "Bone Attach Name",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "Bone Attach Rotate Mode",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "Bone Attach Offset",
+                            "class": "Point3",
+                            "data": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Bone Scale Multiplier",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Parent Entity",
+                            "class": "Entity Pointer",
+                            "data": null
+                        },
+                        {
+                            "name": "Bone Attach Name",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "Bone Attach Rotate Mode",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "Bone Attach Offset",
+                            "class": "Point3",
+                            "data": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "class": "AnimationComponent",
+                    "template_id": "15,14,0,0",
+                    "link_id": 15,
+                    "properties": [
+                        {
+                            "name": "NIF File Path",
+                            "class": "String",
+                            "data": "Characters/Mickey/Mickey.nif",
+                            "type": "path"
+                        },
+                        {
+                            "name": "Force Update",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Stop Scene Designer Updates",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "NoBatch",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Light Group",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "Unique",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Static Lighting Participation",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "Hardware Lighting Participation",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "Special Rendering",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "StartAnimationUsingGlobalTime",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "AnimateWhenThinned",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "PersistentParticleBuffers",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "SketchOpacity",
+                            "class": "Float",
+                            "data": -1.0
+                        },
+                        {
+                            "name": "Behavior File Path",
+                            "class": "String",
+                            "data": "Characters/Mickey/MickeyBehaviorProject.hkx",
+                            "type": "path"
+                        },
+                        {
+                            "name": "Animation List Path",
+                            "class": "String",
+                            "data": "Characters/Mickey/mickey_default.hkw",
+                            "type": "animation_path"
+                        },
+                        {
+                            "name": "Override Bounding Sphere Radius",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ClearRootTranslation",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "ClearRootRotation",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "CharacterName",
+                            "class": "String",
+                            "data": "Mickey"
+                        },
+                        {
+                            "name": "AnimationVariableList",
+                            "class": "Integer",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "AnimationVariableTypeList",
+                            "class": "Integer",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "AnimationVariableBoolList",
+                            "class": "Boolean",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "AnimationVariableIntegerList",
+                            "class": "Integer",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "AnimationVariableFloatList",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "IgnoreAudioEvents",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "ChildComponent",
+                    "template_id": "4,0,0,0",
+                    "link_id": 16,
+                    "properties": [
+                        {
+                            "name": "Child Templates",
+                            "class": "String",
+                            "data": [
+                                "magicbrush",
+                                "mk_ear_l1",
+                                "mk_ear_l2",
+                                "mk_ear_l3",
+                                "mk_ear_r1",
+                                "mk_ear_r2",
+                                "mk_ear_r3",
+                                "mk_hand_l",
+                                "mk_hand_r",
+                                "mk_elbow_l",
+                                "mk_elbow_r",
+                                "mk_elbow_l2",
+                                "mk_elbow_r2",
+                                "mk_ear_r4",
+                                "mk_ear_r5",
+                                "mk_ear_l4",
+                                "mk_ear_l5",
+                                "painthit",
+                                "thinnerhit"
+                            ],
+                            "type": "palette_list"
+                        },
+                        {
+                            "name": "Child Entities",
+                            "class": "Entity Pointer",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "ChildrenShareSphericalHarmonicLighting",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "VulnerabilityComponent",
+                    "template_id": "11,0,0,0",
+                    "link_id": 17,
+                    "properties": [
+                        {
+                            "name": "Thinner Vulnerability",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "Paint Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Physical Vulnerability",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "Knockback Vulnerability",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "Contact Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Breakable Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "DamageLeap Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Magic Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Spin Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Friendly Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Stun Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Slow Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "DrainThinner Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "DrainPaint Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ElectroStun Vulnerability",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Thinner Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Paint Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Physical Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Knockback Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Contact Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Breakable Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "DamageLeap Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Magic Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Spin Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Friendly Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Stun Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Slow Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "DrainThinner Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "DrainPaint Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ElectroStun Threshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "InvulnerableMinAngle",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "InvulnerableMaxAngle",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "InvulnerableThreshold",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "_ThresholdDamageType",
+                            "class": "Integer",
+                            "data": 1
+                        },
+                        {
+                            "name": "_ExtraDamageFromNonPlayer",
+                            "class": "Float",
+                            "data": 1.0
+                        }
+                    ]
+                },
+                {
+                    "class": "TeamComponent",
+                    "template_id": "4,0,0,0",
+                    "link_id": 18,
+                    "properties": [
+                        {
+                            "name": "Team",
+                            "class": "Integer",
+                            "data": 1
+                        },
+                        {
+                            "name": "CurrentTeam",
+                            "class": "Integer",
+                            "data": 1
+                        },
+                        {
+                            "name": "TimeOnTeam",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ThreatAmount",
+                            "class": "Float",
+                            "data": 10.0
+                        },
+                        {
+                            "name": "ThreatAmountOutOfRange",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ThreatAmountRange",
+                            "class": "Float",
+                            "data": 0.0
+                        }
+                    ]
+                },
+                {
+                    "class": "InputOutputComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 19,
+                    "properties": [
+                        {
+                            "name": "Input",
+                            "class": "String",
+                            "data": [
+                                "LoadCheckpoint",
+                                "AudioPostEventOn",
+                                "Mickey_Damage_Audio"
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Output",
+                            "class": "String",
+                            "data": [
+                                "OnDeath",
+                                "OnDamage",
+                                "OnDamage"
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Target",
+                            "class": "String",
+                            "data": [
+                                "_self",
+                                "_self",
+                                "_self"
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Parameters",
+                            "class": "String",
+                            "data": [
+                                "",
+                                "Play_vocal_mickey_pipdeath",
+                                "_event"
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DelayWait",
+                            "class": "Float",
+                            "data": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "IoFlags",
+                            "class": "Unsigned Short",
+                            "data": [
+                                0,
+                                2,
+                                0
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "EntityGroups",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "TargetGroup",
+                            "class": "String",
+                            "data": [
+                                "",
+                                "",
+                                ""
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DoNotInherit",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "HealthComponent",
+                    "template_id": "10,0,0,0",
+                    "link_id": 20,
+                    "properties": [
+                        {
+                            "name": "Health",
+                            "class": "Integer",
+                            "data": 5
+                        },
+                        {
+                            "name": "MaxHealth",
+                            "class": "Integer",
+                            "data": 5
+                        },
+                        {
+                            "name": "InvulnerableDuration",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "Lives",
+                            "class": "Integer",
+                            "data": 3
+                        },
+                        {
+                            "name": "ForceInvulnerable",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "NoHealthAction",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "NoHealthEffect",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "NoHealthSFX",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "InfiniteHealth",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "InvulnerableReflective",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Reflective",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "InventoryComponent",
+                    "template_id": "8,0,0,0",
+                    "link_id": 21,
+                    "properties": [
+                        {
+                            "name": "Paint",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "PaintMax",
+                            "class": "Float",
+                            "data": 30.0
+                        },
+                        {
+                            "name": "PaintAmmoSegmentAmount",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Thinner",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ThinnerMax",
+                            "class": "Float",
+                            "data": 30.0
+                        },
+                        {
+                            "name": "ThinnerAmmoSegmentAmount",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ETicket",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ETicketMax",
+                            "class": "Float",
+                            "data": 1000.0
+                        },
+                        {
+                            "name": "BigBall",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "SuperSaturated",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ThinnerShockwave",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "LongRange",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Sketch",
+                            "class": "String",
+                            "data": [
+                                "Sketch_TV",
+                                "Sketch_Watch",
+                                "Sketch_Anvil"
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "SketchCount",
+                            "class": "Integer",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "SketchMax",
+                            "class": "Float",
+                            "data": [
+                                5.0,
+                                5.0,
+                                5.0
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Invisible_Ammo",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Indelible_Ammo",
+                            "class": "Float",
+                            "data": 0.0
+                        }
+                    ]
+                },
+                {
+                    "class": "PhysicsRigidBodyCharacterComponent",
+                    "template_id": "11,15,0,0",
+                    "link_id": 22,
+                    "properties": [
+                        {
+                            "name": "RB Hull File Path",
+                            "class": "String",
+                            "data": "Characters/Mickey/Mickey_Pencil_Collision_dynamic_hull.hkx",
+                            "type": "path"
+                        },
+                        {
+                            "name": "Collision Layer",
+                            "class": "Integer",
+                            "data": 3
+                        },
+                        {
+                            "name": "Thinned Collision Layer",
+                            "class": "Integer",
+                            "data": 3
+                        },
+                        {
+                            "name": "Is Painted",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "Is Real",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "Allow Look Through",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Friction",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Restitution",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Use Parent Scene",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "CanLedgeGrab",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Damage on Collision",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "InvulnerableToPaintThinner",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "ShouldSavePaintState",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Character Mass",
+                            "class": "Float",
+                            "data": 100.0
+                        },
+                        {
+                            "name": "Is Mover",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Collision Shape",
+                            "class": "Integer",
+                            "data": 5
+                        },
+                        {
+                            "name": "Entity Radius",
+                            "class": "Integer",
+                            "data": 3
+                        },
+                        {
+                            "name": "Entity Height",
+                            "class": "Integer",
+                            "data": 3
+                        },
+                        {
+                            "name": "Max Slope",
+                            "class": "Float",
+                            "data": 39.0
+                        },
+                        {
+                            "name": "Collision Impulse Threshold",
+                            "class": "Float",
+                            "data": 10.0
+                        },
+                        {
+                            "name": "UsePaintThinnerEffects",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "GameEventsComponent",
+                    "template_id": "12,0,0,0",
+                    "link_id": 23,
+                    "properties": [
+                        {
+                            "name": "GameEventTypes",
+                            "class": "Integer",
+                            "data": [
+                                0,
+                                2,
+                                1,
+                                11,
+                                24,
+                                11,
+                                12,
+                                11,
+                                12
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "AudioEventNames",
+                            "class": "String",
+                            "data": [
+                                "Play_Mickey_Walk",
+                                "Play_Mickey_Walk",
+                                "",
+                                "Play_sfx_Fall_Into_Thinner",
+                                "",
+                                "Play_sfx_Fall_Into_Thinner",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "EffectEventNames",
+                            "class": "String",
+                            "data": [
+                                "",
+                                "",
+                                "MK_ImpactFX",
+                                "",
+                                "",
+                                "MickeyThinnerDeathFX",
+                                "MK_TentacleImpactFX",
+                                "MK_DamageLeapSmokeTrail",
+                                "MK_ImpactFX"
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "EffectOffsets",
+                            "class": "Point3",
+                            "data": [
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ]
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "EventSourceAliases",
+                            "class": "String",
+                            "data": [
+                                "",
+                                "",
+                                "",
+                                "ThinnerDamageTrigger",
+                                "ThinnerOcean",
+                                "ThinnerOcean",
+                                "Tentacle",
+                                "ThinnerOcean",
+                                "FireKnockback"
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "ScriptFunctionNames",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "AudioEffectBypass",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "ActionEventNames",
+                            "class": "Integer",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "EventDelays",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "ListenForChildren",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "SwitchName",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "StopWhenDestroyed",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "AmmoRechargeComponent",
+                    "template_id": "3,0,0,0",
+                    "link_id": 24,
+                    "properties": [
+                        {
+                            "name": "PaintCost",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "ThinnerCost",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "PaintJumpCost",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "ThinnerJumpCost",
+                            "class": "Float",
+                            "data": 2.0
+                        },
+                        {
+                            "name": "PaintRechargeRate",
+                            "class": "Float",
+                            "data": 2.0
+                        },
+                        {
+                            "name": "ThinnerRechargeRate",
+                            "class": "Float",
+                            "data": 2.0
+                        },
+                        {
+                            "name": "PaintRechargeMax",
+                            "class": "Float",
+                            "data": 10.0
+                        },
+                        {
+                            "name": "ThinnerRechargeMax",
+                            "class": "Float",
+                            "data": 10.0
+                        },
+                        {
+                            "name": "PaintRechargeWait",
+                            "class": "Float",
+                            "data": 0.75
+                        },
+                        {
+                            "name": "ThinnerRechargeWait",
+                            "class": "Float",
+                            "data": 0.75
+                        },
+                        {
+                            "name": "PaintPenaltyAmount",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "ThinnerPenaltyAmount",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "PaintPenaltyWait",
+                            "class": "Float",
+                            "data": 0.75
+                        },
+                        {
+                            "name": "ThinnerPenaltyWait",
+                            "class": "Float",
+                            "data": 0.75
+                        }
+                    ]
+                },
+                {
+                    "class": "MickeyPlayerMotionControllerComponent",
+                    "template_id": "41,9,0,0",
+                    "link_id": 25,
+                    "properties": [
+                        {
+                            "name": "Stomp Height",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "DistanceAboveGroundForStomp",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "NewDoubleJump",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "DoubleJumpAddedHeight",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "NewDoubleJumpHeight",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "NewDoubleJumpDownSpeed",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "MinDistAboveGroundForDoubleJump",
+                            "class": "Float",
+                            "data": 0.8999999761581421
+                        },
+                        {
+                            "name": "MaxDistAboveGroundForJump",
+                            "class": "Float",
+                            "data": 0.125
+                        },
+                        {
+                            "name": "DoubleJumpInkProjectile",
+                            "class": "Entity Pointer",
+                            "data": null
+                        },
+                        {
+                            "name": "DoubleJumpInkProjectileSpeed",
+                            "class": "Float",
+                            "data": 15.0
+                        },
+                        {
+                            "name": "DoubleJumpInkPuddle",
+                            "class": "Entity Pointer",
+                            "data": null
+                        },
+                        {
+                            "name": "ThinnerJumpDownSpeed",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "ThinnerJumpDonutRadius",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "ThinnerJumpDonutThickness",
+                            "class": "Float",
+                            "data": 0.3499999940395355
+                        },
+                        {
+                            "name": "DoesLedgeGrab",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "LedgeGrabHeight",
+                            "class": "Float",
+                            "data": 0.20000000298023224
+                        },
+                        {
+                            "name": "LedgeGrabTranslateSpeed",
+                            "class": "Float",
+                            "data": 7.5
+                        },
+                        {
+                            "name": "LedgeGrabMaxGrabDistance",
+                            "class": "Float",
+                            "data": 0.3499999940395355
+                        },
+                        {
+                            "name": "LedgeGrabMaxSaveDistance",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "LedgeGrabMaxSaveDistanceLeftAndRight",
+                            "class": "Float",
+                            "data": 0.009999999776482582
+                        },
+                        {
+                            "name": "LedgeGrabMaxVelocityToCheckBackwards",
+                            "class": "Float",
+                            "data": 4.0
+                        },
+                        {
+                            "name": "LedgeGrabMinDistanceOffGround",
+                            "class": "Float",
+                            "data": 1.5
+                        },
+                        {
+                            "name": "LedgeGrabOnlyInFront",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "LedgeGrabAllowSidle",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "LedgeGrabAllowDuringDoubleJump",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "LedgeGrabMinDoubleJumpTime",
+                            "class": "Float",
+                            "data": 0.25
+                        },
+                        {
+                            "name": "UseButtonForLedgeGrab",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "SpinAttackMaxStartSpeed",
+                            "class": "Float",
+                            "data": 20.0
+                        },
+                        {
+                            "name": "SpinAttackAcceleration",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "SpinAttackExtraJumpHeight",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "SkidTime",
+                            "class": "Float",
+                            "data": 0.20000000298023224
+                        },
+                        {
+                            "name": "SkidMaxInput",
+                            "class": "Float",
+                            "data": 0.10000000149011612
+                        },
+                        {
+                            "name": "SkidMinSpeed",
+                            "class": "Float",
+                            "data": 0.4000000059604645
+                        },
+                        {
+                            "name": "SkidTimeToCheck",
+                            "class": "Float",
+                            "data": 0.09999000281095505
+                        },
+                        {
+                            "name": "The180MinInput",
+                            "class": "Float",
+                            "data": 0.22499999403953552
+                        },
+                        {
+                            "name": "The180TimeToCheck",
+                            "class": "Float",
+                            "data": 0.16665999591350555
+                        },
+                        {
+                            "name": "The180Time",
+                            "class": "Float",
+                            "data": 0.3999899923801422
+                        },
+                        {
+                            "name": "The180MinSpeed",
+                            "class": "Float",
+                            "data": 0.20000000298023224
+                        },
+                        {
+                            "name": "The180Cosine",
+                            "class": "Float",
+                            "data": -0.6000000238418579
+                        },
+                        {
+                            "name": "The180MinTimeBetween180s",
+                            "class": "Float",
+                            "data": 0.09999000281095505
+                        },
+                        {
+                            "name": "The180DecelRate",
+                            "class": "Float",
+                            "data": 12.0
+                        },
+                        {
+                            "name": "The180OrSkidMinTimeOnGround",
+                            "class": "Float",
+                            "data": 0.09999000281095505
+                        },
+                        {
+                            "name": "SlidingTimeForAnimation",
+                            "class": "Float",
+                            "data": 0.3666599988937378
+                        },
+                        {
+                            "name": "SlidingMinDownSpeed",
+                            "class": "Float",
+                            "data": -0.4000000059604645
+                        },
+                        {
+                            "name": "PushingMaxAngle",
+                            "class": "Float",
+                            "data": 75.0
+                        },
+                        {
+                            "name": "PushingMaxSpeed",
+                            "class": "Float",
+                            "data": 0.949999988079071
+                        },
+                        {
+                            "name": "PushingTimeForAnimation",
+                            "class": "Float",
+                            "data": 0.09999900311231613
+                        },
+                        {
+                            "name": "PushingMinDesiredSpeed",
+                            "class": "Float",
+                            "data": 9.999999747378752e-06
+                        },
+                        {
+                            "name": "SlidingTurnRate",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Max Move Speed",
+                            "class": "Float",
+                            "data": 5.0
+                        },
+                        {
+                            "name": "Jump Height",
+                            "class": "Float",
+                            "data": 2.0
+                        },
+                        {
+                            "name": "JumpType",
+                            "class": "Integer",
+                            "data": 2
+                        },
+                        {
+                            "name": "JumpHeightMultipliers",
+                            "class": "Float",
+                            "data": [
+                                0.30000001192092896,
+                                0.30000001192092896,
+                                0.6499999761581421,
+                                0.6499999761581421,
+                                0.6499999761581421,
+                                1.0
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Character Gravity Down",
+                            "class": "Float",
+                            "data": -35.0
+                        },
+                        {
+                            "name": "Character Gravity Up",
+                            "class": "Float",
+                            "data": -30.0
+                        },
+                        {
+                            "name": "Max Air Speed",
+                            "class": "Float",
+                            "data": 4.5
+                        },
+                        {
+                            "name": "AirLeftRightAccel",
+                            "class": "Float",
+                            "data": 20.0
+                        },
+                        {
+                            "name": "AirControlAccel",
+                            "class": "Float",
+                            "data": 20.0
+                        },
+                        {
+                            "name": "GroundControlAccel",
+                            "class": "Float",
+                            "data": 12.0
+                        },
+                        {
+                            "name": "GroundControlAccelStop",
+                            "class": "Float",
+                            "data": 25.0
+                        },
+                        {
+                            "name": "DoesDamagedLeap",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "DamagedLeapGravity",
+                            "class": "Float",
+                            "data": -22.0
+                        },
+                        {
+                            "name": "DamagedLeapStunTime",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "KnockbackUpAngle",
+                            "class": "Float",
+                            "data": 30.0
+                        },
+                        {
+                            "name": "KnockbackFriction",
+                            "class": "Float",
+                            "data": 0.25
+                        },
+                        {
+                            "name": "KnockbackMaxStim",
+                            "class": "Float",
+                            "data": 1.2000000476837158
+                        },
+                        {
+                            "name": "AllowPitch",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "MinDeathFallSpeed",
+                            "class": "Float",
+                            "data": 100.0
+                        },
+                        {
+                            "name": "MinHardFallSpeed",
+                            "class": "Float",
+                            "data": 25.0
+                        },
+                        {
+                            "name": "MinNormalFallSpeed",
+                            "class": "Float",
+                            "data": 15.0
+                        },
+                        {
+                            "name": "Stationary Turn Rate",
+                            "class": "Float",
+                            "data": 10.0
+                        },
+                        {
+                            "name": "Moving Turn Rate",
+                            "class": "Float",
+                            "data": 3.0
+                        },
+                        {
+                            "name": "Allow Turn Rate Increase",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "DamagedLeapLaunchSpeed",
+                            "class": "Float",
+                            "data": 11.5
+                        },
+                        {
+                            "name": "DamagedLeapMaxAirSpeed",
+                            "class": "Float",
+                            "data": 5.0
+                        },
+                        {
+                            "name": "DamagedLeapAirAccel",
+                            "class": "Float",
+                            "data": 20.0
+                        },
+                        {
+                            "name": "MotionStateSetup",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "MaxRelevantDistanceOffGround",
+                            "class": "Float",
+                            "data": 5.0
+                        },
+                        {
+                            "name": "InputFilterType",
+                            "class": "Integer",
+                            "data": 2
+                        },
+                        {
+                            "name": "InputLinearVelocity",
+                            "class": "Float",
+                            "data": 2.0
+                        },
+                        {
+                            "name": "InputLengthVelocity",
+                            "class": "Float",
+                            "data": 30.0
+                        },
+                        {
+                            "name": "InputRotationVelocity",
+                            "class": "Float",
+                            "data": 4.5
+                        },
+                        {
+                            "name": "Ground_UseFixedSpeeds",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "Ground_FixedSpeeds",
+                            "class": "Float",
+                            "data": [
+                                0.2199999988079071,
+                                0.4000000059604645,
+                                0.6000000238418579,
+                                1.0
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Ground_StickValues",
+                            "class": "Float",
+                            "data": [
+                                0.699999988079071,
+                                0.7099999785423279,
+                                0.9900000095367432,
+                                1.0
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "AirTurnRate",
+                            "class": "Float",
+                            "data": 4.0
+                        },
+                        {
+                            "name": "SpeedToStartAutoSlidingOnLedges",
+                            "class": "Float",
+                            "data": 0.5
+                        },
+                        {
+                            "name": "SlowStimHindranceRate",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "SlowStimHindranceSFXRTPCParameterName",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "SlowStimHindranceSFXMultiplier",
+                            "class": "Float",
+                            "data": -1.0
+                        },
+                        {
+                            "name": "SlowStimHindranceFXStartingValue",
+                            "class": "Float",
+                            "data": -1.0
+                        },
+                        {
+                            "name": "SlowStimHindranceFXEndingValue",
+                            "class": "Float",
+                            "data": -1.0
+                        },
+                        {
+                            "name": "TerminalSpeed",
+                            "class": "Float",
+                            "data": -25.0
+                        },
+                        {
+                            "name": "StompingGravityUp",
+                            "class": "Float",
+                            "data": -15.0
+                        },
+                        {
+                            "name": "StompingGravityDown",
+                            "class": "Float",
+                            "data": -35.0
+                        },
+                        {
+                            "name": "ApplyExternalVelocity",
+                            "class": "Boolean",
+                            "data": true
+                        }
+                    ]
+                },
+                {
+                    "class": "MickeyPlayerControllerComponent",
+                    "template_id": "1,6,0,0",
+                    "link_id": 26,
+                    "properties": [
+                        {
+                            "name": "Dummy",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "Throw Max Speed",
+                            "class": "Float",
+                            "data": 10.0
+                        },
+                        {
+                            "name": "Throw Max Distance",
+                            "class": "Float",
+                            "data": 10.0
+                        },
+                        {
+                            "name": "Aim Angle",
+                            "class": "Float",
+                            "data": 45.0
+                        }
+                    ]
+                },
+                {
+                    "class": "Cursor3DComponent",
+                    "template_id": "8,0,0,0",
+                    "link_id": 27,
+                    "properties": [
+                        {
+                            "name": "PlayerController",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "TetherPaintFX",
+                            "class": "String",
+                            "data": [],
+                            "type": "palette_list"
+                        },
+                        {
+                            "name": "TetherPaintFXSpeed",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "TetherThinnerFX",
+                            "class": "String",
+                            "data": [],
+                            "type": "palette_list"
+                        },
+                        {
+                            "name": "TetherThinnerFXSpeed",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "PaintBrushDecalIndex",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "PaintBrushDecalIndexEnd",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "ThinnerBrushDecalIndex",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "ThinnerBrushDecalIndexEnd",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "PaintBrushFX",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "ThinnerBrushFX",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        }
+                    ]
+                },
+                {
+                    "class": "StatusComponent",
+                    "template_id": "1,0,0,0",
+                    "link_id": 28,
+                    "properties": [
+                        {
+                            "name": "Invisible",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "DecalComponent",
+                    "template_id": "2,0,0,0",
+                    "link_id": 30,
+                    "properties": [
+                        {
+                            "name": "DecalMaterialNifFile",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DecalRadius",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DecalLifetime",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "BoneList",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        }
+                    ]
+                },
+                {
+                    "class": "FXComponent",
+                    "template_id": "1,0,0,0",
+                    "link_id": 31,
+                    "properties": [
+                        {
+                            "name": "FXTemplate",
+                            "class": "String",
+                            "data": [
+                                "paintbrushfx",
+                                "thinnerbrushfx",
+                                "groundhitfx",
+                                "mk_impactfx",
+                                "mk_damageleapsmoketrail",
+                                "mk_slidedust_right_fx",
+                                "mk_slidedust_left_fx",
+                                "mk_footstepwalkdust_left_fx",
+                                "mk_footstepwalkdust_right_fx",
+                                "mk_jump_inksplash_01",
+                                "mickeythinnerdeathfx",
+                                "mk_tentacleimpactfx"
+                            ],
+                            "type": "palette_list"
+                        },
+                        {
+                            "name": "FXTemplateFireAndForget",
+                            "class": "Boolean",
+                            "data": [
+                                false,
+                                false,
+                                false,
+                                true,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                false,
+                                true,
+                                false
+                            ],
+                            "type": "list"
+                        }
+                    ]
+                },
+                {
+                    "class": "DynamicallyLitComponent",
+                    "template_id": "2,0,0,0",
+                    "link_id": 32,
+                    "properties": [
+                        {
+                            "name": "LinkLightsOnceOnly",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Dynamic Light Layers",
+                            "class": "Integer",
+                            "data": 1
+                        }
+                    ]
+                },
+                {
+                    "class": "GuardianManagerComponent",
+                    "template_id": "5,0,0,0",
+                    "link_id": 33,
+                    "properties": [
+                        {
+                            "name": "StimVulnerabilityTypesArray",
+                            "class": "Integer",
+                            "data": [
+                                0,
+                                2
+                            ],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Spawn Paint Audio FX",
+                            "class": "String",
+                            "data": "Play_sfx_guardianpaint_in"
+                        },
+                        {
+                            "name": "Spawn Thinner Audio FX",
+                            "class": "String",
+                            "data": "Play_sfx_guardianthinner_in"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "StaticScene",
+            "link_id": 1011,
+            "components": [
+                {
+                    "class": "JPSTransformationComponent",
+                    "template_id": "4,0,0,0",
+                    "link_id": 1153,
+                    "properties": [
+                        {
+                            "name": "Source Entity",
+                            "class": "Entity Pointer",
+                            "data": null
+                        },
+                        {
+                            "name": "Local Translation",
+                            "class": "Point3",
+                            "data": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Local Rotation",
+                            "class": "Matrix3",
+                            "data": [
+                                [
+                                    1.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "Local Scale",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "Translation",
+                            "class": "Point3",
+                            "data": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Rotation",
+                            "class": "Matrix3",
+                            "data": [
+                                [
+                                    1.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            ]
+                        },
+                        {
+                            "name": "Scale",
+                            "class": "Float",
+                            "data": 1.0
+                        },
+                        {
+                            "name": "DisallowRotation",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "JPSSceneGraphComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 1152,
+                    "properties": [
+                        {
+                            "name": "NIF File Path",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "Force Update",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Stop Scene Designer Updates",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "NoBatch",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Light Group",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "Unique",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Static Lighting Participation",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "Hardware Lighting Participation",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "Special Rendering",
+                            "class": "Integer",
+                            "data": 0
+                        },
+                        {
+                            "name": "StartAnimationUsingGlobalTime",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "AnimateWhenThinned",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                },
+                {
+                    "class": "PhysicsRigidBodyStaticComponent",
+                    "template_id": "11,12,0,0",
+                    "link_id": 1149,
+                    "properties": [
+                        {
+                            "name": "RB Hull File Path",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "Collision Layer",
+                            "class": "Integer",
+                            "data": 1
+                        },
+                        {
+                            "name": "Thinned Collision Layer",
+                            "class": "Integer",
+                            "data": 1
+                        },
+                        {
+                            "name": "Is Painted",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "Is Real",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "Allow Look Through",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Friction",
+                            "class": "Float",
+                            "data": -1.0
+                        },
+                        {
+                            "name": "Restitution",
+                            "class": "Float",
+                            "data": -1.0
+                        },
+                        {
+                            "name": "Use Parent Scene",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "CanLedgeGrab",
+                            "class": "Boolean",
+                            "data": true
+                        },
+                        {
+                            "name": "Damage on Collision",
+                            "class": "Float",
+                            "data": 0.0
+                        },
+                        {
+                            "name": "InvulnerableToPaintThinner",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "ShouldSavePaintState",
+                            "class": "Boolean",
+                            "data": false
+                        },
+                        {
+                            "name": "Instance Level Name",
+                            "class": "String",
+                            "data": ""
+                        },
+                        {
+                            "name": "AI Obstacle Type",
+                            "class": "Integer",
+                            "data": 0
+                        }
+                    ]
+                },
+                {
+                    "class": "InputOutputComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 1150,
+                    "properties": [
+                        {
+                            "name": "Input",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Output",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Target",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Parameters",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DelayWait",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "IoFlags",
+                            "class": "Unsigned Short",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "EntityGroups",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "TargetGroup",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DoNotInherit",
+                            "class": "Boolean",
+                            "data": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "eb_villagetest.EB_VillagetestGround 01",
+            "link_id": 2600,
+            "master_link_id": 1011,
+            "components": [
+                {
+                    "class": "JPSTransformationComponent",
+                    "template_id": "4,0,0,0",
+                    "link_id": 2601,
+                    "master_link_id": 1153,
+                    "properties": []
+                },
+                {
+                    "class": "JPSSceneGraphComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 2602,
+                    "master_link_id": 1152,
+                    "properties": [
+                        {
+                            "name": "NIF File Path",
+                            "class": "String",
+                            "data": "environments/_test/eb_tests/EB_VillagetestGround.nif",
+                            "type": "path"
+                        },
+                        {
+                            "name": "Light Group",
+                            "class": "String",
+                            "data": "Global"
+                        }
+                    ]
+                },
+                {
+                    "class": "PhysicsRigidBodyStaticComponent",
+                    "template_id": "11,12,0,0",
+                    "link_id": 2603,
+                    "master_link_id": 1149,
+                    "properties": [
+                        {
+                            "name": "RB Hull File Path",
+                            "class": "String",
+                            "data": "environments/_test/eb_tests/EB_VillagetestGround_static_mesh.hkx",
+                            "type": "path"
+                        }
+                    ]
+                },
+                {
+                    "class": "InputOutputComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 2605,
+                    "master_link_id": 1150,
+                    "properties": [
+                        {
+                            "name": "Input",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Output",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Target",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Parameters",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DelayWait",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "IoFlags",
+                            "class": "Unsigned Short",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "TargetGroup",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "eb_villagetest.EB_VillageTestHouse 01",
+            "link_id": 2594,
+            "master_link_id": 1011,
+            "components": [
+                {
+                    "class": "JPSTransformationComponent",
+                    "template_id": "4,0,0,0",
+                    "link_id": 2595,
+                    "master_link_id": 1153,
+                    "properties": []
+                },
+                {
+                    "class": "JPSSceneGraphComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 2596,
+                    "master_link_id": 1152,
+                    "properties": [
+                        {
+                            "name": "NIF File Path",
+                            "class": "String",
+                            "data": "environments/_test/eb_tests/EB_VillageTestHouse.nif",
+                            "type": "path"
+                        },
+                        {
+                            "name": "Light Group",
+                            "class": "String",
+                            "data": "Global"
+                        }
+                    ]
+                },
+                {
+                    "class": "PhysicsRigidBodyStaticComponent",
+                    "template_id": "11,12,0,0",
+                    "link_id": 2597,
+                    "master_link_id": 1149,
+                    "properties": [
+                        {
+                            "name": "RB Hull File Path",
+                            "class": "String",
+                            "data": "environments/_test/eb_tests/EB_VillageTestHouse_static_mesh.hkx",
+                            "type": "path"
+                        }
+                    ]
+                },
+                {
+                    "class": "InputOutputComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 2599,
+                    "master_link_id": 1150,
+                    "properties": [
+                        {
+                            "name": "Input",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Output",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Target",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Parameters",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DelayWait",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "IoFlags",
+                            "class": "Unsigned Short",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "TargetGroup",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "eb_villagetest.Player 01",
+            "link_id": 2573,
+            "master_link_id": 13,
+            "components": [
+                {
+                    "class": "JPSTransformationComponent",
+                    "template_id": "4,0,0,0",
+                    "link_id": 2574,
+                    "master_link_id": 14,
+                    "properties": [
+                        {
+                            "name": "Local Translation",
+                            "class": "Point3",
+                            "data": [
+                                -1.0252093076705933,
+                                0.0674380213022232,
+                                4.355883598327637
+                            ]
+                        },
+                        {
+                            "name": "Translation",
+                            "class": "Point3",
+                            "data": [
+                                -1.0252093076705933,
+                                0.0674380213022232,
+                                4.355883598327637
+                            ]
+                        },
+                        {
+                            "name": "Rotation",
+                            "class": "Matrix3",
+                            "data": [
+                                [
+                                    1.0,
+                                    0.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    1.0,
+                                    0.0
+                                ],
+                                [
+                                    0.0,
+                                    0.0,
+                                    1.0
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "class": "AnimationComponent",
+                    "template_id": "13,14,0,0",
+                    "link_id": 2575,
+                    "master_link_id": 15,
+                    "properties": [
+                        {
+                            "name": "Light Group",
+                            "class": "String",
+                            "data": ""
+                        }
+                    ]
+                },
+                {
+                    "class": "ChildComponent",
+                    "template_id": "3,0,0,0",
+                    "link_id": 2576,
+                    "master_link_id": 16,
+                    "properties": []
+                },
+                {
+                    "class": "VulnerabilityComponent",
+                    "template_id": "11,0,0,0",
+                    "link_id": 2577,
+                    "master_link_id": 17,
+                    "properties": []
+                },
+                {
+                    "class": "TeamComponent",
+                    "template_id": "4,0,0,0",
+                    "link_id": 2578,
+                    "master_link_id": 18,
+                    "properties": []
+                },
+                {
+                    "class": "InputOutputComponent",
+                    "template_id": "13,0,0,0",
+                    "link_id": 2579,
+                    "master_link_id": 19,
+                    "properties": [
+                        {
+                            "name": "Input",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Output",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Target",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "Parameters",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "DelayWait",
+                            "class": "Float",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "IoFlags",
+                            "class": "Unsigned Short",
+                            "data": [],
+                            "type": "list"
+                        },
+                        {
+                            "name": "TargetGroup",
+                            "class": "String",
+                            "data": [],
+                            "type": "list"
+                        }
+                    ]
+                },
+                {
+                    "class": "HealthComponent",
+                    "template_id": "10,0,0,0",
+                    "link_id": 2580,
+                    "master_link_id": 20,
+                    "properties": []
+                },
+                {
+                    "class": "InventoryComponent",
+                    "template_id": "7,0,0,0",
+                    "link_id": 2581,
+                    "master_link_id": 21,
+                    "properties": []
+                },
+                {
+                    "class": "PhysicsRigidBodyCharacterComponent",
+                    "template_id": "11,15,0,0",
+                    "link_id": 2582,
+                    "master_link_id": 22,
+                    "properties": []
+                },
+                {
+                    "class": "GameEventsComponent",
+                    "template_id": "12,0,0,0",
+                    "link_id": 2583,
+                    "master_link_id": 23,
+                    "properties": []
+                },
+                {
+                    "class": "AmmoRechargeComponent",
+                    "template_id": "3,0,0,0",
+                    "link_id": 2584,
+                    "master_link_id": 24,
+                    "properties": []
+                },
+                {
+                    "class": "MickeyPlayerMotionControllerComponent",
+                    "template_id": "40,8,0,0",
+                    "link_id": 2585,
+                    "master_link_id": 25,
+                    "properties": []
+                },
+                {
+                    "class": "MickeyPlayerControllerComponent",
+                    "template_id": "1,6,0,0",
+                    "link_id": 2586,
+                    "master_link_id": 26,
+                    "properties": []
+                },
+                {
+                    "class": "Cursor3DComponent",
+                    "template_id": "8,0,0,0",
+                    "link_id": 2587,
+                    "master_link_id": 27,
+                    "properties": []
+                },
+                {
+                    "class": "StatusComponent",
+                    "template_id": "1,0,0,0",
+                    "link_id": 2588,
+                    "master_link_id": 28,
+                    "properties": []
+                },
+                {
+                    "class": "DecalComponent",
+                    "template_id": "2,0,0,0",
+                    "link_id": 2590,
+                    "master_link_id": 30,
+                    "properties": []
+                },
+                {
+                    "class": "FXComponent",
+                    "template_id": "1,0,0,0",
+                    "link_id": 2591,
+                    "master_link_id": 31,
+                    "properties": []
+                },
+                {
+                    "class": "DynamicallyLitComponent",
+                    "template_id": "2,0,0,0",
+                    "link_id": 2592,
+                    "master_link_id": 32,
+                    "properties": []
+                },
+                {
+                    "class": "GuardianManagerComponent",
+                    "template_id": "5,0,0,0",
+                    "link_id": 2593,
+                    "master_link_id": 33,
+                    "properties": []
+                }
+            ]
+        }
+    ],
+    "scene": [
+        2600,
+        2594,
+        2573
+    ]
+}

@@ -323,10 +323,12 @@ class FileManipulator:
         - data (str): The string to be written.
         """
         self.align(4)
-        num1 = len(data) + 2
+        num1 = 2
+        num1 += len(data) + 1
         while num1 % 4 != 0:
             num1 += 1
-        num2 = len(data) + 1
+        num2 = len(data)
+        num2 += 1
         self.w_byte(num1)
         self.w_byte(num2)
         self.w_str_null(data)

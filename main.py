@@ -1,15 +1,16 @@
 from formats.scene import Scene
 from formats.packfile import Packfile
 
-path = "E:/Modding/EpicMickey/Builds/EM1/clean/DATA/files/packfiles/_Dynamic.pak"
-pack_json = {}
+path = "eb_villagetest.bin"
+scene_json = {}
 with open(path, "rb") as f:
-    packfile = Packfile(f.read())
-    pack_json = packfile.get_json()
-scene = None
-for path in pack_json["order"]:
-    if path.endswith(".bin"):
-        scene = Scene(pack_json["files"][path]["data"])
-        break
+    scene = Scene(f.read())
+    scene_json = scene.get_json()
 
-print(scene.get_referenced_files())
+with open("test.bin", "wb") as f:
+    scene = Scene(scene_json, "json")
+    f.write(scene.get_binary())
+
+#with open(path + ".json", "w") as f:
+#    scene = Scene(scene_json, "json")
+#    f.write(scene.get_text())
