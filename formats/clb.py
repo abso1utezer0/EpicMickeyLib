@@ -57,8 +57,26 @@ class CLB:
         return self.json_root
     
     def get_binary(self):
-        # TODO: implement
-        return b""
+        self.fm = FileManipulator()
+        self.fm.from_bytes(b"")
+
+        self.fm.w_int(3)
+        self.fm.w_int(len(self.json_root["collectibles"]))
+        # get keys in collectibles
+        for key in self.json_root["collectibles"]:
+            self.fm.w_next_str(self.json_root["collectibles"][key]["type"])
+            self.fm.w_next_str(key)
+            self.fm.w_next_str(self.json_root["collectibles"][key]["icon"])
+        
+        self.fm.w_int(len(self.json_root["extras"]))
+        # get keys in extras
+        for key in self.json_root["extras"]:
+            self.fm.w_next_str(self.json_root["extras"][key]["type"])
+            self.fm.w_next_str(key)
+            self.fm.w_next_str(self.json_root["extras"][key]["icon"])
+            self.fm.w_next_str(self.json_root["extras"][key]["file"])
+        
+        return self.fm.get_bytes()
     
     def get_text(self):
         return json.dumps(self.json_root, indent=4)

@@ -11,8 +11,10 @@ class Dict:
             self.fm = FileManipulator()
             self.fm.from_bytes(data, "little")
             self.decompile()
-        elif format_type == "ascii":
+        elif format_type == "json":
             self.json_root = data
+        elif format_type == "text":
+            self.json_root = json.loads(data)
         else:
             print("Unknown type: " + type)
             sys.exit(1)

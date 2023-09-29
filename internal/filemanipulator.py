@@ -327,8 +327,9 @@ class FileManipulator:
         num1 += len(data) + 1
         while num1 % 4 != 0:
             num1 += 1
-        num2 = len(data)
-        num2 += 1
+        num2 = len(data) + 1
+        if len(data) == 0:
+            num2 = 0
         self.w_byte(num1)
         self.w_byte(num2)
         self.w_str_null(data)

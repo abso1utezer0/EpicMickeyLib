@@ -1,16 +1,12 @@
+from formats.packfile import Packfile
 import os
-from formats.dict import Dict
+import sys
 from formats.scene import Scene
 from formats.clb import CLB
+from formats.dict import Dict
+
 
 class Unpacker:
-    """
-    A class that unpacks a packfile to a specified output directory.
-
-    Attributes:
-    - packfile (Packfile): The packfile to be unpacked.
-    """
-
     packfile = None
 
     def __init__(self, packfile):
@@ -18,7 +14,7 @@ class Unpacker:
         Initializes an instance of the Unpacker class with a given packfile.
 
         Args:
-        - packfile (Packfile): The packfile to be unpacked.
+        packfile (Packfile): The packfile to be unpacked.
         """
         self.packfile = packfile
 
@@ -31,49 +27,36 @@ class Unpacker:
         - decompile_formats (bool): Whether or not to decompile formats.
 
         Returns:
-        - None
+        None
         """
         pak_json = self.packfile.get_json()
-        files = pak_json["files"]
-        for path, file in files.items():
+        paths = pak_json["order"]
+        for file_path in paths:
+            file = pak_json["files"][file_path]
             data = file["data"]
-
-            out_path = os.path.join(out_dir, path)
+            extension = file_path[file_path.rfind(".") + 1:len(file_path)]
+            # decompile formats
+            if decompile_formats:
+                if extension == "bin" or extension == "clb" or extension == "dct":
+                    # add .json to the file_path
+                    file_path = file_path + ".json"
 
             # create directory if it doesn't exist
-            dir_path = os.path.dirname(out_path)
+            dir_path = os.path.dirname(os.path.join(out_dir, file_path))
             if not os.path.exists(dir_path):
                 os.makedirs(dir_path)
-
+            
             if decompile_formats:
-                extension = path.split(".")[-1]
-                magic = file["type"]
-                data, new_extension = Unpacker.decompile_data(data, extension, magic)
-                out_path = out_path.replace(extension, new_extension)
+                if extension == "bin":
+                    scene = Scene(data)
+                    data = scene.get_text().encode("utf-8")
+                elif extension == "clb":
+                    clb = CLB(data)
+                    data = clb.get_text().encode("utf-8")
+                elif extension == "dct":
+                    dct = Dict(data)
+                    data = dct.get_text().encode("utf-8")
 
             # write file
-            with open(out_path, "wb") as file:
+            with open(os.path.join(out_dir, file_path), "wb") as file:
                 file.write(data)
-
-    def decompile_data(data, extension, magic):
-        text = ""
-        extension = extension.lower()
-        new_extension = extension
-        magic = magic.lower()
-        if extension == "dct":
-            new_extension += ".json"
-            dct = Dict(data)
-            text = dct.get_ascii()
-        elif extension == "bin":
-            new_extension += ".json"
-            scene = Scene(data)
-            text = scene.get_text()
-        elif extension == "clb":
-            new_extension += ".json"
-            clb = CLB(data)
-            text = clb.get_text()
-        else:
-            return data, extension
-        # encode text
-        text = text.encode("utf-8")
-        return text, new_extension

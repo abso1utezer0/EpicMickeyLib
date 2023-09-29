@@ -65,8 +65,6 @@ class Scene:
             data = self.fm.r_int()
         elif class_name == "Entity Pointer":
             data = self.fm.r_int()
-            if data == 0:
-                data = None
         elif class_name == "Unsigned Short":
             data = self.fm.r_ushort()
         elif class_name == "Unsigned Integer":
@@ -147,16 +145,21 @@ class Scene:
                 data_type = "palette_list"
         amount = self.fm.r_int()
         data = None
-        if data_type == "list" or data_type == "palette_list":
+        if data_type == "list" or data_type == "palette_list" or data_type == "animation_path":
             data = []
             for i in range(amount):
                 data.append(self.read_property_data(class_name))
-        elif amount == 1:
-            data = self.read_property_data(class_name)
-        elif amount == 0:
-            data = None
         else:
-            raise Exception("Unknown data type: " + data_type)
+            if amount == 1:
+                data = self.read_property_data(class_name)
+            elif amount == 0:
+                data = None
+            else:
+                data = []
+                for i in range(amount):
+                    data.append(self.read_property_data(class_name))
+        #else:
+        #    raise Exception("Unknown data type: " + data_type)
         component_property["data"] = data
         if data_type != None:
             component_property["type"] = data_type
@@ -187,7 +190,7 @@ class Scene:
             data_type_id = int(data_type.split("_")[1])
         self.fm.w_int(data_type_id)
         data = component_property["data"]
-        if data_type == "list" or data_type == "palette_list":
+        if data_type == "list" or data_type == "palette_list" or data_type == "animation_path":
             amount = len(data)
             self.fm.w_int(amount)
             for item in data:
@@ -295,11 +298,11 @@ class Scene:
         else:
             self.fm.w_int(0)
         # write unknown_em2
-        if "unknown_em2" in entity and self.json_root["version"] == 2:
-            unknown_em2 = entity["unknown_em2"]
+        if self.json_root["version"] == 2:
+            unknown_em2 = 0
+            if "unknown_em2" in entity:
+                unknown_em2 = entity["unknown_em2"]
             self.fm.w_int(unknown_em2)
-        else:
-            self.fm.w_int(0)
         # write component amount
         component_amount = len(entity["components"])
         self.fm.w_int(component_amount)
@@ -315,9 +318,6 @@ class Scene:
         return entities
     
     def write_entities(self, entities, strings):
-        # write entity amount
-        entity_amount = len(entities)
-        self.fm.w_int(entity_amount)
         # write entities
         for entity in entities:
             self.write_entity(entity, strings)
@@ -330,9 +330,6 @@ class Scene:
         return linked_entities
     
     def write_scene(self, linked_entities):
-        # write entity amount
-        entity_amount = len(linked_entities)
-        self.fm.w_int(entity_amount)
         # write entities
         for linked_entity in linked_entities:
             self.fm.w_int(linked_entity)
@@ -360,7 +357,7 @@ class Scene:
                         data_type = None
                         if "type" in component_property:
                             data_type = component_property["type"]
-                        if data_type == "list" or data_type == "palette_list":
+                        if data_type == "list" or data_type == "palette_list" or data_type == "animation_path":
                             for item in component_property["data"]:
                                 strings = self.add_string(item, strings)
                         else:
@@ -383,10 +380,22 @@ class Scene:
 
         if self.json_root["version"] == 1:
             unique_id = self.fm.r_bytes(16)
-            unique_id = "".join([hex(byte)[2:] for byte in unique_id])
-            # seperate each byte by a comma
-            unique_id = ",".join(unique_id[i:i+2] for i in range(0, len(unique_id), 2))
-            self.json_root["unique_id"] = unique_id
+            string = ""
+            for byte in unique_id:
+                # convert to hex string, no 0x
+                byte = hex(byte)
+                # remove 0x if it exists
+                if byte[0:2] == "0x":
+                    byte = byte[2:len(byte)]
+                # add 0 if the length is 1
+                if len(byte) == 1:
+                    byte = "0" + byte
+                # add to string
+                string += byte + ","
+            # remove last comma
+            string = string[0:len(string) - 1]
+            # add unique id
+            self.json_root["unique_id"] = string
         else:
             self.fm.move(8)
             # read number of extra strings
@@ -406,15 +415,35 @@ class Scene:
         self.json_root["entities"] = entities
         self.json_root["scene"] = linked_entities
     
-    def get_referenced_files(self):
-        referenced_files = {}
+    def get_referenced_palettes(self):
+        referenced_palettes = []
         for entity in self.json_root["entities"]:
             for component in entity["components"]:
                 for component_property in component["properties"]:
                     # check if the "type" key exists
                     if not "type" in component_property:
                         continue
-                    if component_property["type"] == "path" or component_property["type"] == "animation_path":
+                    if component_property["type"] == "palette_list":
+                        palette_list = component_property["data"]
+                        for palette in palette_list:
+                            if not palette in referenced_palettes:
+                                referenced_palettes.append(palette)
+        return referenced_palettes
+
+    def get_referenced_files(self):
+        paths = []
+        file_types = []
+        def add_path(path, file_type):
+            if not path in paths:
+                paths.append(path)
+                file_types.append(file_type)
+        for entity in self.json_root["entities"]:
+            for component in entity["components"]:
+                for component_property in component["properties"]:
+                    # check if the "type" key exists
+                    if not "type" in component_property:
+                        continue
+                    if component_property["type"] == "path":
                         path = component_property["data"]
                         name = component_property["name"]
                         file_type = None
@@ -430,13 +459,12 @@ class Scene:
                             file_type = "kfm"
                         elif name == "Lua File Path":
                             file_type = ""
+                        elif name == "Portrait":
+                            file_type = "nif"
                         else:
                             raise Exception("Unknown path type: " + name)
-                        if not path in referenced_files:
-                            referenced_files[path] = file_type.upper()
-        return referenced_files
-
-
+                        add_path(path, file_type.upper())
+        return paths, file_types
     
     def get_json(self):
         return self.json_root
@@ -483,7 +511,8 @@ class Scene:
         self.fm.w_int(entity_amount)
         # write linked entity amount
         linked_entity_amount = 0
-        if "scene" in self.json_root:
+        # check if scene has no elements
+        if "scene" in self.json_root and len(self.json_root["scene"]) > 0:
             linked_entity_amount = len(self.json_root["scene"])
         self.fm.w_int(linked_entity_amount)
         # write entities
@@ -491,5 +520,7 @@ class Scene:
         # write scene
         if linked_entity_amount > 0:
             self.write_scene(self.json_root["scene"])
+        #else:
+        #    self.fm.w_int(0)
         # return bytes
         return self.fm.get_bytes()

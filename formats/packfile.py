@@ -1,8 +1,6 @@
-import os
 import sys
-import struct
 import zlib
-import io
+import json
 
 from internal.filemanipulator import FileManipulator
 
@@ -13,10 +11,18 @@ class Packfile:
 
     json_root = {}
 
-    def __init__(self, data, endian="auto"):
-        self.fm = FileManipulator()
-        self.fm.from_bytes(data, endian)
-        self.decompile()
+    def __init__(self, data, format_type="binary"):
+        if format_type == "binary":
+            self.fm = FileManipulator()
+            self.fm.from_bytes(data, "little")
+            self.decompile()
+        elif format_type == "json":
+            self.json_root = data
+        elif format_type == "text":
+            self.json_root = json.loads(data)
+        else:
+            print("Unknown type: " + type)
+            sys.exit(1)
     
     def get_json(self):
         return self.json_root
@@ -44,32 +50,28 @@ class Packfile:
 
         path_partition = b""
 
-        filename_pointers = []
-        folder_pointers = []
-        used_filenames = {}
-        used_folders = {}
+        filename_pointers = {}
+        folder_pointers = {}
 
         for path in self.json_root["order"]:
-            # get the directory (everything before the last forward slash)
-            directory = path[0:path.rfind("/")]
-            # get the filename (everything after the last forward slash)
-            filename = path[path.rfind("/") + 1:len(path)]
-            # remove the last forward slash from the directory if it exists
-            if directory[len(directory) - 1] == "/":
-                directory = directory[0:len(directory) - 1]
-            # if the directory is not in the used folders array, add the offset to the used folders array
-            if directory not in used_folders:
-                used_folders[directory] = len(path_partition)
-                path_partition += directory.encode("utf-8")
+            filename = ""
+            foldername = ""
+            if "/" in path:
+                filename = path[path.rfind("/") + 1:len(path)]
+                foldername = path[0:path.rfind("/")]
+            else:
+                filename = path
+                foldername = ""
+            # if foldername is not in folder pointers, add it to the path partition and the folder pointers
+            if foldername not in folder_pointers:
+                folder_pointers[foldername] = len(path_partition)
+                path_partition += foldername.encode("utf-8")
                 path_partition += b"\0"
-            folder_pointers.append(used_folders[directory])
-            # if the filename is not in the used filenames array, add the offset to the used filenames array
-            if filename not in used_filenames:
-                used_filenames[filename] = len(path_partition)
+            # if filename is not in filename pointers, add it to the path partition and the filename pointers
+            if filename not in filename_pointers:
+                filename_pointers[filename] = len(path_partition)
                 path_partition += filename.encode("utf-8")
                 path_partition += b"\0"
-            filename_pointers.append(used_filenames[filename])
-        
         # header data pointer
         data_pointer = header_size + len(path_partition) + (len(self.json_root["order"]) * 24)
         while data_pointer % 32 != 0:
@@ -99,11 +101,18 @@ class Packfile:
             while aligned_file_size % 32 != 0:
                 aligned_file_size += 1
             # get the folder pointer
-            folder_pointer = folder_pointers[self.json_root["order"].index(path)]
+            foldername = ""
+            filename = ""
+            if "/" in path:
+                foldername = path[0:path.rfind("/")]
+                filename = path[path.rfind("/") + 1:len(path)]
+            else:
+                foldername = ""
+                filename = path
+            folder_pointer = folder_pointers[foldername]
+            file_pointer = filename_pointers[filename]
             # get the file type
             file_type = file["type"]
-            # get the file pointer
-            file_pointer = filename_pointers[self.json_root["order"].index(path)]
             # write the header values
             out_fm.w_int(real_file_size)
             out_fm.w_int(compressed_file_size)
@@ -206,7 +215,11 @@ class Packfile:
             file_name = self.fm.r_str_null()
 
             # combine the folder name and the file name
-            path = folder_name + "/" + file_name
+            path = ""
+            if folder_name == "" or folder_name == None:
+                path = file_name
+            else:
+                path = folder_name + "/" + file_name
 
             # go to the current data position
             self.fm.file.seek(current_data_positon)
