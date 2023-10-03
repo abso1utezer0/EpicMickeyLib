@@ -376,3 +376,21 @@ class FileManipulator:
         self.file.seek(pos)
         # return bytes
         return data
+
+    def size(self):
+        """
+        Returns the size of the file.
+
+        Returns:
+        - The size of the file.
+        """
+        # get current position
+        pos = self.file.tell()
+        # seek to end
+        self.file.seek(0, 2)
+        # get size
+        size = self.file.tell()
+        # seek to original position
+        self.file.seek(pos)
+        # return size
+        return size

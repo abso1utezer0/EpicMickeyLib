@@ -119,8 +119,12 @@ class Packfile:
             out_fm.w_int(aligned_file_size)
             out_fm.w_int(folder_pointer)
             # while file type is less than 4 characters, add null bytes to the end
-            while len(file_type) < 4:
-                file_type += "\0"
+            if endian == "big":
+                while len(file_type) < 4:
+                    file_type += "\0"
+            else:
+                while len(file_type) < 4:
+                    file_type = "\0" + file_type
             # write the file type
             out_fm.w_str(file_type)
             out_fm.w_int(file_pointer)

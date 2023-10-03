@@ -37,7 +37,7 @@ class Unpacker:
             extension = file_path[file_path.rfind(".") + 1:len(file_path)]
             # decompile formats
             if decompile_formats:
-                if extension == "bin" or extension == "clb" or extension == "dct":
+                if extension == "bin" or extension == "clb":# or extension == "dct":
                     # add .json to the file_path
                     file_path = file_path + ".json"
 
@@ -53,9 +53,9 @@ class Unpacker:
                 elif extension == "clb":
                     clb = CLB(data)
                     data = clb.get_text().encode("utf-8")
-                elif extension == "dct":
-                    dct = Dict(data)
-                    data = dct.get_text().encode("utf-8")
+                #elif extension == "dct":
+                #    dct = Dict(data)
+                #    data = dct.get_text().encode("utf-8")
 
             # write file
             with open(os.path.join(out_dir, file_path), "wb") as file:

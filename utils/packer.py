@@ -41,7 +41,7 @@ class Packer:
         for root, _, filenames in os.walk(os.path.join(self.base_dir, "palettes")):
             for filename in filenames:
                 # if the filename is the palette name + .bin or .bin.json
-                if filename.lower() == palette_name + ".bin" or filename.lower() == palette_name + ".bin.json":
+                if filename.lower() == palette_name.lower() + ".bin" or filename.lower() == palette_name.lower() + ".bin.json":
                     # return the relative path to the palette
                     palette_path = os.path.join(root, filename).replace(".json", "")
                     palette_path = os.path.relpath(palette_path, self.base_dir)
@@ -209,40 +209,40 @@ class Packer:
             if path.endswith(".hkw"):
                 # get the directory of the hkw
                 directory = os.path.dirname(path)
-                # get the animations folder (directory/animations)
-                animations_folder = os.path.join(directory, "animations")
-                # read the file
-                anims = []
-                with open(os.path.join(self.base_dir, path), "r", encoding="utf-8") as f:
-                    anims = f.readlines()
-                for anim in anims:
-                    # make sure to grow the i_max if we are adding more items to the paths and filetypes arrays
-                    # check if the anim is empty
-                    anim = anim.replace("\n", "")
-                    anim = anim.strip()
-                    if anim == "":
-                        continue
-                    if anim.lower().endswith("behaviorproject.hkx"):
-                        anim = os.path.join(directory, anim)
-                    else:
-                        anim = os.path.join(animations_folder, anim)
-                    # check if the anim exists
-                    if not os.path.exists(os.path.join(self.base_dir, anim)):
-                        anim += "_wii"
-                    if not os.path.exists(os.path.join(self.base_dir, anim)):
-                        continue
-                    # add the anim to the paths and filetypes arrays before the current path and filetype
-                    print("Adding anim: " + anim)
-                    if anim not in paths and anim not in self.paths_to_exclude:
-                        paths.insert(i, anim)
-                        if anim.lower().endswith("behaviorproject.hkx") or anim.lower().endswith("behaviorproject.hkx_wii"):
-                            filetypes.insert(i, "HKP")
-                        else:
-                            filetypes.insert(i, "HKX")
-                    
-                    i += 1
-            i += 1
+                # loop through every file in the directory and subdirectories
+                for root, _, filenames in os.walk(os.path.join(self.base_dir, directory)):
+                    # if it ends with behaviorproject.hkx or behaviorproject.hkx_wii
+                    for filename in filenames:
+                        if filename.lower() == "behaviorproject.hkx" or filename.lower() == "behaviorproject.hkx_wii":
+                            # add the hkx to the paths and filetypes
+                            paths.append(os.path.join(root, filename).replace("\\", "/"))
+                            filetypes.append("HKP")
+                            i_max = len(paths)
+                            i += 1
+                        # if it ends with behavior.hkx or behavior.hkx_wii
+                        elif filename.lower() == "behavior.hkx" or filename.lower() == "behavior.hkx_wii":
+                            # add the hkx to the paths and filetypes
+                            paths.append(os.path.join(root, filename).replace("\\", "/"))
+                            filetypes.append("HKB")
+                            i_max = len(paths)
+                            i += 1
+                        # if it ends with .hkw
+                        elif filename.lower().endswith(".hkw"):
+                            # add the hkx to the paths and filetypes
+                            paths.append(os.path.join(root, filename).replace("\\", "/"))
+                            filetypes.append("HKW")
+                            i_max = len(paths)
+                            i += 1
+                        # if it ends with .hkx or .hkx_wii
+                        elif filename.lower().endswith(".hkx") or filename.lower().endswith(".hkx_wii"):
+                            # add the hkx to the paths and filetypes
+                            paths.append(os.path.join(root, filename).replace("\\", "/"))
+                            filetypes.append("HKX")
+                            i_max = len(paths)
+                            i += 1
             i_max = len(paths)
+            i += 1
+                        
 
         # get the filename for the relative path
         relative_path = relative_path.replace("\\", "/")
@@ -273,15 +273,21 @@ class Packer:
                 # remove the path and filetype from the paths and filetypes arrays
                 paths.pop(i)
                 filetypes.pop(i)
-                # decrement i_max
-                i_max -= 1
-            else:
-                i += 1
+                i -= 1
+            i += 1
+            i_max = len(paths)
+
         
         scenes_paths = []
         scenes_filetypes = []
         hkx_paths = []
         hkx_filetypes = []
+        nif_paths = []
+        nif_filetypes = []
+        nif_textures_paths = []
+        nif_textures_filetypes = []
+        other_paths = []
+        other_filetypes = []
         for path in paths:
             index = paths.index(path)
             filetype = filetypes[index]
@@ -291,24 +297,31 @@ class Packer:
             elif filetype.lower() == "hkx":
                 hkx_paths.append(path)
                 hkx_filetypes.append(filetype)
-        # remove all items from the paths and filetypes arrays that are in the scenes_paths and scenes_filetypes arrays
-        for path in scenes_paths:
-            index = paths.index(path)
-            paths.pop(index)
-            filetypes.pop(index)
-        for path in hkx_paths:
-            index = paths.index(path)
-            paths.pop(index)
-            filetypes.pop(index)
+            elif filetype.lower() == "nif":
+                is_texture = False
+                # open the nif and determine if it is a texture
+                nif = NifFile.from_path(os.path.join(self.base_dir, path))
+                for block in nif.blocks:
+                    if block.__class__.__name__ == "NiSourceTexture":
+                        if not block.file_name:
+                            is_texture = True
+                if is_texture:
+                    nif_textures_paths.append(path)
+                    nif_textures_filetypes.append(filetype)
+                else:
+                    nif_paths.append(path)
+                    nif_filetypes.append(filetype)
+            else:
+                other_paths.append(path)
+                other_filetypes.append(filetype)
         scenes_paths.append("Palettes/_Dynamic/PlayerTools/PaintStream.bin")
         scenes_filetypes.append("")
         scenes_paths.append("Palettes/_Dynamic/PlayerTools/ThinnerStream.bin")
         scenes_filetypes.append("")
-        paths = hkx_paths + paths
-        filetypes = hkx_filetypes + filetypes
-        paths = scenes_paths + paths
-        filetypes = scenes_filetypes + filetypes
-
+        paths = []
+        filetypes = []
+        paths = scenes_paths + hkx_paths + nif_textures_paths + nif_paths + other_paths
+        filetypes = scenes_filetypes + hkx_filetypes + nif_textures_filetypes + nif_filetypes + other_filetypes
         em2_proto = False
         # if em2 proto = true, remove palettes/_dynamic.bin from the paths and filetypes arrays
         if em2_proto is True:

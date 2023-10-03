@@ -408,10 +408,14 @@ class Scene:
                 for i in range(num_extra_strings):
                     em2_extra_strings.append(self.fm.r_next_str())
             self.json_root["em2_extra_strings"] = em2_extra_strings
-        entity_amount = self.fm.r_int()
-        linked_entity_amount = self.fm.r_int()
-        entities = self.read_entities(entity_amount)
-        linked_entities = self.read_scene(linked_entity_amount)
+        entities = []
+        linked_entities = []
+        # if we are at the end of the file, return
+        if not self.fm.tell() >= self.fm.size() + 4:
+            entity_amount = self.fm.r_int()
+            linked_entity_amount = self.fm.r_int()
+            entities = self.read_entities(entity_amount)
+            linked_entities = self.read_scene(linked_entity_amount)
         self.json_root["entities"] = entities
         self.json_root["scene"] = linked_entities
     
