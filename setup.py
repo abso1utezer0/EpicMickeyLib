@@ -14,11 +14,11 @@ setup(
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         install_requires=[
-            "json",
-            "struct",
-            "io",
-            "sys",
-            "zlib"
+            #"json",
+            #"struct",
+            #"io",
+            #"sys",
+            #"zlib"
         ], # add any additional packages that
         # needs to be installed along with your package. Eg: 'caer'
         
