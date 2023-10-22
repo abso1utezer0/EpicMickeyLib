@@ -12,6 +12,7 @@ class FileManipulator:
 
     file = None
     endian = "big"
+    write_mode = "overwrite"
 
     def __init__(self, path="", mode="rb", endian="big", encoding=None):
         """
@@ -57,7 +58,7 @@ class FileManipulator:
         Returns:
         - The data that was read.
         """
-        self.align(4)
+        #self.align(4)
         value = None
         if self.endian == "big":
             value = struct.unpack(">" + data_type, self.file.read(length))[0]
@@ -234,10 +235,25 @@ class FileManipulator:
         - data_type (str): The type of data to be written.
         - data (any): The data to be written.
         """
+        data_to_write = None
         if self.endian == "big":
-            self.file.write(struct.pack(">" + data_type, data))
+            data_to_write = struct.pack(">" + data_type, data)
         else:
-            self.file.write(struct.pack("<" + data_type, data))
+            data_to_write = struct.pack("<" + data_type, data)
+        
+        if self.write_mode == "overwrite":
+            self.file.write(data_to_write)
+        elif self.write_mode == "insert":
+            # insert data
+            pos = self.file.tell()
+            data = self.file.read()
+            self.file.seek(pos)
+            self.file.write(data_to_write)
+            self.file.write(data)
+            self.file.seek(pos + len(data_to_write))
+        else:
+            raise Exception("Invalid write mode specified.")
+
     
     def w_bytes(self, data):
         """
@@ -394,3 +410,12 @@ class FileManipulator:
         self.file.seek(pos)
         # return size
         return size
+    
+    def set_write_mode(self, mode):
+        """
+        Sets the write mode of the file.
+
+        Args:
+        - mode (str): The write mode to set.
+        """
+        self.write_mode = mode

@@ -322,7 +322,7 @@ class Packer:
         filetypes = []
         paths = scenes_paths + hkx_paths + nif_textures_paths + nif_paths + other_paths
         filetypes = scenes_filetypes + hkx_filetypes + nif_textures_filetypes + nif_filetypes + other_filetypes
-        em2_proto = False
+        em2_proto = True
         # if em2 proto = true, remove palettes/_dynamic.bin from the paths and filetypes arrays
         if em2_proto is True:
             paths_to_remove = [

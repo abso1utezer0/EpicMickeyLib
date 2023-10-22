@@ -397,7 +397,7 @@ class Scene:
             # add unique id
             self.json_root["unique_id"] = string
         else:
-            self.fm.move(8)
+            self.fm.move(4)
             # read number of extra strings
             num_extra_strings = self.fm.r_int()
             em2_extra_strings = None
