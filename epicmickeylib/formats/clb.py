@@ -1,8 +1,6 @@
-from internal.filemanipulator import FileManipulator
-import os
-import sys
-import json
+from epicmickeylib.internal.filemanipulator import FileManipulator
 
+import json
 
 class CLB:
 

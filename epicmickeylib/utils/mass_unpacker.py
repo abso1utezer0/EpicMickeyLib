@@ -1,8 +1,6 @@
-import shutil
-from utils.unpacker import Unpacker
-from formats.packfile import Packfile
+from epicmickeylib.utils.unpacker import Unpacker
+from epicmickeylib.formats.packfile import Packfile
 import os
-import sys
 
 class MassUnpacker:
     packfile_dir = None

@@ -1,9 +1,8 @@
-from formats.packfile import Packfile
+from epicmickeylib.formats.packfile import Packfile
 import os
-import sys
-from formats.scene import Scene
-from formats.clb import CLB
-from formats.dict import Dict
+from epicmickeylib.formats.scene import Scene
+from epicmickeylib.formats.clb import CLB
+from epicmickeylib.formats.dictionary import Dictionary
 
 
 class Unpacker:

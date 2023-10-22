@@ -1,7 +1,5 @@
 import json
-from internal.filemanipulator import FileManipulator
-import os
-import sys
+from epicmickeylib.internal.filemanipulator import FileManipulator
 
 class Dictionary:
     """

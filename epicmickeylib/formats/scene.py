@@ -1,6 +1,6 @@
 import json
 
-from internal.filemanipulator import FileManipulator
+from epicmickeylib.internal.filemanipulator import FileManipulator
 
 class Scene:
 

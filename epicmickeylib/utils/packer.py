@@ -1,9 +1,9 @@
 import os
 import zlib
-from formats.dict import Dict
-from formats.packfile import Packfile
-from formats.scene import Scene
-from formats.clb import CLB
+from epicmickeylib.formats.dictionary import Dictionary
+from epicmickeylib.formats.packfile import Packfile
+from epicmickeylib.formats.scene import Scene
+from epicmickeylib.formats.clb import CLB
 from generated.formats.nif import NifFile
 
 class Packer:

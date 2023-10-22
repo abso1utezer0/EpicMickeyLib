@@ -1,4 +1,4 @@
-from internal.filemanipulator import FileManipulator
+from epicmickeylib.internal.filemanipulator import FileManipulator
 import json
 
 class AIPathDatabase:

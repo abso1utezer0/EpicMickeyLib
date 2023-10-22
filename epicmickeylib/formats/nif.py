@@ -1,7 +1,7 @@
 import sys
 from generated.formats.nif import NifFile
 import json
-from internal.filemanipulator import FileManipulator
+from epicmickeylib.internal.filemanipulator import FileManipulator
 import io
 
 class Nif:
