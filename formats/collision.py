@@ -2,11 +2,38 @@ from internal.filemanipulator import FileManipulator
 import json
 
 class Collision:
+    """
+    A class representing a collision object in Epic Mickey.
 
+    Attributes:
+    - fm (FileManipulator): A FileManipulator object.
+    - json_root (dict): A dictionary containing the JSON data of the collision object.
+
+    Methods:
+    - __init__(self, data, format_type="binary", endian="big"): Initializes the Collision object.
+    - decompile(self): Decompiles the binary data of the Collision object.
+    - get_text(self): Returns the JSON data of the Collision object as a string.
+    - get_json(self): Returns the JSON data of the Collision object as a dictionary.
+    - get_obj(self): Returns the Collision object in OBJ format as a string.
+    """
+    
     fm = None
     json_root = {}
 
-    def __init__(self, data, format_type="binary", endian="big"):
+    def __init__(self, data, format_type="binary", endian="big") -> None:
+        
+        """
+        Initializes the Collision object.
+
+        Parameters:
+        - data (bytes or dict or str): The binary data, JSON data, or JSON string of the collision object.
+        - format_type (str): The format type of the data. Can be "binary", "json", or "text".
+        - endian (str): The endian of the binary data. Can be "big" or "little".
+
+        Raises:
+        - Exception: If the format type is invalid or the collision version is unsupported.
+        """
+
         if format_type == "binary":
             self.fm = FileManipulator()
             self.fm.from_bytes(data, endian)
@@ -16,9 +43,23 @@ class Collision:
         elif format_type == "text":
             self.json_root = json.loads(data)
         else:
-            raise Exception("Invalid format type specified.")
+            raise ValueError(f"Invalid format type specified: {format_type}. Must be 'binary', 'json', or 'text'.")
     
-    def decompile(self):
+    def decompile(self) -> None:
+        
+        """
+        Decompiles the binary data of the Collision object.
+        
+        Args:
+        None
+
+        Returns:
+        None
+
+        Raises:
+        - ValueError: If the collision version is unsupported.
+        """
+
         self.fm.seek(0x0C)
         class_version = self.fm.r_int()
         self.fm.seek(0x28)
@@ -29,7 +70,7 @@ class Collision:
         if class_version == 7 and contents_version == "Havok-7.0.0-r1":
             supported = True
         if not supported:
-            raise Exception("Unsupported collision version.")
+            raise ValueError(f"Unsupported collision version: {class_version} {contents_version}.")
         collisions = []
         self.fm.seek(0x370)
         exporter = self.fm.r_str_null()
@@ -53,7 +94,7 @@ class Collision:
             unknown = []
             num_unkown_values = self.fm.r_int()
             self.fm.move(8)
-            for i in range(num_unkown_values):
+            for j in range(num_unkown_values):
                 value = self.fm.r_byte()
                 # convert to int
                 value = int.from_bytes(value, "big")
@@ -64,7 +105,7 @@ class Collision:
             unknown_2 = []
             num_unkown_values_2 = self.fm.r_int()
             self.fm.move(0x138)
-            for i in range(num_unkown_values_2):
+            for j in range(num_unkown_values_2):
                 value = self.fm.r_ushort()
                 unknown_2.append(value)
             self.fm.align(16)
@@ -76,16 +117,16 @@ class Collision:
             self.fm.move(0x20)
             num_faces = int(self.fm.r_int() / 4)
             self.fm.move(0x3C)
-            for i in range(num_vertices):
+            for j in range(num_vertices):
                 vertex = []
-                for j in range(3):
+                for k in range(3):
                     value = self.fm.r_float()
                     vertex.append(value)
                 vertices.append((vertex[0], vertex[1], vertex[2]))
                 self.fm.move(4)
-            for i in range(num_faces):
+            for j in range(num_faces):
                 face = []
-                for j in range(3):
+                for k in range(3):
                     value = self.fm.r_int()
                     face.append(value)
                 faces.append((face[0], face[1], face[2]))
@@ -96,13 +137,46 @@ class Collision:
             collisions.append(collision)
         self.json_root["collisions"] = collisions
 
-    def get_text(self):
+    def get_text(self) -> str:
+
+        """
+        Returns the JSON data of the Collision object as a string.
+
+        Args:
+        None
+
+        Returns:
+        str: the JSON data of the Collision object as a string.
+        """
+
         return json.dumps(self.json_root, indent=4)
         
-    def get_json(self):
+    def get_json(self) -> dict:
+
+        """
+        Returns the JSON data of the Collision object as a dictionary.
+
+        Args:
+        None
+
+        Returns:
+        dict: the JSON data of the Collision object
+        """
+
         return self.json_root
 
-    def get_obj(self):
+    def get_obj(self) -> str:
+
+        """
+        Returns the Collision object in OBJ format as a string.
+
+        Args:
+        None
+
+        Returns:
+        str: the Collision object in OBJ format as a string.
+        """
+
         text = ""
         text += """
         # Epic Mickey Collision\n
@@ -113,6 +187,12 @@ class Collision:
         # Contents Version: """ + self.json_root["contents_version"] + """\n
         # Exporter: """ + self.json_root["exporter"] + """\n
         # Source Path: """ + self.json_root["source_path"] + """\n\n"""
+
+        # in the obj format, even when using groups, the vertices are still global,
+        # so we need to keep track of the largest vertex index and add that to the
+        # face indices. this ensures that the faces are still correct, even when
+        # using groups.
+
         largest_vertex_index = 0
         i = 0
         for collision in self.json_root["collisions"]:

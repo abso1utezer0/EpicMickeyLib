@@ -1,15 +1,59 @@
 import json
-import os
-import sys
-import struct
 
 from internal.filemanipulator import FileManipulator
 
 class Scene:
+
+    """
+    A class representing a scene file in Epic Mickey.
+
+    Attributes:
+    - fm (FileManipulator): A FileManipulator object.
+    - json_root (dict): A dictionary containing the JSON data of the scene file.
+
+    Methods:
+    - __init__(self, data, format_type="binary"): Initializes the Scene object.
+    - read_pointer(self): Reads a pointer from the file.
+    - read_pointed_string(self): Reads a string from the file.
+    - read_property_data(self, class_name): Reads property data from the file.
+    - write_property_data(self, class_name, data): Writes property data to the file.
+    - read_property(self): Reads a property from the file.
+    - write_property(self, component_property, strings): Writes a property to the file.
+    - read_component(self): Reads a component from the file.
+    - write_component(self, component, strings): Writes a component to the file.
+    - read_entity(self): Reads an entity from the file.
+    - write_entity(self, entity, strings): Writes an entity to the file.
+    - read_entities(self, entity_amount): Reads entities from the file.
+    - write_entities(self, entities, strings): Writes entities to the file.
+    - read_scene(self, entity_amount): Reads a scene from the file.
+    - write_scene(self, linked_entities): Writes a scene to the file.
+    - add_string(self, string, strings): Adds a string to the string table.
+    - assemble_strings(self): Assembles the string table.
+    - get_referenced_palettes(self): Returns a list of referenced palettes.
+    - get_referenced_files(self): Returns a list of referenced files.
+    - decompile(self): Decompiles the binary data of the Scene object.
+    - get_binary(self): Returns the binary data of the compiled Scene object.
+    - get_text(self): Returns the JSON data of the Scene object as a string.
+    - get_json(self): Returns the JSON data of the Scene object as a dictionary.
+    """
+
     json_root = {}
     fm = None
 
-    def __init__(self, data, format_type="binary", endian="big"):
+    def __init__(self, data, format_type="binary", endian="big") -> None:
+
+        """
+        Initializes a Scene object.
+
+        Args:
+        - data: the data to be used to initialize the object
+        - format_type: the format of the data (binary, json, or text)
+        - endian: the endian of the data (big or little)
+
+        Returns:
+        None
+        """
+
         if format_type == "binary":
             self.fm = FileManipulator()
             self.fm.from_bytes(data, endian)
@@ -19,23 +63,56 @@ class Scene:
         elif format_type == "text":
             self.json_root = json.loads(data)
         else:
-            raise Exception("Invalid format type specified.")
-    
-    def read_pointer(self):
+            raise ValueError(f"""
+                Invalid format type specified: {format_type}. Must be 'binary', 'json', or 'text'.
+            """)
+
+    def read_pointer(self) -> int:
+
+        """
+        Reads a pointer from the file.
+
+        Args:
+        None
+
+        Returns:
+        The pointer as an integer.
+        """
+
         # read pointer
         pointer = self.fm.r_int()
         if self.json_root["version"] == 2:
             pointer += 4
         return pointer
-    
-    def read_pointed_string(self):
+
+    def read_pointed_string(self) -> str:
+
+        """
+        Reads a string from the file.
+
+        Args:
+        None
+
+        Returns:
+        The string.
+        """
         # read pointer
         pointer = self.read_pointer()
         # read string
         string = self.fm.r_str_from_pointer(pointer)
         return string
-    
-    def read_property_data(self, class_name):
+
+    def read_property_data(self, class_name) -> str:
+
+        """
+        Reads property data from the file.
+
+        Args:
+        - class_name: the class of the property
+
+        Returns:
+        None
+        """
         data = None
         if class_name == "Float":
             data = self.fm.r_float()
@@ -80,10 +157,21 @@ class Scene:
                 values.append(self.fm.r_float())
             data = (values[0], values[1], values[2], values[3])
         else:
-            raise Exception("Unknown property class: " + class_name)
+            raise ValueError(f"Unknown property class: {class_name}")
         return data
-    
-    def write_property_data(self, class_name, data):
+
+    def write_property_data(self, class_name, data) -> None:
+
+        """
+        Writes property data to the file.
+
+        Args:
+        - class_name: the class of the property
+
+        Returns:
+        None
+        """
+
         if class_name == "Float":
             self.fm.w_float(data)
         elif class_name == "Boolean":
@@ -117,9 +205,20 @@ class Scene:
             for num in data:
                 self.fm.w_float(num)
         else:
-            raise Exception("Unknown property class: " + class_name)
+            raise ValueError(f"Unknown property class: {class_name}")
 
-    def read_property(self):
+    def read_property(self) -> dict:
+
+        """
+        Reads a property from the file.
+
+        Args:
+        None
+
+        Returns:
+        A dictionary containing the property data.
+        """
+
         # add property element
         component_property = {}
         # read property name pointer
@@ -161,11 +260,23 @@ class Scene:
         #else:
         #    raise Exception("Unknown data type: " + data_type)
         component_property["data"] = data
-        if data_type != None:
+        if data_type is not None:
             component_property["type"] = data_type
         return component_property
-    
-    def write_property(self, component_property, strings):
+
+    def write_property(self, component_property, strings) -> None:
+
+        """
+        Writes a property to the file.
+
+        Args:
+        - component_property: a dictionary containing the property data
+        - strings: a dictionary containing the string table
+
+        Returns:
+        None
+        """
+
         # write property name pointer
         name = component_property["name"]
         self.fm.w_int(strings[name])
@@ -185,7 +296,7 @@ class Scene:
         elif data_type == "palette_list":
             data_type_id = 5
         # catch unknown data types
-        if data_type_id == 0 and data_type != None:
+        if data_type_id == 0 and data_type is not None:
             # get the number from the string
             data_type_id = int(data_type.split("_")[1])
         self.fm.w_int(data_type_id)
@@ -199,7 +310,7 @@ class Scene:
                 # write data
                 self.write_property_data(class_name, item)
         else:
-            if data == None:
+            if data is None:
                 amount = 0
             else:
                 amount = 1
@@ -209,11 +320,22 @@ class Scene:
                     data = strings[data]
                 # write data
                 self.write_property_data(class_name, data)
-    
-    def read_component(self):
+
+    def read_component(self) -> dict:
+
+        """
+        Reads a component from the file.
+
+        Args:
+        None
+
+        Returns:
+        A dictionary containing the component data.
+        """
+
         # add component element
         component = {}
-        
+
         class_name = self.read_pointed_string()
         component["class"] = class_name
         template_id = self.read_pointed_string()
@@ -230,8 +352,20 @@ class Scene:
             component_properties.append(component_property)
         component["properties"] = component_properties
         return component
-    
-    def write_component(self, component, strings):
+
+    def write_component(self, component, strings) -> None:
+
+        """
+        Writes a component to the file.
+
+        Args:
+        - component: a dictionary containing the component data
+        - strings: a dictionary containing the string table
+
+        Returns:
+        None
+        """
+
         # write component class pointer
         class_name = component["class"]
         self.fm.w_int(strings[class_name])
@@ -253,8 +387,19 @@ class Scene:
         # write properties
         for component_property in component["properties"]:
             self.write_property(component_property, strings)
-    
-    def read_entity(self):
+
+    def read_entity(self) -> dict:
+
+        """
+        Reads an entity from the file.
+
+        Args:
+        None
+
+        Returns:
+        A dictionary containing the entity data.
+        """
+
         entity = {}
         name = self.read_pointed_string()
         entity["name"] = name
@@ -277,8 +422,20 @@ class Scene:
             components.append(component)
         entity["components"] = components
         return entity
-    
-    def write_entity(self, entity, strings):
+
+    def write_entity(self, entity, strings) -> None:
+
+        """
+        Writes an entity to the file.
+
+        Args:
+        - entity: a dictionary containing the entity data
+        - strings: a dictionary containing the string table
+
+        Returns:
+        None
+        """
+
         # write entity name pointer
         name = entity["name"]
         self.fm.w_int(strings[name])
@@ -309,32 +466,89 @@ class Scene:
         # write components
         for component in entity["components"]:
             self.write_component(component, strings)
-    
-    def read_entities(self, entity_amount):
+
+    def read_entities(self, entity_amount) -> list:
+
+        """
+        Reads entities from the file.
+
+        Args:
+        - entity_amount: the amount of entities to read
+
+        Returns:
+        A list containing the entities.
+        """
+
         entities = []
         for i in range(entity_amount):
             entity = self.read_entity()
             entities.append(entity)
         return entities
-    
-    def write_entities(self, entities, strings):
+
+    def write_entities(self, entities, strings) -> None:
+
+        """
+        Writes entities to the file.
+
+        Args:
+        - entities: a list containing the entities
+        - strings: a dictionary containing the string table
+
+        Returns:
+        None
+        """
+
         # write entities
         for entity in entities:
             self.write_entity(entity, strings)
 
-    def read_scene(self, entity_amount):
+    def read_scene(self, entity_amount) -> list:
+
+        """
+        Reads the linked entities from the file.
+
+        Args:
+        - entity_amount: the amount of entities to read
+
+        Returns:
+        A list containing the linked entities' ids.
+        """
+
         linked_entities = []
         for i in range(entity_amount):
             linked_entity = self.fm.r_int()
             linked_entities.append(linked_entity)
         return linked_entities
-    
-    def write_scene(self, linked_entities):
+
+    def write_scene(self, linked_entities) -> None:
+
+        """
+        Writes the linked entities to the file.
+
+        Args:
+        - linked_entities: a list containing the linked entities' ids
+
+        Returns:
+        None
+        """
+
         # write entities
         for linked_entity in linked_entities:
             self.fm.w_int(linked_entity)
-    
-    def add_string(self, string, strings):
+
+    def add_string(self, string, strings) -> dict:
+
+        """
+        Adds a string to the string table.
+
+        Args:
+        - string: the string to add
+        - strings: a dictionary containing the string table
+
+        Returns:
+        A dictionary containing the string table.
+        """
+
         if not string in strings:
             location = self.fm.tell()
             if self.json_root["version"] == 2:
@@ -343,28 +557,62 @@ class Scene:
             self.fm.w_next_str(string)
         return strings
 
-    def assemble_strings(self):
+    def assemble_strings(self) -> dict:
+
+        """
+        Assembles the string table.
+
+        Args:
+        None
+
+        Returns:
+        A dictionary containing the string table.
+        """
+
         strings = {}
+
         for entity in self.json_root["entities"]:
+
             strings = self.add_string(entity["name"], strings)
+
             for component in entity["components"]:
+
                 strings = self.add_string(component["class"], strings)
                 strings = self.add_string(component["template_id"], strings)
+
                 for component_property in component["properties"]:
+
                     strings = self.add_string(component_property["name"], strings)
                     strings = self.add_string(component_property["class"], strings)
+
                     if component_property["class"] == "String":
+
                         data_type = None
+
                         if "type" in component_property:
                             data_type = component_property["type"]
-                        if data_type == "list" or data_type == "palette_list" or data_type == "animation_path":
+
+                        if data_type in ["list", "palette_list", "animation_path"]:
+
                             for item in component_property["data"]:
                                 strings = self.add_string(item, strings)
+
                         else:
                             strings = self.add_string(component_property["data"], strings)
         return strings
-    
-    def decompile(self):
+
+    def decompile(self) -> None:
+
+        """
+        Decompiles the binary data and converts it to a JSON object.
+
+        Args:
+        None
+
+        Returns:
+        None
+        """
+
         # read the first 4 bytes
         first_four_bytes = self.fm.r_bytes(4)
         # if they equal 01 00 00 01, then the file is of version 2
@@ -373,7 +621,7 @@ class Scene:
         else:
             self.json_root["version"] = 1
             self.fm.seek(0)
-        
+
         # read data pointer
         data_pointer = self.read_pointer()
         self.fm.seek(data_pointer)
@@ -418,8 +666,19 @@ class Scene:
             linked_entities = self.read_scene(linked_entity_amount)
         self.json_root["entities"] = entities
         self.json_root["scene"] = linked_entities
-    
-    def get_referenced_palettes(self):
+
+    def get_referenced_palettes(self) -> list:
+
+        """
+        Returns a list of referenced palettes' names.
+
+        Args:
+        None
+
+        Returns:
+        A list containing the referenced palettes.
+        """
+
         referenced_palettes = []
         for entity in self.json_root["entities"]:
             for component in entity["components"]:
@@ -434,24 +693,49 @@ class Scene:
                                 referenced_palettes.append(palette)
         return referenced_palettes
 
-    def get_referenced_files(self):
+    def get_referenced_files(self) -> list:
+
+        """
+        Returns lists of referenced files' paths and types.
+
+        Args:
+        None
+
+        Returns:
+        - A list containing the referenced files' paths.
+        - A list containing the referenced files' types.
+        """
+
         paths = []
         file_types = []
+
         def add_path(path, file_type):
             if not path in paths:
                 paths.append(path)
                 file_types.append(file_type)
+
         for entity in self.json_root["entities"]:
+
             for component in entity["components"]:
+
                 for component_property in component["properties"]:
+
                     # check if the "type" key exists
                     if not "type" in component_property:
                         continue
+
                     if component_property["type"] == "path":
+
                         path = component_property["data"]
                         name = component_property["name"]
+
                         file_type = None
-                        if name == "NIF File Path" or name == "DecalMaterialNifFile" or name == "Phantom NIF File":
+
+                        if name in [
+                            "NIF File Path",
+                            "DecalMaterialNifFile",
+                            "Phantom NIF File",
+                            "Portrait"]:
                             file_type = "nif"
                         elif name == "Phantom HKX File" or name == "RB Hull File Path":
                             file_type = "hkx"
@@ -463,20 +747,52 @@ class Scene:
                             file_type = "kfm"
                         elif name == "Lua File Path":
                             file_type = ""
-                        elif name == "Portrait":
-                            file_type = "nif"
                         else:
-                            raise Exception("Unknown path type: " + name)
+                            raise ValueError(f"Unknown path type: {name}")
                         add_path(path, file_type.upper())
+
         return paths, file_types
-    
-    def get_json(self):
+
+    def get_json(self) -> dict:
+
+        """
+        Returns the JSON data of the Scene object as a dictionary.
+
+        Args:
+        None
+
+        Returns:
+        dict: the JSON data of the Scene object
+        """
+
         return self.json_root
-    
-    def get_text(self):
+
+    def get_text(self) -> str:
+
+        """
+        Returns the JSON data of the Scene object as a string.
+
+        Args:
+        None
+
+        Returns:
+        str: the JSON data of the Scene object
+        """
+
         return json.dumps(self.json_root, indent=4)
-    
-    def get_binary(self):
+
+    def get_binary(self) -> bytes:
+
+        """
+        Compiles the Scene object to binary data.
+
+        Args:
+        None
+
+        Returns:
+        bytes: the binary data of the Scene object
+        """
+
         self.fm = FileManipulator()
         self.fm.from_bytes(b"", "big")
         if self.json_root["version"] == 2:

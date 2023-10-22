@@ -15,7 +15,7 @@ class AIPathDatabase:
         elif format_type == "text":
             self.json_root = json.loads(data)
         else:
-            raise Exception("Invalid format type specified.")
+            raise ValueError(f"Invalid format type specified: {format_type}. Must be 'binary', 'json', or 'text'.")
     
     def decompile(self):
         self.fm.seek(0x10)

@@ -4,14 +4,38 @@ import json
 
 from internal.filemanipulator import FileManipulator
 
-# create packfile class
 class Packfile:
+    """
+    A class representing a packfile in Epic Mickey.
+
+    Attributes:
+    - fm (FileManipulator): A FileManipulator object.
+    - json_root (dict): A dictionary containing the JSON data of the packfile.
+
+    Methods:
+    - __init__(self, data, format_type="binary"): Initializes the Packfile object.
+    - decompile(self): Decompiles the binary data of the Packfile object.
+    - get_binary(self): Returns the binary data of the compiled Packfile object.
+    - get_text(self): Returns the JSON data of the Packfile object as a string.
+    - get_json(self): Returns the JSON data of the Packfile object as a dictionary.
+    """
 
     fm = None
-
     json_root = {}
 
-    def __init__(self, data, format_type="binary"):
+    def __init__(self, data, format_type="binary") -> None:
+
+        """
+        Initializes a Packfile object.
+
+        Args:
+        - data: the data to be used to initialize the object
+        - format_type: the format of the data (binary, json, or text)
+
+        Returns:
+        None
+        """
+
         if format_type == "binary":
             self.fm = FileManipulator()
             self.fm.from_bytes(data, "little")
@@ -23,11 +47,33 @@ class Packfile:
         else:
             print("Unknown type: " + type)
             sys.exit(1)
-    
-    def get_json(self):
+
+    def get_json(self) -> dict:
+
+        """
+        Returns the JSON data of the Packfile object as a dictionary.
+
+        Args:
+        None
+
+        Returns:
+        dict: the JSON data of the Packfile object
+        """
+
         return self.json_root
     
-    def get_binary(self, endian="big"):
+    def get_binary(self, endian="big") -> bytes:
+
+        """
+        Returns the binary data of the compiled Packfile object.
+
+        Args:
+        None
+
+        Returns:
+        bytes: the binary data of the compiled Packfile object
+        """
+
         out_fm = FileManipulator()
         out_fm.from_bytes(b"", endian)
 
@@ -152,10 +198,32 @@ class Packfile:
         # return the binary data
         return out_fm.get_bytes()
 
-    def close(self):
+    def close(self) -> None:
+
+        """
+        Closes the FileManipulator object.
+
+        Args:
+        None
+
+        Returns:
+        None
+        """
+
         self.fm.close()
 
-    def decompile(self):
+    def decompile(self) -> None:
+
+        """
+        Decompiles the binary data of the Packfile object.
+
+        Args:
+        None
+
+        Returns:
+        None
+        """
+        
         magic = self.fm.r_str(4)
         if magic == "PAK ":
             self.fm.set_endian("little")

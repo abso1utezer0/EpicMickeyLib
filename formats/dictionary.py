@@ -4,9 +4,37 @@ import os
 import sys
 
 class Dictionary:
+    """
+    A class representing a dictionary file in Epic Mickey.
+
+    Attributes:
+    - fm (FileManipulator): A FileManipulator object.
+    - json_root (dict): A dictionary containing the JSON data of the dictionary file.
+
+    Methods:
+    - __init__(self, data, format_type="binary"): Initializes the Dictionary object.
+    - decompile(self): Decompiles the binary data of the Dictionary object.
+    - get_binary(self): Returns the binary data of the compiled Dictionary object.
+    - get_text(self): Returns the JSON data of the Dictionary object as a string.
+    - get_json(self): Returns the JSON data of the Dictionary object as a dictionary.
+    """
+
     fm = None
     json_root = {}
-    def __init__(self, data, format_type="binary"):
+
+    def __init__(self, data, format_type="binary") -> None:
+
+        """
+        Initializes a Dictionary object.
+
+        Args:
+        - data: the data to be used to initialize the object
+        - format_type: the format of the data (binary, json, or text)
+
+        Returns:
+        None
+        """
+
         if format_type == "binary":
             self.fm = FileManipulator()
             self.fm.from_bytes(data, "little")
@@ -16,10 +44,20 @@ class Dictionary:
         elif format_type == "text":
             self.json_root = json.loads(data)
         else:
-            print("Unknown type: " + type)
-            sys.exit(1)
+            raise ValueError(f"Invalid format type specified: {format_type}. Must be 'binary', 'json', or 'text'.")
  
-    def decompile(self):
+    def decompile(self) -> None:
+
+        """
+        Decompiles the binary data and converts it to a JSON object.
+
+        Args:
+        None
+
+        Returns:
+        None
+        """
+
         # read magic
         magic = self.fm.r_str(4) # = "DICT"
 
@@ -106,7 +144,18 @@ class Dictionary:
         # add footer to json data
         self.json_root["footer"] = footer
 
-    def get_binary(self):
+    def get_binary(self) -> bytes:
+
+        """
+        Returns the binary data for the Dictionary object.
+
+        Args:
+        None
+
+        Returns:
+        The binary data for the Dictionary object.
+        """
+
         self.fm = FileManipulator()
         self.fm.from_bytes(b"", "little")
         # get line count
@@ -206,12 +255,45 @@ class Dictionary:
 
         return self.fm.get_bytes()
 
-    def get_text(self):
+    def get_text(self) -> str:
+
+        """
+        Returns the JSON representation of the dictionary object as a formatted string.
+
+        Args:
+        None
+
+        Returns:
+        The JSON representation of the dictionary object as a formatted string.
+        """
+
         # convert json to text and prettify it
         return json.dumps(self.json_root, indent=4)
     
-    def get_json(self):
+    def get_json(self) -> dict:
+
+        """
+        Returns the JSON representation of the dictionary object as a dictionary.
+
+        Args:
+        None
+
+        Returns:
+        The JSON representation of the dictionary object as a dictionary.
+        """
+
         return self.json_root
 
-    def __str__(self):
-        return str(self.json_root)
+    def __str__(self) -> str:
+
+        """
+        Returns the JSON representation of the dictionary object as a formatted string.
+    
+        Args:
+        None
+
+        Returns:
+        The JSON representation of the dictionary object as a formatted string.
+        """
+        
+        return self.get_text()
