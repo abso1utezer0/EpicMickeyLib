@@ -7,7 +7,7 @@ A Python library for working with Epic Mickey's file structures and formats.
 | ----------- | -------------- | ------------- | ----------- | ----- |
 | Scene/Palette | .bin | Yes | Yes | |
 | Model | .nif | No | No | |
-| Texture | _tex.nif | No | No | Research is finished, but the format has not yet been implemented. |
+| Texture | _tex.nif | Yes(?) | No | Fully researched, DXT1 textures can be decompiled to an easy to use format. More formats will be implemented in the coming months. |
 | Animation | .hkx | Yes(?) | Yes | Animations can be decompiled to a format usable by artists, but compilation must be done with a new file from scratch and assetcc2 from Havok's SDK. |
 | Sound | .wav | Yes | Yes | Possible with Memer's tool, which has gone missing. |
 | Collision | .hkx | Yes(?) | Yes | Same as animations. |
