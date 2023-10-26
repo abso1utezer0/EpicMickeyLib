@@ -144,6 +144,7 @@ class Scene:
             data = self.fm.r_int()
         elif class_name == "Unsigned Short":
             data = self.fm.r_ushort()
+            self.fm.align(4)
         elif class_name == "Unsigned Integer":
             data = self.fm.r_int()
         elif class_name == "Color (RGB)":
