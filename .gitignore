@@ -162,3 +162,4 @@ cython_debug/
 /generated
 /test.py
 /nifgen
+/pack_scene_reimport.py

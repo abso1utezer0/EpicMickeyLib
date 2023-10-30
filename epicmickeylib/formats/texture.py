@@ -3,11 +3,13 @@ import math
 
 import numpy
 from generated.formats.nif import NifFile
-# import pillow
+
 import PIL
+import PIL.Image
 from epicmickeylib.internal.filemanipulator import FileManipulator
 from generated.formats.nif.enums.PlatformID import PlatformID
 from generated.formats.nif.enums.PixelFormat import PixelFormat
+from generated.formats.nif.enums.EndianType import EndianType
 
 class Texture:
     fm = None
@@ -70,6 +72,19 @@ class Texture:
             raise ValueError("Invalid format_type")
     
     def untile_pixels(self, pixels: list, width: int) -> list:
+
+        """
+        Untiles pixels. 
+
+        Args:
+        - pixels: the pixels to be untiled
+        - width: the width of the texture
+        - row_order: the order of the rows (default: [0, 1, 2, 3])
+        
+        Returns:
+        The untiled pixels.
+        """
+
         rearranged_pixels = []
         num = width * 4
         for i in range(0, len(pixels), num):
@@ -79,7 +94,19 @@ class Texture:
                     for pixel in pixels_to_add:
                         rearranged_pixels.append(pixel)
         return rearranged_pixels
-        
+
+    def untile_pixels_1CH(self, pixels: list, width: int) -> list:
+
+        rearranged_pixels = []
+        num = width * 4
+        for i in range(0, len(pixels), num):
+            for j in range(0, 32, 8):
+                for k in range(i+j, i+num+j, 32):
+                    pixels_to_add = pixels[k:k+8]
+                    for pixel in pixels_to_add:
+                        rearranged_pixels.append(pixel)
+        return rearranged_pixels
+
     def decompile(self) -> None:
 
         """
@@ -97,6 +124,7 @@ class Texture:
         stream = BytesIO(binary_data)
         # create NIF object
         nif = NifFile.from_stream(stream)
+        print(nif)
 
         format = None
         pixel_data = None
@@ -116,28 +144,35 @@ class Texture:
                 height = largest_mipmap.height
                 platform = block.platform
                 bits_per_pixel = block.bits_per_pixel
-        print(tex_block)
         if platform == PlatformID.WII:
             if format == PixelFormat.FMT_DXT1:
-
                 bytes_per_chunk = width * 4
+                #while bytes_per_chunk % 64 != 0:
+                #    bytes_per_chunk -= 1
+                
                 chunks = []
                 crop = (width * height) // 2
                 data_to_use = tex_block.pixel_data[:crop]
+                tex_block.pixel_data = tex_block.pixel_data[:crop]
+                pixel_data = tex_block.pixel_data
                 for i in range(0, len(data_to_use), bytes_per_chunk):
                     chunks.append(data_to_use[i:i+bytes_per_chunk])
                 new_bytes_to_use = b""
                 for chunk in chunks:
-                    # split the chunk into rows, each row is 16 bytes
+                    # split the chunk into rows, each row is 16 bytes (but each tile is 8 bytes)
                     rows = []
-                    for i in range(0, len(chunk), 16):
-                        rows.append(chunk[i:i+16])
+                    for i in range(0, len(chunk), 8):
+                        rows.append(chunk[i:i+8])
                     group_one = []
                     group_two = []
-                    for i in range(0, len(rows), 2):
+                    for i in range(0, len(rows), 4):
                         group_one.append(rows[i])
                         if i + 1 < len(rows):
-                            group_two.append(rows[i+1])
+                            group_one.append(rows[i+1])
+                        if i + 2 < len(rows):
+                            group_two.append(rows[i+2])
+                        if i + 3 < len(rows):
+                            group_two.append(rows[i+3])
                     final_rows = []
                     for i in range(0, len(group_one)):
                         final_rows.append(group_one[i])
@@ -207,7 +242,6 @@ class Texture:
                     self.width = img.width
                     self.height = img.height
             elif format == PixelFormat.FMT_RGBA:
-                print(tex_block.bytes_per_pixel)
                 if bits_per_pixel == 16:
                     # crop the pixel data
                     crop = (width * height) * 2
@@ -262,7 +296,7 @@ class Texture:
                 
                     # crop the pixel data
                     crop = (width * height) * 4
-                    pixel_data = pixel_data[:crop]
+                    #pixel_data = pixel_data[:crop]
 
                     tiles = []
                     # each tile is 64 bytes
@@ -341,7 +375,6 @@ class Texture:
                     for j in range(3):
                         pixel.append(intensity)
                     pixel.append(alpha)
-                    print(pixel)
                     pixels.append(pixel)
                 # crop
                 crop = (width * height)
@@ -388,7 +421,7 @@ class Texture:
                 crop = (width * height)
                 pixels = pixels[:crop]
 
-                pixels = self.untile_pixels(pixels, width)
+                pixels = self.untile_pixels_1CH(pixels, width)
                 # create pixel data
                 new_pixel_data = b""
                 for pixel in pixels:
@@ -401,7 +434,22 @@ class Texture:
                 raise ValueError(f"Invalid format '{format}'. Only DXT1 is supported at the moment.")
         else:
             raise ValueError(f"Invalid platform '{platform}'. Only Wii is supported at the moment.")
+    
+    def compile(self, format: PixelFormat = PixelFormat.FMT_RGBA, platform: PlatformID = PlatformID.WII) -> None:
+        nif = NifFile().from_version(335938816)
+        nif.header_string = "Gamebryo File Format, Version 20.6.5.0"
+        nif.endian_type = EndianType.ENDIAN_BIG
+        nif.user_version = 10
+        print(nif)
+        # create texture block
         
+        # save texture
+        stream = BytesIO()
+        NifFile.to_stream(nif, stream)
+        print(stream.getvalue())
+        return stream.getvalue()
+
+
     def get_png(self) -> bytes:
 
         """
