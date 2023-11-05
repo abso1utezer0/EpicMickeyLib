@@ -8,10 +8,11 @@ A Python library for working with Epic Mickey's file structures and formats.
 | Scene/Palette | .bin | Yes | Yes | |
 | Model | .nif | No | No | |
 | Texture | _tex.nif | Yes | No | Besides a very rare, small NIF conversion bug, all that is left is implementing compilation for all the formats. |
-| Animation | .hkx | Yes(?) | Yes | Animations can be decompiled to a format usable by artists, but compilation must be done with a new file from scratch and assetcc2 from Havok's SDK. |
+| Animation | .hkx | Yes | Yes | |
+| Skeleton | .hkx | Yes | Yes | |
 | Sound | .wav | Yes | Yes | Possible with Memer's tool, which has gone missing. |
-| Collision | .hkx | Yes(?) | Yes | Same as animations. |
-| Script | .lua | Yes | Yes | Lua scripts must be decompiled with unluac. Check docs.epicmickey.wiki for more information. |
+| Collision | .hkx | Yes(?) | Yes | Collision can only be decompiled to meshes, meaning the new collision file must be created from scratch using the mesh as a base. |
+| Script | .lua | Yes | Yes | |
 | Packfiles | .pak | Yes | Yes | The packfile format itself is fully supported, but research still needs to be done on how to grab the file list for the header with the correct ordering. |
 | Collectible Database | .clb | Yes | Yes | |
 | Dialog Dictionary | .dct | Yes | Yes | |

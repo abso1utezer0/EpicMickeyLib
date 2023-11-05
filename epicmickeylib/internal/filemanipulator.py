@@ -107,14 +107,27 @@ class FileManipulator:
         - The byte that was read.
         """
         return self.r_bytes(1)
+    
+    def r_uint(self) -> int:
+            
+        """
+        Reads a 4-byte unsigned integer from the file.
 
+        Returns:
+        - The unsigned integer that was read.
+        """
+
+        return self.read_data("I", 4)
+    
     def r_int(self) -> int:
+                
         """
         Reads a 4-byte integer from the file.
 
         Returns:
         - The integer that was read.
         """
+
         return self.read_data("i", 4)
 
     def r_ushort(self) -> int:
@@ -127,6 +140,17 @@ class FileManipulator:
         """
 
         return self.read_data("H", 2)
+    
+    def r_short(self) -> int:
+            
+            """
+            Reads a 2-byte short from the file.
+    
+            Returns:
+            - The short that was read.
+            """
+    
+            return self.read_data("h", 2)
 
     def r_float(self) -> float:
 
@@ -322,6 +346,17 @@ class FileManipulator:
         """
 
         self.w_bytes(bytes([data]))
+    
+    def w_uint(self, data) -> None:
+            
+        """
+        Writes a 4-byte unsigned integer to the file.
+
+        Args:
+        - data (int): The unsigned integer to be written.
+        """
+
+        self.w_data("I", data)
 
     def w_int(self, data) -> None:
 
@@ -344,6 +379,18 @@ class FileManipulator:
         """
 
         self.w_data("H", data)
+    
+    def w_short(self, data) -> None:
+            
+        """
+        Writes a 2-byte short to the file.
+
+        Args:
+        - data (int): The short to be written.
+        """
+
+        self.w_data("h", data)
+
 
     def w_float(self, data) -> None:
 

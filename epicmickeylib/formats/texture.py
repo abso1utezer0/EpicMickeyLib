@@ -442,7 +442,7 @@ class Texture:
         nif.user_version = 10
         print(nif)
         # create texture block
-        
+
         # save texture
         stream = BytesIO()
         NifFile.to_stream(nif, stream)
