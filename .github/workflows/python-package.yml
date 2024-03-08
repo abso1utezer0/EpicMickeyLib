@@ -23,7 +23,7 @@ jobs:
     
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade pip
+        python -m pip install --upgrade pip build
         git clone https://github.com/OpenNaja/cobra-tools 
         git https://github.com/niftools/nifxml
         git clone https://github.com/Candoran2/new-pyffi
@@ -36,7 +36,7 @@ jobs:
         rm -rf cobra-tools new-pyffi nifxml
     
     - name: build
-      run: python setup.py sdist
+      run: python -m build --sdist
         
     - name: Upload Artifact
       uses: actions/upload-artifact@4
